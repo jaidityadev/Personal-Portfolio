@@ -260,7 +260,7 @@ export default function HomePage() {
                   <div className="grid md:grid-cols-2 gap-6">
                   <div className="relative aspect-video overflow-hidden rounded-lg">
                     <Image
-                      src="/images/projects/disease-prediction.jpg"
+                      src="/images/disease-prediction.jpg"
                       alt="Disease Prediction Model"
                       fill              // stretches to fill parent
                       className="object-cover"
@@ -299,7 +299,7 @@ export default function HomePage() {
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="relative aspect-video overflow-hidden rounded-lg">
                       <Image
-                        src="/images/projects/arima-forecasting.jpg"
+                        src="/images/arima-forecasting.jpg"
                         alt="ARIMA Time Series Forecasting"
                         fill
                         className="object-cover"
