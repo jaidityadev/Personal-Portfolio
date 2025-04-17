@@ -6,6 +6,7 @@ import FadeIn from "@/components/animations/fade-in";
 import StaggerIn from "@/components/animations/stagger-in";
 import PageTransition from "@/components/animations/page-transition";
 import HoverScale from "@/components/animations/hover-scale";
+import Image from "next/image";
 
 export default function ProjectsPage() {
   const projects = [
@@ -14,7 +15,7 @@ export default function ProjectsPage() {
       title: "Heterogeneous Ensemble Forecasting for Disease Prediction",
       description:
         "A research project focusing on machine learning models to predict the spread of diseases using ensemble-based forecasting techniques. This work combined multiple forecasting algorithms to improve prediction accuracy of disease outbreaks.",
-      image: "/projects/disease-prediction.jpg",
+      image: "/images/disease_prediction.png",
       tags: ["R", "Ensemble Forecasting", "CART", "RPART", "ARIMA", "NNAR", "CTREE"],
       links: [
         {
@@ -29,7 +30,7 @@ export default function ProjectsPage() {
       title: "ARIMA Modelling for Time Series Forecasting",
       description:
         "Research on efficient techniques to forecast time series data using ARIMA Modelling Techniques. The project focused on improving forecasting accuracy for various types of time-dependent data.",
-      image: "/projects/time-series.jpg",
+      image: "/images/arima_forecasting.png",
       tags: ["R", "Forecasting Algorithms", "ARIMA", "Time Series Analysis"],
       links: [
         {
@@ -44,7 +45,7 @@ export default function ProjectsPage() {
       title: "Tax Form Classification System",
       description:
         "Developed a machine learning classification model at ADP Canada to identify tax form types, managing a real-time dataset of 800,000+ entries. The system automates the identification and processing of various tax documents.",
-      image: "/projects/tax-classification.jpg",
+      image: "/images/tax.png",
       tags: ["Machine Learning", "Classification", "Python", "Data Visualization", "Large Datasets"],
       links: [],
       featured: true,
@@ -79,8 +80,8 @@ export default function ProjectsPage() {
       <div className="py-12">
         <div className="container mx-auto px-4">
           <FadeIn>
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">Projects</h1>
-            <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">Projects</h1>
+            <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl">
               A collection of my research work, data science projects and professional contributions
             </p>
           </FadeIn>
@@ -95,8 +96,17 @@ export default function ProjectsPage() {
                 <HoverScale key={project.id} scale={1.01}>
                   <Card className="overflow-hidden">
                     <div className="grid md:grid-cols-2 gap-6">
-                      <div className="bg-muted aspect-video flex items-center justify-center">
-                        <p className="text-muted-foreground">{project.title}</p>
+                      <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
+                        {project.image && (
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            priority
+                            className="object-cover object-center"
+                          />
+                        )}
                       </div>
                       <div className="p-6">
                         <h3 className="text-2xl font-bold mb-3">{project.title}</h3>

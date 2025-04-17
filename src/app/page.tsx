@@ -258,12 +258,14 @@ export default function HomePage() {
               <HoverScale scale={1.01}>
                 <Card className="overflow-hidden">
                   <div className="grid md:grid-cols-2 gap-6">
-                  <div className="relative aspect-video overflow-hidden rounded-lg">
+                  <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
                     <Image
-                      src="/images/disease-prediction.jpg"
+                      src="/images/disease_prediction.png"
                       alt="Disease Prediction Model"
-                      fill              // stretches to fill parent
-                      className="object-cover"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      priority
+                      className="object-cover object-center"
                     />
                   </div>
                     <div className="p-6">
@@ -297,14 +299,16 @@ export default function HomePage() {
               <HoverScale scale={1.01}>
                 <Card className="overflow-hidden">
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="relative aspect-video overflow-hidden rounded-lg">
-                      <Image
-                        src="/images/arima-forecasting.jpg"
-                        alt="ARIMA Time Series Forecasting"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
+                  <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
+                    <Image
+                      src="/images/arima_forecasting.png"
+                      alt="ARIMA Time Series Forecasting"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      priority
+                      className="object-cover object-center"
+                    />
+                  </div>
                     <div className="p-6">
                       <h3 className="text-2xl font-bold mb-2">
                         ARIMA Modelling for Time Series Forecasting
