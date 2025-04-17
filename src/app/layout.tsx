@@ -6,7 +6,7 @@ import ClientBody from "./ClientBody";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jaiditya Dev - Data Science Portfolio",
+  title: 'Jaiditya Dev | Data Scientist & Full Stack Developer',
   description: "Portfolio of Jaiditya Dev, a Data Science professional with expertise in machine learning, statistical modeling, and R programming.",
 };
 
