@@ -31,10 +31,10 @@ export default function ContactPage() {
                     <div className="flex items-center gap-2">
                       <Mail className="h-5 w-5 text-muted-foreground" />
                       <a
-                        href="mailto:jaiditya.dev@example.com"
+                        href="mailto:jaidityadev1402@gmail.com"
                         className="text-primary hover:underline"
                       >
-                        jaiditya.dev@example.com
+                        jaidityadev1402@gmail.com
                       </a>
                     </div>
                   </CardContent>
@@ -114,19 +114,19 @@ export default function ContactPage() {
               <HoverScale>
                 <Card>
                   <CardHeader>
-                    <CardTitle>Blog</CardTitle>
-                    <CardDescription>Read my thoughts on data science</CardDescription>
+                    <CardTitle>Resume</CardTitle>
+                    <CardDescription>View my professional experience</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="flex items-center gap-2">
-                      <ExternalLink className="h-5 w-5 text-muted-foreground" />
+                      <FileText className="h-5 w-5 text-muted-foreground" />
                       <a
-                        href="https://medium.com/"
+                        href="https://drive.google.com/file/d/1JKGh7w_7I2bzosiCpPXBWimTUPaRsUWr/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary hover:underline"
                       >
-                        Medium Blog
+                        View Resume
                       </a>
                     </div>
                   </CardContent>
@@ -140,7 +140,7 @@ export default function ContactPage() {
                 I&apos;m currently open to research collaborations, data science projects, and teaching opportunities in statistics and machine learning.
               </p>
               <Button size="lg" asChild className="animate-pulse">
-                <a href="mailto:jaiditya.dev@example.com">Send a Message</a>
+                <a href="mailto:jaidityadev1402@gmail.com">Send a Message</a>
               </Button>
             </FadeIn>
           </div>

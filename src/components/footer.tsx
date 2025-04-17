@@ -43,19 +43,38 @@ export default function Footer() {
         <div>
           <h3 className="font-medium mb-2">Connect</h3>
           <div className="flex space-x-4">
-            <Link href="https://github.com/" aria-label="GitHub" className="text-muted-foreground hover:text-foreground">
+            <Link 
+              href="https://github.com/jaiditya-dev" 
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile" 
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               <Github className="h-5 w-5" />
             </Link>
-            <Link href="https://linkedin.com/in/" aria-label="LinkedIn" className="text-muted-foreground hover:text-foreground">
+            <Link 
+              href="https://linkedin.com/in/jaiditya-dev" 
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile" 
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               <Linkedin className="h-5 w-5" />
             </Link>
-            <Link href="https://medium.com/" aria-label="Medium" className="text-muted-foreground hover:text-foreground">
-              <ExternalLink className="h-5 w-5" />
-            </Link>
-            <Link href="https://orcid.org/" aria-label="ORCID" className="text-muted-foreground hover:text-foreground">
+            <Link 
+              href="https://drive.google.com/file/d/1JKGh7w_7I2bzosiCpPXBWimTUPaRsUWr/view?usp=sharing" 
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Resume" 
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               <FileText className="h-5 w-5" />
             </Link>
-            <Link href="mailto:jaiditya.dev@example.com" aria-label="Email" className="text-muted-foreground hover:text-foreground">
+            <Link 
+              href="mailto:jaiditya.dev@example.com" 
+              aria-label="Email Contact"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               <Mail className="h-5 w-5" />
             </Link>
           </div>
