@@ -320,7 +320,7 @@ export default function HomePage() {
                       </div>
                       <div className="space-x-4">
                         <Button variant="outline" asChild>
-                          <Link href="https://doi.org/10.37418/amsj.9.6.75">
+                          <Link href="https://www.research-publication.com/amsj/uploads/papers/vol-09/iss-06/AMSJ-2020-N6-75.pdf">
                             View Publication
                           </Link>
                         </Button>
