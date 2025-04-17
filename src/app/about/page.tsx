@@ -6,6 +6,7 @@ import FadeIn from "@/components/animations/fade-in";
 import StaggerIn from "@/components/animations/stagger-in";
 import PageTransition from "@/components/animations/page-transition";
 import HoverScale from "@/components/animations/hover-scale";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
