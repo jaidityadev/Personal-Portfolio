@@ -18,13 +18,13 @@ export default function HomePage() {
           <div className="container mx-auto px-4">
             <FadeIn>
               <div className="relative mx-auto mb-8 w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-muted bg-muted">
-                <Image
-                  src="/profile.jpg"
-                  alt="Jaiditya Dev"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+              <Image
+                src="/images/profile.jpg"
+                alt="Jaiditya Dev"
+                width={160}
+                height={160}
+                className="object-cover"
+              />
               </div>
             </FadeIn>
             <FadeIn delay={0.1}>
