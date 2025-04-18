@@ -66,10 +66,10 @@ export default function HomePage() {
 
             <FadeIn delay={0.1}>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Data Science & Statistical Analysis
+                Data Scientist
               </h2>
               <p className="text-muted-foreground mb-12 max-w-3xl">
-                Data Science student specializing in statistical analysis, machine learning, and R programming, with experience in research, teaching, and real-world data applications.
+                I’m a Data Scientist with an H.B.Sc. in Applied Statistics and minors in Computer Science & Mathematics from the University of Toronto Mississauga. I specialize in statistical modeling, machine learning, and data visualization, and have applied these skills in academic research, teaching, and real-world projects.
               </p>
             </FadeIn>
 

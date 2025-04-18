@@ -562,7 +562,7 @@ function HomePage() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         className: "text-3xl md:text-4xl font-bold mb-6",
-                                        children: "Data Science & Statistical Analysis"
+                                        children: "Data Scientist"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/page.tsx",
                                         lineNumber: 68,
@@ -570,7 +570,7 @@ function HomePage() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-muted-foreground mb-12 max-w-3xl",
-                                        children: "Data Science student specializing in statistical analysis, machine learning, and R programming, with experience in research, teaching, and real-world data applications."
+                                        children: "I’m a Data Scientist with an H.B.Sc. in Applied Statistics and minors in Computer Science & Mathematics from the University of Toronto Mississauga. I specialize in statistical modeling, machine learning, and data visualization, and have applied these skills in academic research, teaching, and real-world projects."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/page.tsx",
                                         lineNumber: 71,
