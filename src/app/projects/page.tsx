@@ -41,6 +41,21 @@ export default function ProjectsPage() {
       featured: true,
     },
     {
+      id: 6,
+      title: "Health TrueInfo: A Multilingual Android App & Social Media Approach",
+      description:
+        "Implemented a multilingual Android app and leveraged social media to combat COVID-19 vaccine misinformation and hesitancy across Bolivia, India, and Canada. Collaborated with community influencers to create culturally relevant content.",
+      image: "/images/health_trueinfo.png",
+      tags: ["COVID-19", "Misinformation", "Public Health", "Android", "Social Media"],
+      links: [
+        {
+          label: "Publication",
+          url: "https://doi.org/10.33137/utjph.v9999i1.38113",
+        },
+      ],
+      featured: true,
+    },
+    {
       id: 3,
       title: "Tax Form Classification System",
       description:
@@ -104,7 +119,7 @@ export default function ProjectsPage() {
                             fill
                             sizes="(max-width: 768px) 100vw, 50vw"
                             priority
-                            className="object-cover object-center"
+                            className="object-cover object-top"
                           />
                         )}
                       </div>

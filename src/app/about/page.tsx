@@ -14,12 +14,20 @@ export default function AboutPage() {
       <div className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <FadeIn>
-              <h1 className="text-3xl md:text-4xl font-bold mb-6">About Me</h1>
-              <p className="text-xl text-muted-foreground mb-10">
-                Data Science student with expertise in statistical analysis, machine learning, and creating insights from complex datasets.
-              </p>
-            </FadeIn>
+          <FadeIn>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">About Me</h1>
+            <p className="text-xl text-foreground mb-6">
+              Hi there! I’m <strong>Jaiditya Dev</strong>, a Pearson Scholar and soon‑to‑graduate Data Science student at UofT Mississauga. 
+              Ever since building my first word cloud in Python, I’ve been hooked on turning messy datasets into clear, impactful insights.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-10">
+              <Badge>🥇 Lester B. Pearson Scholar</Badge>
+              <Badge>🔍 NLP & ML Enthusiast</Badge>
+              <Badge>📝 Published Researcher</Badge>
+              <Badge>💻 Data Scientist</Badge>
+
+            </div>
+          </FadeIn>
 
             {/* Education */}
             <section className="mb-12">
@@ -58,6 +66,114 @@ export default function AboutPage() {
                   </Card>
                 </HoverScale>
               </FadeIn>
+            </section>
+
+            {/* Certifications */}
+            <section className="mb-12">
+              <FadeIn>
+                <h2 className="text-2xl font-bold mb-6">Certifications</h2>
+              </FadeIn>
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Top Certifications */}
+                <FadeIn delay={0.1} direction="up">
+                  <HoverScale>
+                    <Card>
+                      <CardContent className="pt-6">
+                        <div className="flex flex-col">
+                          <h3 className="text-xl font-bold">The Data Science Course: Complete Data Science Bootcamp 2024</h3>
+                          <p className="text-muted-foreground mb-2">Udemy, Jun 2024</p>
+                          <Link href="https://ude.my/UC-27613d14-da18-446f-858e-d905f8cfc4a8" target="_blank" className="text-primary hover:underline">
+                            View Credential
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </HoverScale>
+                </FadeIn>
+
+                <FadeIn delay={0.2} direction="up">
+                  <HoverScale>
+                    <Card>
+                      <CardContent className="pt-6">
+                        <div className="flex flex-col">
+                          <h3 className="text-xl font-bold">Applied Data Science with R - Specialization</h3>
+                          <p className="text-muted-foreground mb-2">IBM, Aug 2023</p>
+                          <Link href="https://www.coursera.org/account/accomplishments/specialization/certificate/YVU2TPUC68W8" target="_blank" className="text-primary hover:underline">
+                            View Credential
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </HoverScale>
+                </FadeIn>
+
+                <FadeIn delay={0.3} direction="up">
+                  <HoverScale>
+                    <Card>
+                      <CardContent className="pt-6">
+                        <div className="flex flex-col">
+                          <h3 className="text-xl font-bold">Machine Learning Specialization</h3>
+                          <p className="text-muted-foreground mb-2">Stanford University, Jul 2023</p>
+                          <Link href="https://www.coursera.org/account/accomplishments/specialization/certificate/96T49RULC3XX" target="_blank" className="text-primary hover:underline">
+                            View Credential
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </HoverScale>
+                </FadeIn>
+
+                <FadeIn delay={0.4} direction="up">
+                  <HoverScale>
+                    <Card>
+                      <CardContent className="pt-6">
+                        <div className="flex flex-col">
+                          <h3 className="text-xl font-bold">Duke University Specialization: Data Analysis with R</h3>
+                          <p className="text-muted-foreground mb-2">Duke University, Jun 2023</p>
+                          <Link href="https://www.coursera.org/account/accomplishments/specialization/certificate/AM52F7CQUVWA" target="_blank" className="text-primary hover:underline">
+                            View Credential
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </HoverScale>
+                </FadeIn>
+
+                <FadeIn delay={0.5} direction="up">
+                  <HoverScale>
+                    <Card>
+                      <CardContent className="pt-6">
+                        <div className="flex flex-col">
+                          <h3 className="text-xl font-bold">Data Analysis with R Programming</h3>
+                          <p className="text-muted-foreground mb-2">Google, Jun 2023</p>
+                          <Link href="https://www.coursera.org/account/accomplishments/certificate/MF7YALYSXBFS" target="_blank" className="text-primary hover:underline">
+                            View Credential
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </HoverScale>
+                </FadeIn>
+
+                <FadeIn delay={0.6} direction="up">
+                  <HoverScale>
+                    <Card>
+                      <CardContent className="pt-6">
+                        <div className="flex flex-col">
+                          <h3 className="text-xl font-bold">Prepare Data for Exploration</h3>
+                          <p className="text-muted-foreground mb-2">Google, Jun 2023</p>
+                          <Link href="https://www.coursera.org/account/accomplishments/certificate/5SZ9Y7EHLZN2" target="_blank" className="text-primary hover:underline">
+                            View Credential
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </HoverScale>
+                </FadeIn>
+              </div>
+              <p className="mt-4 text-sm text-muted-foreground">
+                See more on <Link href="https://www.linkedin.com/in/jaidityadev/details/certifications/" target="_blank" className="text-primary hover:underline">LinkedIn</Link>.
+              </p>
             </section>
 
             {/* Technical Skills */}
@@ -285,6 +401,30 @@ export default function AboutPage() {
                 <h2 className="text-2xl font-bold mb-6">Publications</h2>
               </FadeIn>
               <StaggerIn className="space-y-6" staggerDelay={0.2}>
+
+              <HoverScale scale={1.01}>
+                  <Card>
+                    <CardContent className="pt-6">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h3 className="text-xl font-bold">Health TrueInfo: A multilingual Android app and social media approach in tackling COVID-19 vaccine misinformation and hesitancy in Bolivia, India, and Canada</h3>
+                        <div className="text-muted-foreground">
+                          <span>February 2022</span>
+                        </div>
+                      </div>
+                      <div className="text-muted-foreground mb-4">
+                        <span>University of Toronto Journal of Public Health</span>
+                      </div>
+                      <ul className="list-disc list-inside text-muted-foreground space-y-3">
+                        <li>
+                          <Link href="https://doi.org/10.33137/utjph.v9999i1.38113" target="_blank" className="text-primary hover:underline">
+                            View Publication
+                          </Link>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </HoverScale>
+                
                 <HoverScale scale={1.01}>
                   <Card>
                     <CardContent className="pt-6">
