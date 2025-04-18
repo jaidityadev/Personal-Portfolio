@@ -6,6 +6,7 @@ import FadeIn from "@/components/animations/fade-in";
 import StaggerIn from "@/components/animations/stagger-in";
 import PageTransition from "@/components/animations/page-transition";
 import HoverScale from "@/components/animations/hover-scale";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -14,20 +15,20 @@ export default function AboutPage() {
       <div className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-          <FadeIn>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">About Me</h1>
-            <p className="text-xl text-foreground mb-6">
-              Hi there! I’m <strong>Jaiditya Dev</strong>, a Pearson Scholar and soon‑to‑graduate Data Science student at UofT Mississauga. 
-              Ever since building my first word cloud in Python, I’ve been hooked on turning messy datasets into clear, impactful insights.
-            </p>
-            <div className="flex flex-wrap gap-2 mb-10">
-              <Badge>🥇 Lester B. Pearson Scholar</Badge>
-              <Badge>🔍 NLP & ML Enthusiast</Badge>
-              <Badge>📝 Published Researcher</Badge>
-              <Badge>💻 Data Scientist</Badge>
+            <FadeIn>
+              <h1 className="text-3xl md:text-4xl font-bold mb-4">About Me</h1>
+              <p className="text-xl text-foreground mb-6">
+                Hi there! I’m <strong>Jaiditya Dev</strong>, a Pearson Scholar and soon‑to‑graduate Data Science student at UofT Mississauga.
+                Ever since building my first word cloud in Python, I’ve been hooked on turning messy datasets into clear, impactful insights.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-10">
+                <Badge>🥇 Lester B. Pearson Scholar</Badge>
+                <Badge>🔍 NLP & ML Enthusiast</Badge>
+                <Badge>📝 Published Researcher</Badge>
+                <Badge>💻 Data Scientist</Badge>
 
-            </div>
-          </FadeIn>
+              </div>
+            </FadeIn>
 
             {/* Education */}
             <section className="mb-12">
@@ -191,6 +192,7 @@ export default function AboutPage() {
                       <CardContent>
                         <div className="flex flex-wrap gap-2">
                           <Badge variant="secondary">Java</Badge>
+                          <Badge variant="secondary">JavaScript</Badge>
                           <Badge variant="secondary">Python</Badge>
                           <Badge variant="secondary">R</Badge>
                           <Badge variant="secondary">Jinja</Badge>
@@ -340,6 +342,87 @@ export default function AboutPage() {
                   <Card>
                     <CardContent className="pt-6">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h3 className="text-xl font-bold">Research Assistant</h3>
+                        <div className="text-muted-foreground"><span>May 2023 – Aug 2023</span></div>
+                      </div>
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <p className="font-medium">University of Toronto, Mississauga</p>
+                        <div className="text-muted-foreground"><span>Mississauga, ON</span></div>
+                      </div>
+                      <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                        <li>Conducted research on causal inference models with Prof. Sonya Allin.</li>
+                        <li>Authored literature reviews and presented findings at lab meetings.</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </HoverScale>
+
+                <HoverScale scale={1.01}>
+                  <Card>
+                    <CardContent className="pt-6">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h3 className="text-xl font-bold">LearnAI Program Teaching Assistant</h3>
+                        <div className="text-muted-foreground"><span>Oct 2022 – Apr 2023</span></div>
+                      </div>
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <p className="font-medium">UofT AI</p>
+                        <div className="text-muted-foreground"><span>Toronto, ON</span></div>
+                      </div>
+                      <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                        <li>
+                          Delivered tutorials on <span className="font-medium text-foreground">ML</span>,{" "}
+                          <span className="font-medium text-foreground">neural networks</span>, and{" "}
+                          <span className="font-medium text-foreground">computer vision</span>.
+                        </li>
+                        <li>
+                          Mentored students on <span className="font-medium text-foreground">AI projects</span>,
+                          fostering <span className="font-medium text-foreground">curiosity</span> and{" "}
+                          <span className="font-medium text-foreground">skills</span>.
+                        </li>
+                        <li>
+                          Assessed assignments and provided{" "}
+                          <span className="font-medium text-foreground">constructive feedback</span>.
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </HoverScale>
+
+                <HoverScale scale={1.01}>
+                  <Card>
+                    <CardContent className="pt-6">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h3 className="text-xl font-bold">President, UTM Residence Council</h3>
+                        <div className="text-muted-foreground"><span>May 2022 – Apr 2024</span></div>
+                      </div>
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <p className="font-medium">University of Toronto Mississauga</p>
+                        <div className="text-muted-foreground"><span>Mississauga, ON</span></div>
+                      </div>
+                      <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                        <li>
+                          Drove initiatives to <span className="font-medium text-foreground">enhance residence life</span> and
+                          <span className="font-medium text-foreground">smooth transitions for new students</span>.
+                        </li>
+                        <li>
+                          Led a team to <span className="font-medium text-foreground">organize community‑building events</span> and
+                          <span className="font-medium text-foreground">coordinate sub‑teams for maximum impact</span>.
+                        </li>
+                        <li>
+                          Served as a <span className="font-medium text-foreground">voting member on Food Quality Services</span> to
+                          <span className="font-medium text-foreground">improve campus dining</span>.
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </HoverScale>
+
+
+
+                <HoverScale scale={1.01}>
+                  <Card>
+                    <CardContent className="pt-6">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                         <h3 className="text-xl font-bold">Strategy Analyst (Summer Intern)</h3>
                         <div className="text-muted-foreground">
                           <span>May 2022 - August 2022</span>
@@ -392,6 +475,45 @@ export default function AboutPage() {
                     </CardContent>
                   </Card>
                 </HoverScale>
+
+                <HoverScale scale={1.01}>
+                  <Card>
+                    <CardContent className="pt-6">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h3 className="text-xl font-bold">Summer Intern, SMEV</h3>
+                        <div className="text-muted-foreground"><span>Jun 2019 – Jun 2019</span></div>
+                      </div>
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <Link
+                          href="https://www.smev.in/"
+                          target="_blank"
+                          className="font-medium text-foreground hover:underline"
+                        >
+                          Society of Manufacturers of Electric Vehicle
+                        </Link>
+                        <div className="text-muted-foreground"><span>New Delhi, IN</span></div>
+                      </div>
+                      <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                        <li>
+                          <span className="font-medium text-foreground">
+                            Analyzed the Indian electric mobility value chain
+                          </span> and <span className="font-medium text-foreground">market incentives</span>.
+                        </li>
+                        <li>
+                          Assisted in <span className="font-medium text-foreground">research on battery chemistries</span> and
+                          <span className="font-medium text-foreground"> policy impacts on EV adoption</span>.
+                        </li>
+                        <li>
+                          <span className="font-medium text-foreground">Collaborated cross‑functionally</span> to develop
+                          <span className="font-medium text-foreground">
+                            recommendations for two‑ and three‑wheeler transitions
+                          </span>.
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </HoverScale>
+
               </StaggerIn>
             </section>
 
@@ -402,82 +524,194 @@ export default function AboutPage() {
               </FadeIn>
               <StaggerIn className="space-y-6" staggerDelay={0.2}>
 
-              <HoverScale scale={1.01}>
+                {/* Health TrueInfo */}
+                <HoverScale scale={1.01}>
                   <Card>
                     <CardContent className="pt-6">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                        <h3 className="text-xl font-bold">Health TrueInfo: A multilingual Android app and social media approach in tackling COVID-19 vaccine misinformation and hesitancy in Bolivia, India, and Canada</h3>
+                        <h3 className="text-xl font-bold">
+                          Health TrueInfo: A multilingual Android app and social media approach in tackling COVID-19 vaccine misinformation and hesitancy in Bolivia, India, and Canada
+                        </h3>
                         <div className="text-muted-foreground">
-                          <span>February 2022</span>
+                          <span>February 2022</span>
                         </div>
                       </div>
                       <div className="text-muted-foreground mb-4">
                         <span>University of Toronto Journal of Public Health</span>
                       </div>
+                      <p className="text-foreground mb-4">
+                        Developed and evaluated a multilingual Android app alongside targeted social media campaigns, achieving measurable reductions in vaccine hesitancy across three countries.
+                      </p>
                       <ul className="list-disc list-inside text-muted-foreground space-y-3">
                         <li>
-                          <Link href="https://doi.org/10.33137/utjph.v9999i1.38113" target="_blank" className="text-primary hover:underline">
-                            View Publication
+                          <Link
+                            href="https://doi.org/10.33137/utjph.v9999i1.38113"
+                            target="_blank"
+                            className="text-primary hover:underline"
+                          >
+                            https://doi.org/10.33137/utjph.v9999i1.38113
                           </Link>
                         </li>
                       </ul>
+
+                      {/* Add download button */}
+                      <div className="mt-4">
+                        <Button variant="outline" asChild>
+                          <Link
+                            href="https://utjph.com/index.php/utjph/article/view/38113/29116"
+                            target="_blank"
+                          >
+                            Download PDF
+                          </Link>
+                        </Button>
+                      </div>
                     </CardContent>
                   </Card>
                 </HoverScale>
-                
+
+                {/* IoT Time Series Survey */}
+                <HoverScale scale={1.01}>
+                  <Card>
+                    <CardContent className="pt-6">
+                      {/* title + meta */}
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h3 className="text-xl font-bold">
+                          Time Series Forecasting Techniques for Internet of Things: A Survey
+                        </h3>
+                        <div className="text-muted-foreground">
+                          <span>January 2022</span>
+                        </div>
+                      </div>
+
+                      {/* source info */}
+                      <div className="text-muted-foreground mb-4">
+                        <span>
+                          In Handbook of Research on Machine Learning Foundations and Applications (Book Chapter)
+                        </span>
+                      </div>
+
+                      {/* description */}
+                      <p className="text-foreground mb-4">
+                        Provides a comprehensive overview of time‑series forecasting methods, challenges, and enabling technologies for large‑scale IoT deployments.
+                      </p>
+
+                      {/* DOI link */}
+                      <ul className="list-disc list-inside text-muted-foreground space-y-3">
+                        <li>
+                          <Link
+                            href="https://doi.org/10.1201/9781003277330-13"
+                            target="_blank"
+                            className="text-primary hover:underline"
+                          >
+                            https://doi.org/10.1201/9781003277330-13
+                          </Link>
+                        </li>
+                      </ul>
+
+                      {/* download button */}
+                      <div className="mt-4">
+                        <Button variant="outline" asChild>
+                          <Link
+                            href="https://drive.google.com/file/d/1KcsjoFHFaHqDlrcvc3WPUNjAn0bmwDI4/view?usp=sharing"
+                            target="_blank"
+                          >
+                            Download PDF
+                          </Link>
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </HoverScale>
+
+
+                {/* Ensemble Forecasting */}
                 <HoverScale scale={1.01}>
                   <Card>
                     <CardContent className="pt-6">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                        <h3 className="text-xl font-bold">A Heterogeneous Ensemble Forecasting Model for Disease Prediction</h3>
+                        <h3 className="text-xl font-bold">
+                          A Heterogeneous Ensemble Forecasting Model for Disease Prediction
+                        </h3>
                         <div className="text-muted-foreground">
-                          <span>January 2021</span>
+                          <span>January 2021</span>
                         </div>
                       </div>
                       <div className="text-muted-foreground mb-4">
                         <span>R, Ensemble Forecasting, CART, RPART, ARIMA, NNAR, CTREE</span>
                       </div>
+                      <p className="text-foreground mb-4">
+                        Combined multiple forecasting algorithms into one ensemble to significantly improve the accuracy of outbreak predictions for diseases like dengue and tuberculosis.
+                      </p>
                       <ul className="list-disc list-inside text-muted-foreground space-y-3">
                         <li>
-                          <a href="https://doi.org/10.1007/s00354-020-00119-7" className="text-primary hover:underline">
+                          <a
+                            href="https://doi.org/10.1007/s00354-020-00119-7"
+                            className="text-primary hover:underline"
+                          >
                             https://doi.org/10.1007/s00354-020-00119-7
                           </a>
                         </li>
-                        <li>
-                          Researched in Machine Learning based Ensemble Forecasting models, to predict the spread of various diseases
-                        </li>
                       </ul>
+                      <div className="mt-4">
+                        <Button variant="outline" asChild>
+                          <Link
+                            href="https://link.springer.com/content/pdf/10.1007/s00354-020-00119-7.pdf"
+                            target="_blank"
+                          >
+                            Download PDF
+                          </Link>
+                        </Button>
+                      </div>
+
                     </CardContent>
                   </Card>
                 </HoverScale>
 
+                {/* ARIMA Modelling */}
                 <HoverScale scale={1.01}>
                   <Card>
                     <CardContent className="pt-6">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                        <h3 className="text-xl font-bold">ARIMA Modelling for Time Series Forecasting</h3>
+                        <h3 className="text-xl font-bold">
+                          ARIMA Modelling for Time Series Forecasting
+                        </h3>
                         <div className="text-muted-foreground">
-                          <span>December 2020</span>
+                          <span>December 2020</span>
                         </div>
                       </div>
                       <div className="text-muted-foreground mb-4">
                         <span>R, Forecasting Algorithms, ARIMA</span>
                       </div>
+                      <p className="text-foreground mb-4">
+                        Explored ARIMA-based techniques to optimize parameter selection and improve forecasting precision across diverse datasets.
+                      </p>
                       <ul className="list-disc list-inside text-muted-foreground space-y-3">
                         <li>
-                          <a href="https://doi.org/10.37418/amsj.9.6.75" className="text-primary hover:underline">
+                          <a
+                            href="https://doi.org/10.37418/amsj.9.6.75"
+                            className="text-primary hover:underline"
+                          >
                             https://doi.org/10.37418/amsj.9.6.75
                           </a>
                         </li>
-                        <li>
-                          Researched in efficient techniques to forecast data sets using the ARIMA Modelling Techniques.
-                        </li>
                       </ul>
+                      <div className="mt-4">
+                        <Button variant="outline" asChild>
+                          <Link
+                            href="https://www.research-publication.com/amsj/uploads/papers/vol-09/iss-06/AMSJ-2020-N6-75.pdf"
+                            target="_blank"
+                          >
+                            Download PDF
+                          </Link>
+                        </Button>
+                      </div>
                     </CardContent>
                   </Card>
                 </HoverScale>
+
               </StaggerIn>
             </section>
+
           </div>
         </div>
       </div>
