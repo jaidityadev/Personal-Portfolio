@@ -68,7 +68,7 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold mb-6">More Ways to Connect</h2>
             </FadeIn>
 
-            <StaggerIn className="grid md:grid-cols-3 gap-6" staggerDelay={0.1} delay={0.4}>
+            <StaggerIn className="grid md:grid-cols-4 gap-6" staggerDelay={0.1} delay={0.4}>
               <HoverScale>
                 <Card>
                   <CardHeader>
@@ -127,6 +127,28 @@ export default function ContactPage() {
                         className="text-primary hover:underline"
                       >
                         View Resume
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+              </HoverScale>
+
+              <HoverScale>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>ORCID</CardTitle>
+                    <CardDescription>View my ORCID researcher profile</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex items-center gap-2">
+                      <ExternalLink className="h-5 w-5 text-muted-foreground" />
+                      <a
+                        href="https://orcid.org/0009-0005-2095-4383"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline"
+                      >
+                        orcid.org/0009-0005-2095-4383
                       </a>
                     </div>
                   </CardContent>

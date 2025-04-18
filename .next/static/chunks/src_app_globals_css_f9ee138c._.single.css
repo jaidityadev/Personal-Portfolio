@@ -468,6 +468,10 @@ body {
   margin-top: 4rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -490,10 +494,6 @@ body {
 
 .aspect-square {
   aspect-ratio: 1;
-}
-
-.aspect-video {
-  aspect-ratio: 16 / 9;
 }
 
 .size-2 {
@@ -866,16 +866,16 @@ body {
   background-color: hsl(var(--secondary));
 }
 
-.object-contain {
-  object-fit: contain;
-}
-
 .object-cover {
   object-fit: cover;
 }
 
 .object-center {
   object-position: center;
+}
+
+.object-top {
+  object-position: top;
 }
 
 .p-2 {
@@ -974,6 +974,11 @@ body {
   line-height: 2.5rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -992,11 +997,6 @@ body {
 .text-xs {
   font-size: .75rem;
   line-height: 1rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -1405,6 +1405,10 @@ body {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
