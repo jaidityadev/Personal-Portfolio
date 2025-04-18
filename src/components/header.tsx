@@ -35,7 +35,7 @@ export default function Header() {
       <div className="container flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="images/logo.png"        // <-- put your SVG/PNG in public/
+            src="images/logo.png"      
             alt="Jaiditya Dev logo"
             width={40}
             height={40}
