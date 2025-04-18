@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+
 
 export default function Header() {
   const pathname = usePathname();
@@ -31,8 +33,14 @@ export default function Header() {
   return (
     <header className="py-4 border-b border-border bg-background sticky top-0 z-30">
       <div className="container flex items-center justify-between">
-        <Link href="/">
-          <h1 className="text-lg font-medium">Jaiditya Dev | Portfolio</h1>
+        <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src="images/logo.png"        // <-- put your SVG/PNG in public/
+            alt="Jaiditya Dev logo"
+            width={40}
+            height={40}
+          />
+          <span className="text-lg font-medium">Jaiditya Dev</span>
         </Link>
 
         {/* Desktop Navigation */}
