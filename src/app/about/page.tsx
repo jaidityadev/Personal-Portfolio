@@ -193,6 +193,7 @@ export default function AboutPage() {
                         <div className="flex flex-wrap gap-2">
                           <Badge variant="secondary">Java</Badge>
                           <Badge variant="secondary">JavaScript</Badge>
+                          <Badge variant="secondary">JavaScript (ES6+)</Badge>
                           <Badge variant="secondary">Python</Badge>
                           <Badge variant="secondary">R</Badge>
                           <Badge variant="secondary">Jinja</Badge>
@@ -200,6 +201,7 @@ export default function AboutPage() {
                           <Badge variant="secondary">SAS</Badge>
                           <Badge variant="secondary">SQL</Badge>
                           <Badge variant="secondary">HTML/CSS</Badge>
+                          <Badge variant="secondary">HTML5 & CSS3</Badge>
                         </div>
                       </CardContent>
                     </Card>
@@ -218,6 +220,8 @@ export default function AboutPage() {
                           <Badge variant="secondary">JUnit</Badge>
                           <Badge variant="secondary">WordPress</Badge>
                           <Badge variant="secondary">PyTorch</Badge>
+                          <Badge variant="secondary">React.js</Badge>
+                          <Badge variant="secondary">Next.js</Badge>
                         </div>
                       </CardContent>
                     </Card>
@@ -241,6 +245,10 @@ export default function AboutPage() {
                           <Badge variant="secondary">Android Studio</Badge>
                           <Badge variant="secondary">Databricks</Badge>
                           <Badge variant="secondary">Bitbucket</Badge>
+                          <Badge variant="secondary">Tailwind CSS</Badge>
+                          <Badge variant="secondary">Framer Motion</Badge>
+                          <Badge variant="secondary">Shadcn/UI</Badge>
+                          <Badge variant="secondary">Radix UI</Badge>
                         </div>
                       </CardContent>
                     </Card>
