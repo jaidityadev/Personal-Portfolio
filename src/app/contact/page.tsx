@@ -51,12 +51,12 @@ export default function ContactPage() {
                     <div className="flex items-center gap-2">
                       <Linkedin className="h-5 w-5 text-muted-foreground" />
                       <a
-                        href="https://linkedin.com/in/"
+                        href="https://www.linkedin.com/in/jaidityadev/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary hover:underline"
                       >
-                        LinkedIn Profile
+                        linkedin.com/in/jaidityadev
                       </a>
                     </div>
                   </CardContent>
@@ -79,12 +79,12 @@ export default function ContactPage() {
                     <div className="flex items-center gap-2">
                       <Github className="h-5 w-5 text-muted-foreground" />
                       <a
-                        href="https://github.com/"
+                        href="https://github.com/jaidityadev"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary hover:underline"
                       >
-                        GitHub Profile
+                        github.com/jaidityadev
                       </a>
                     </div>
                   </CardContent>
@@ -100,10 +100,7 @@ export default function ContactPage() {
                   <CardContent>
                     <div className="flex items-center gap-2">
                       <FileText className="h-5 w-5 text-muted-foreground" />
-                      <Link
-                        href="/projects"
-                        className="text-primary hover:underline"
-                      >
+                      <Link href="/projects" className="text-primary hover:underline">
                         Research Publications
                       </Link>
                     </div>
@@ -121,7 +118,7 @@ export default function ContactPage() {
                     <div className="flex items-center gap-2">
                       <FileText className="h-5 w-5 text-muted-foreground" />
                       <a
-                        href="https://drive.google.com/file/d/1JKGh7w_7I2bzosiCpPXBWimTUPaRsUWr/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1sDXQU6cJBtxi1uL7YrX-oFAB04dYQr-h/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary hover:underline"
@@ -159,8 +156,32 @@ export default function ContactPage() {
             <FadeIn delay={0.7} className="mt-16 text-center">
               <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                I&apos;m currently open to research collaborations, data science projects, and teaching opportunities in statistics and machine learning.
+                Whether you’re interested in research collaborations or looking to bring me on board for data science, software, or machine learning roles, I’d love to connect and explore how we can work together.
               </p>
+              <div className="flex justify-center gap-4 mb-6">
+                <Button size="lg" variant="outline" asChild>
+                  <a
+                    href="https://github.com/jaidityadev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    <Github className="mr-2 h-5 w-5" />
+                    GitHub
+                  </a>
+                </Button>
+                <Button size="lg" variant="outline" asChild>
+                  <a
+                    href="https://www.linkedin.com/in/jaidityadev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    <Linkedin className="mr-2 h-5 w-5" />
+                    LinkedIn
+                  </a>
+                </Button>
+              </div>
               <Button size="lg" asChild className="animate-pulse">
                 <a href="mailto:jaidityadev1402@gmail.com">Send a Message</a>
               </Button>

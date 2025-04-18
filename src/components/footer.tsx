@@ -44,7 +44,7 @@ export default function Footer() {
           <h3 className="font-medium mb-2">Connect</h3>
           <div className="flex space-x-4">
             <Link 
-              href="https://github.com/jaiditya-dev" 
+              href="https://github.com/jaidityadev" 
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile" 
@@ -53,7 +53,7 @@ export default function Footer() {
               <Github className="h-5 w-5" />
             </Link>
             <Link 
-              href="https://linkedin.com/in/jaiditya-dev" 
+              href="https://www.linkedin.com/in/jaidityadev/" 
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile" 
@@ -62,7 +62,7 @@ export default function Footer() {
               <Linkedin className="h-5 w-5" />
             </Link>
             <Link 
-              href="https://drive.google.com/file/d/1JKGh7w_7I2bzosiCpPXBWimTUPaRsUWr/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1sDXQU6cJBtxi1uL7YrX-oFAB04dYQr-h/view?usp=sharing" 
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View Resume" 
@@ -71,7 +71,7 @@ export default function Footer() {
               <FileText className="h-5 w-5" />
             </Link>
             <Link 
-              href="mailto:jaiditya.dev@example.com" 
+              href="mailto:jaidityadev1402@gmail.com" 
               aria-label="Email Contact"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
