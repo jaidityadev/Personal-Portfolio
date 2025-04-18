@@ -85,6 +85,25 @@ export default function ProjectsPage() {
       links: [],
       featured: false,
     },
+    {
+      id: 7,
+      title: "Time Series Forecasting Techniques for Internet of Things: A Survey (Book Chapter)",
+      description:
+        "A comprehensive survey chapter on Time Series Forecasting techniques for Internet of Things (IoT) applications, covering enabling technologies, protocols, and implementation challenges.",
+      image: "/images/iot_forecasting.png",
+      tags: ["Time Series", "IoT", "Forecasting", "ARIMA", "Ensemble", "Survey"],
+      links: [
+        {
+          label: "DOI",
+          url: "https://doi.org/10.1201/9781003277330-13",
+        },
+        {
+          label: "Download PDF",
+          url: "https://drive.google.com/file/d/1KcsjoFHFaHqDlrcvc3WPUNjAn0bmwDI4/view?usp=sharing",
+        },
+      ],
+      featured: true,
+    },
   ];
 
   const featuredProjects = projects.filter((project) => project.featured);
