@@ -650,7 +650,7 @@ function HomePage() {
                                                         className: "pt-2",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-sm text-muted-foreground",
-                                                            children: "Currently pursuing an H.B.Sc. in Applied Statistics with a minor in Computer Science and Mathematics at the University of Toronto. Recipient of the Lester B. Pearson International Scholarship (Full-Ride) and a Dean's List Scholar."
+                                                            children: "Graduated with an H.B.Sc. in Applied Statistics, with minors in Computer Science & Mathematics, from the University of Toronto Mississauga. Recipient of the Lester B. Pearson International Scholarship (Full-Ride) and a Dean’s List Scholar."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/page.tsx",
                                                             lineNumber: 103,

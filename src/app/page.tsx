@@ -101,7 +101,7 @@ export default function HomePage() {
                     </CardHeader>
                     <CardContent className="pt-2">
                       <p className="text-sm text-muted-foreground">
-                        Currently pursuing an H.B.Sc. in Applied Statistics with a minor in Computer Science and Mathematics at the University of Toronto. Recipient of the Lester B. Pearson International Scholarship (Full-Ride) and a Dean's List Scholar.
+                      Graduated with an H.B.Sc. in Applied Statistics, with minors in Computer Science & Mathematics, from the University of Toronto Mississauga. Recipient of the Lester B. Pearson International Scholarship (Full-Ride) and a Dean’s List Scholar.
                       </p>
                     </CardContent>
                   </Card>
