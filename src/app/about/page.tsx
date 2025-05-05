@@ -18,7 +18,7 @@ export default function AboutPage() {
             <FadeIn>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">About Me</h1>
               <p className="text-xl text-foreground mb-6">
-                Hi there! I’m <strong>Jaiditya Dev</strong>, a Pearson Scholar and soon‑to‑graduate Data Science student at UofT Mississauga.
+                Hi there! I’m <strong>Jaiditya Dev</strong>, a Pearson Scholar and Data Science graduate from UofT Mississauga.
                 Ever since building my first word cloud in Python, I’ve been hooked on turning messy datasets into clear, impactful insights.
               </p>
               <div className="flex flex-wrap gap-2 mb-10">

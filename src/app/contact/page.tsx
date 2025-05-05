@@ -69,20 +69,23 @@ export default function ContactPage() {
             </FadeIn>
 
             <StaggerIn className="grid md:grid-cols-4 gap-6" staggerDelay={0.1} delay={0.4}>
-              <HoverScale>
+            <HoverScale>
                 <Card>
                   <CardHeader>
                     <CardTitle>GitHub</CardTitle>
                     <CardDescription>Check out my code and projects</CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <div className="flex items-center gap-2">
-                      <Github className="h-5 w-5 text-muted-foreground" />
+                  {/* reduce top‐padding and center contents */}
+                  <CardContent className="pt-4">
+                    <div className="flex flex-col items-center space-y-2">
+                      {/* larger icon for emphasis */}
+                      <Github className="h-6 w-6 text-muted-foreground" />
+                      {/* center and wrap URL */}
                       <a
                         href="https://github.com/jaidityadev"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary hover:underline"
+                        className="text-primary hover:underline break-all text-center"
                       >
                         github.com/jaidityadev
                       </a>
