@@ -121,7 +121,7 @@ export default function ContactPage() {
                     <div className="flex items-center gap-2">
                       <FileText className="h-5 w-5 text-muted-foreground" />
                       <a
-                        href="https://drive.google.com/file/d/1sDXQU6cJBtxi1uL7YrX-oFAB04dYQr-h/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1ugwHznEzrnilO2pXeAgk8hEnJg3WScfj/view?usp=share_link"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary hover:underline"
@@ -159,7 +159,7 @@ export default function ContactPage() {
             <FadeIn delay={0.7} className="mt-16 text-center">
               <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Whether you’re interested in research collaborations or looking to bring me on board for data science, software, or machine learning roles, I’d love to connect and explore how we can work together.
+                Whether you're interested in research collaborations or looking to bring me on board for data science, software, or machine learning roles, I'd love to connect and explore how we can work together.
               </p>
               <div className="flex justify-center gap-4 mb-6">
                 <Button size="lg" variant="outline" asChild>
