@@ -410,7 +410,7 @@ function AboutPage() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-xl text-foreground mb-6",
                                     children: [
-                                        "Hi there! I’m ",
+                                        "Hi there! I'm ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                             children: "Jaiditya Dev"
                                         }, void 0, false, {
@@ -418,7 +418,7 @@ function AboutPage() {
                                             lineNumber: 21,
                                             columnNumber: 31
                                         }, this),
-                                        ", a Pearson Scholar and Data Science graduate from UofT Mississauga. Ever since building my first word cloud in Python, I’ve been hooked on turning messy datasets into clear, impactful insights."
+                                        ", a Pearson Scholar and Data Science graduate from UofT Mississauga. Ever since building my first word cloud in Python, I've been hooked on turning messy datasets into clear, impactful insights."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/about/page.tsx",
@@ -443,14 +443,14 @@ function AboutPage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Badge"], {
-                                            children: "📝 Published Researcher"
+                                            children: "📝 Published Researcher"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.tsx",
                                             lineNumber: 27,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Badge"], {
-                                            children: "💻 Data Scientist"
+                                            children: "💻 Data Scientist"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.tsx",
                                             lineNumber: 28,
@@ -1624,30 +1624,128 @@ function AboutPage() {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                     className: "text-xl font-bold",
-                                                                    children: "Teaching Assistant"
+                                                                    children: "Associate Software Developer"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 293,
+                                                                    lineNumber: 296,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "text-muted-foreground",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "January, 2025 - Present"
+                                                                        children: "July 2025 - Present"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 295,
+                                                                        lineNumber: 298,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 294,
+                                                                    lineNumber: 297,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 292,
+                                                            lineNumber: 295,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex flex-col md:flex-row md:items-center md:justify-between mb-4",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "font-medium",
+                                                                    children: "ADP Canada"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 302,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-muted-foreground",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        children: "Toronto, ON"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/about/page.tsx",
+                                                                        lineNumber: 304,
+                                                                        columnNumber: 27
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 303,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                            lineNumber: 301,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                            className: "list-disc list-inside text-muted-foreground space-y-3",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                children: "Set to begin full-time as a Software Engineer at ADP Canada in July 2025, focusing on building scalable payroll and HR solutions."
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/about/page.tsx",
+                                                                lineNumber: 308,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                            lineNumber: 307,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                    lineNumber: 294,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/about/page.tsx",
+                                                lineNumber: 293,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/about/page.tsx",
+                                            lineNumber: 292,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$hover$2d$scale$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            scale: 1.01,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
+                                                    className: "pt-6",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex flex-col md:flex-row md:items-center md:justify-between mb-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                    className: "text-xl font-bold",
+                                                                    children: "Teaching Assistant"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 322,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-muted-foreground",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        children: "January 2025 - April 2025"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/about/page.tsx",
+                                                                        lineNumber: 324,
+                                                                        columnNumber: 27
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 323,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                            lineNumber: 321,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1658,7 +1756,7 @@ function AboutPage() {
                                                                     children: "University of Toronto, Mississauga"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 299,
+                                                                    lineNumber: 328,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1667,18 +1765,18 @@ function AboutPage() {
                                                                         children: "Mississauga, ON"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 301,
+                                                                        lineNumber: 330,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 300,
+                                                                    lineNumber: 329,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 298,
+                                                            lineNumber: 327,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1692,14 +1790,14 @@ function AboutPage() {
                                                                             children: "STA107H5S: Introduction to Probability and Modelling"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 306,
+                                                                            lineNumber: 335,
                                                                             columnNumber: 60
                                                                         }, this),
                                                                         ", engaging students in activities on discrete distributions, sampling, and statistical inference."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 305,
+                                                                    lineNumber: 334,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1710,43 +1808,43 @@ function AboutPage() {
                                                                             children: "R programming"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 309,
+                                                                            lineNumber: 338,
                                                                             columnNumber: 48
                                                                         }, this),
                                                                         ", supporting students in simulating probabilities and applying statistical concepts."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 308,
+                                                                    lineNumber: 337,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "Assessed student submissions and provided feedback on assignments, ensuring alignment with course learning outcomes."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 311,
+                                                                    lineNumber: 340,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 304,
+                                                            lineNumber: 333,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                    lineNumber: 291,
+                                                    lineNumber: 320,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                lineNumber: 290,
+                                                lineNumber: 319,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.tsx",
-                                            lineNumber: 289,
+                                            lineNumber: 318,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$hover$2d$scale$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1763,7 +1861,7 @@ function AboutPage() {
                                                                     children: "Data Science Intern"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 323,
+                                                                    lineNumber: 353,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1772,191 +1870,8 @@ function AboutPage() {
                                                                         children: "May 2024 - August 2024"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 325,
+                                                                        lineNumber: 355,
                                                                         columnNumber: 27
-                                                                    }, this)
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 324,
-                                                                    columnNumber: 25
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 322,
-                                                            columnNumber: 23
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex flex-col md:flex-row md:items-center md:justify-between mb-4",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "font-medium",
-                                                                    children: "ADP Canada"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 329,
-                                                                    columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "text-muted-foreground",
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "Toronto, ON"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 331,
-                                                                        columnNumber: 27
-                                                                    }, this)
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 330,
-                                                                    columnNumber: 25
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 328,
-                                                            columnNumber: 23
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                            className: "list-disc list-inside text-muted-foreground space-y-3",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                    children: [
-                                                                        "Developed a ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "machine learning classification model"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 336,
-                                                                            columnNumber: 39
-                                                                        }, this),
-                                                                        " to identify tax form types, managing a ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "real-time dataset of 800,000+ entries"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 336,
-                                                                            columnNumber: 169
-                                                                        }, this),
-                                                                        "."
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 335,
-                                                                    columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                    children: [
-                                                                        "Refined ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "keyword search algorithms"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 339,
-                                                                            columnNumber: 35
-                                                                        }, this),
-                                                                        " and deployed ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "data visualization"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 339,
-                                                                            columnNumber: 127
-                                                                        }, this),
-                                                                        " tools, such as ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "word clouds"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 339,
-                                                                            columnNumber: 214
-                                                                        }, this),
-                                                                        ", for enhanced data analysis and stakeholder engagement."
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 338,
-                                                                    columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                    children: [
-                                                                        "Collaborated with cross-functional teams to integrate ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "data-driven solutions"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 342,
-                                                                            columnNumber: 81
-                                                                        }, this),
-                                                                        ", boosting strategic decision-making and ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "operational efficiency"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 342,
-                                                                            columnNumber: 196
-                                                                        }, this),
-                                                                        "."
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 341,
-                                                                    columnNumber: 25
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 334,
-                                                            columnNumber: 23
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                    lineNumber: 321,
-                                                    columnNumber: 21
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/about/page.tsx",
-                                                lineNumber: 320,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/about/page.tsx",
-                                            lineNumber: 319,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$hover$2d$scale$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            scale: 1.01,
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
-                                                    className: "pt-6",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex flex-col md:flex-row md:items-center md:justify-between mb-2",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                    className: "text-xl font-bold",
-                                                                    children: "Research Assistant"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 353,
-                                                                    columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "text-muted-foreground",
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "May 2023 – Aug 2023"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 354,
-                                                                        columnNumber: 64
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
@@ -1974,53 +1889,129 @@ function AboutPage() {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                     className: "font-medium",
-                                                                    children: "University of Toronto, Mississauga"
+                                                                    children: "ADP Canada"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 357,
+                                                                    lineNumber: 359,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "text-muted-foreground",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "Mississauga, ON"
+                                                                        children: "Toronto, ON"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 358,
-                                                                        columnNumber: 64
+                                                                        lineNumber: 361,
+                                                                        columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 358,
+                                                                    lineNumber: 360,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 356,
+                                                            lineNumber: 358,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                            className: "list-disc list-inside text-muted-foreground space-y-2",
+                                                            className: "list-disc list-inside text-muted-foreground space-y-3",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                    children: "Conducted research on causal inference models with Prof. Sonya Allin."
-                                                                }, void 0, false, {
+                                                                    children: [
+                                                                        "Developed a ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "machine learning classification model"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 366,
+                                                                            columnNumber: 39
+                                                                        }, this),
+                                                                        " to identify tax form types, managing a ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "real-time dataset of 800,000+ entries"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 366,
+                                                                            columnNumber: 169
+                                                                        }, this),
+                                                                        "."
+                                                                    ]
+                                                                }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 361,
+                                                                    lineNumber: 365,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                    children: "Authored literature reviews and presented findings at lab meetings."
-                                                                }, void 0, false, {
+                                                                    children: [
+                                                                        "Refined ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "keyword search algorithms"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 369,
+                                                                            columnNumber: 35
+                                                                        }, this),
+                                                                        " and deployed ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "data visualization"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 369,
+                                                                            columnNumber: 127
+                                                                        }, this),
+                                                                        " tools, such as ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "word clouds"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 369,
+                                                                            columnNumber: 214
+                                                                        }, this),
+                                                                        ", for enhanced data analysis and stakeholder engagement."
+                                                                    ]
+                                                                }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 362,
+                                                                    lineNumber: 368,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: [
+                                                                        "Collaborated with cross-functional teams to integrate ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "data-driven solutions"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 372,
+                                                                            columnNumber: 81
+                                                                        }, this),
+                                                                        ", boosting strategic decision-making and ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "operational efficiency"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 372,
+                                                                            columnNumber: 196
+                                                                        }, this),
+                                                                        "."
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 371,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 360,
+                                                            lineNumber: 364,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
@@ -2050,30 +2041,137 @@ function AboutPage() {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                     className: "text-xl font-bold",
-                                                                    children: "LearnAI Program Teaching Assistant"
+                                                                    children: "Research Assistant"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 372,
+                                                                    lineNumber: 383,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "text-muted-foreground",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "Oct 2022 – Apr 2023"
+                                                                        children: "May 2023 – Aug 2023"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 373,
+                                                                        lineNumber: 384,
                                                                         columnNumber: 64
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 373,
+                                                                    lineNumber: 384,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 371,
+                                                            lineNumber: 382,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex flex-col md:flex-row md:items-center md:justify-between mb-4",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "font-medium",
+                                                                    children: "University of Toronto, Mississauga"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 387,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-muted-foreground",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        children: "Mississauga, ON"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/about/page.tsx",
+                                                                        lineNumber: 388,
+                                                                        columnNumber: 64
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 388,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                            lineNumber: 386,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                            className: "list-disc list-inside text-muted-foreground space-y-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: "Conducted research on causal inference models with Prof. Sonya Allin."
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 391,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: "Authored literature reviews and presented findings at lab meetings."
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 392,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                            lineNumber: 390,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                    lineNumber: 381,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/about/page.tsx",
+                                                lineNumber: 380,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/about/page.tsx",
+                                            lineNumber: 379,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$hover$2d$scale$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            scale: 1.01,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
+                                                    className: "pt-6",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex flex-col md:flex-row md:items-center md:justify-between mb-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                    className: "text-xl font-bold",
+                                                                    children: "LearnAI Program Teaching Assistant"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 402,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-muted-foreground",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        children: "Oct 2022 – Apr 2023"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/about/page.tsx",
+                                                                        lineNumber: 403,
+                                                                        columnNumber: 64
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 403,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                            lineNumber: 401,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2084,7 +2182,7 @@ function AboutPage() {
                                                                     children: "UofT AI"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 376,
+                                                                    lineNumber: 406,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2093,18 +2191,18 @@ function AboutPage() {
                                                                         children: "Toronto, ON"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 377,
+                                                                        lineNumber: 407,
                                                                         columnNumber: 64
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 377,
+                                                                    lineNumber: 407,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 375,
+                                                            lineNumber: 405,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2118,7 +2216,7 @@ function AboutPage() {
                                                                             children: "ML"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 381,
+                                                                            lineNumber: 411,
                                                                             columnNumber: 50
                                                                         }, this),
                                                                         ",",
@@ -2128,7 +2226,7 @@ function AboutPage() {
                                                                             children: "neural networks"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 382,
+                                                                            lineNumber: 412,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         ", and",
@@ -2138,14 +2236,14 @@ function AboutPage() {
                                                                             children: "computer vision"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 383,
+                                                                            lineNumber: 413,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         "."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 380,
+                                                                    lineNumber: 410,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2156,7 +2254,7 @@ function AboutPage() {
                                                                             children: "AI projects"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 386,
+                                                                            lineNumber: 416,
                                                                             columnNumber: 48
                                                                         }, this),
                                                                         ", fostering ",
@@ -2165,7 +2263,7 @@ function AboutPage() {
                                                                             children: "curiosity"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 387,
+                                                                            lineNumber: 417,
                                                                             columnNumber: 37
                                                                         }, this),
                                                                         " and",
@@ -2175,14 +2273,14 @@ function AboutPage() {
                                                                             children: "skills"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 388,
+                                                                            lineNumber: 418,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         "."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 385,
+                                                                    lineNumber: 415,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2194,36 +2292,36 @@ function AboutPage() {
                                                                             children: "constructive feedback"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 392,
+                                                                            lineNumber: 422,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         "."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 390,
+                                                                    lineNumber: 420,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 379,
+                                                            lineNumber: 409,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                    lineNumber: 370,
+                                                    lineNumber: 400,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                lineNumber: 369,
+                                                lineNumber: 399,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.tsx",
-                                            lineNumber: 368,
+                                            lineNumber: 398,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$hover$2d$scale$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -2240,27 +2338,27 @@ function AboutPage() {
                                                                     children: "President, UTM Residence Council"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 403,
+                                                                    lineNumber: 433,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "text-muted-foreground",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "May 2022 – Apr 2024"
+                                                                        children: "May 2022 – Apr 2024"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 404,
+                                                                        lineNumber: 434,
                                                                         columnNumber: 64
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 404,
+                                                                    lineNumber: 434,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 402,
+                                                            lineNumber: 432,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2271,7 +2369,7 @@ function AboutPage() {
                                                                     children: "University of Toronto Mississauga"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 407,
+                                                                    lineNumber: 437,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2280,18 +2378,18 @@ function AboutPage() {
                                                                         children: "Mississauga, ON"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 408,
+                                                                        lineNumber: 438,
                                                                         columnNumber: 64
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 408,
+                                                                    lineNumber: 438,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 406,
+                                                            lineNumber: 436,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2305,7 +2403,7 @@ function AboutPage() {
                                                                             children: "enhance residence life"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 412,
+                                                                            lineNumber: 442,
                                                                             columnNumber: 48
                                                                         }, this),
                                                                         " and",
@@ -2314,14 +2412,14 @@ function AboutPage() {
                                                                             children: "smooth transitions for new students"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 413,
+                                                                            lineNumber: 443,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         "."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 411,
+                                                                    lineNumber: 441,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2332,7 +2430,7 @@ function AboutPage() {
                                                                             children: "organize community‑building events"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 416,
+                                                                            lineNumber: 446,
                                                                             columnNumber: 41
                                                                         }, this),
                                                                         " and",
@@ -2341,14 +2439,14 @@ function AboutPage() {
                                                                             children: "coordinate sub‑teams for maximum impact"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 417,
+                                                                            lineNumber: 447,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         "."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 415,
+                                                                    lineNumber: 445,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2359,7 +2457,7 @@ function AboutPage() {
                                                                             children: "voting member on Food Quality Services"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 420,
+                                                                            lineNumber: 450,
                                                                             columnNumber: 39
                                                                         }, this),
                                                                         " to",
@@ -2368,36 +2466,36 @@ function AboutPage() {
                                                                             children: "improve campus dining"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 421,
+                                                                            lineNumber: 451,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         "."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 419,
+                                                                    lineNumber: 449,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 410,
+                                                            lineNumber: 440,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                    lineNumber: 401,
+                                                    lineNumber: 431,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                lineNumber: 400,
+                                                lineNumber: 430,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.tsx",
-                                            lineNumber: 399,
+                                            lineNumber: 429,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$hover$2d$scale$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -2414,196 +2512,13 @@ function AboutPage() {
                                                                     children: "Strategy Analyst (Summer Intern)"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 434,
-                                                                    columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "text-muted-foreground",
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "May 2022 - August 2022"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 436,
-                                                                        columnNumber: 27
-                                                                    }, this)
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 435,
-                                                                    columnNumber: 25
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 433,
-                                                            columnNumber: 23
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex flex-col md:flex-row md:items-center md:justify-between mb-4",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "font-medium",
-                                                                    children: "Ernst and Young LLC."
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 440,
-                                                                    columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "text-muted-foreground",
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "New Delhi, India"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 442,
-                                                                        columnNumber: 27
-                                                                    }, this)
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 441,
-                                                                    columnNumber: 25
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 439,
-                                                            columnNumber: 23
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                            className: "list-disc list-inside text-muted-foreground space-y-3",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                    children: [
-                                                                        "Collaborated within the EY Strategy Analysis Team to study the evolving ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "Asia Pacific 3D Printing market"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 447,
-                                                                            columnNumber: 99
-                                                                        }, this),
-                                                                        "."
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 446,
-                                                                    columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                    children: [
-                                                                        "Utilized ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "statistical modeling and market assessments"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 450,
-                                                                            columnNumber: 36
-                                                                        }, this),
-                                                                        " to evaluate the market's feasibility for the ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "I.I.T. Delhi Incubation Center"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 450,
-                                                                            columnNumber: 178
-                                                                        }, this),
-                                                                        "."
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 449,
-                                                                    columnNumber: 25
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                    children: [
-                                                                        "Developed ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "data-driven models"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 453,
-                                                                            columnNumber: 37
-                                                                        }, this),
-                                                                        " for optimizing ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "3D Printing filament procurement"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 453,
-                                                                            columnNumber: 124
-                                                                        }, this),
-                                                                        " strategies through ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "regression analysis"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 453,
-                                                                            columnNumber: 229
-                                                                        }, this),
-                                                                        " and ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "trend forecasting"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 453,
-                                                                            columnNumber: 306
-                                                                        }, this),
-                                                                        "."
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 452,
-                                                                    columnNumber: 25
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 445,
-                                                            columnNumber: 23
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/app/about/page.tsx",
-                                                    lineNumber: 432,
-                                                    columnNumber: 21
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/about/page.tsx",
-                                                lineNumber: 431,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/about/page.tsx",
-                                            lineNumber: 430,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$hover$2d$scale$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            scale: 1.01,
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
-                                                    className: "pt-6",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex flex-col md:flex-row md:items-center md:justify-between mb-2",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                    className: "text-xl font-bold",
-                                                                    children: "Machine Learning Research Intern"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/about/page.tsx",
                                                                     lineNumber: 464,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "text-muted-foreground",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "September 2019 - April 2021"
+                                                                        children: "May 2022 - August 2022"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
                                                                         lineNumber: 466,
@@ -2625,7 +2540,7 @@ function AboutPage() {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                     className: "font-medium",
-                                                                    children: "National Institute of Technology"
+                                                                    children: "Ernst and Young LLC."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
                                                                     lineNumber: 470,
@@ -2656,25 +2571,16 @@ function AboutPage() {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: [
-                                                                        "Led research on the ",
+                                                                        "Collaborated within the EY Strategy Analysis Team to study the evolving ",
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "font-medium text-foreground",
-                                                                            children: "prediction of Dengue and Tuberculosis"
+                                                                            children: "Asia Pacific 3D Printing market"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
                                                                             lineNumber: 477,
-                                                                            columnNumber: 47
+                                                                            columnNumber: 99
                                                                         }, this),
-                                                                        " using ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-medium text-foreground",
-                                                                            children: "ensemble-based forecasting techniques"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 477,
-                                                                            columnNumber: 144
-                                                                        }, this),
-                                                                        ", contributing to proactive public health measures."
+                                                                        "."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
@@ -2683,29 +2589,74 @@ function AboutPage() {
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: [
-                                                                        "Co-authored and presented research papers at international conferences, including the ",
+                                                                        "Utilized ",
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "font-medium text-foreground",
-                                                                            children: "International Conference on AI"
+                                                                            children: "statistical modeling and market assessments"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
                                                                             lineNumber: 480,
-                                                                            columnNumber: 113
+                                                                            columnNumber: 36
                                                                         }, this),
-                                                                        " and the ",
+                                                                        " to evaluate the market's feasibility for the ",
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "font-medium text-foreground",
-                                                                            children: "Swiss OpenTox Conference"
+                                                                            children: "I.I.T. Delhi Incubation Center"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
                                                                             lineNumber: 480,
-                                                                            columnNumber: 205
+                                                                            columnNumber: 178
                                                                         }, this),
                                                                         "."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
                                                                     lineNumber: 479,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: [
+                                                                        "Developed ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "data-driven models"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 483,
+                                                                            columnNumber: 37
+                                                                        }, this),
+                                                                        " for optimizing ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "3D Printing filament procurement"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 483,
+                                                                            columnNumber: 124
+                                                                        }, this),
+                                                                        " strategies through ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "regression analysis"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 483,
+                                                                            columnNumber: 229
+                                                                        }, this),
+                                                                        " and ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "trend forecasting"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 483,
+                                                                            columnNumber: 306
+                                                                        }, this),
+                                                                        "."
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 482,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
@@ -2741,30 +2692,177 @@ function AboutPage() {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                     className: "text-xl font-bold",
-                                                                    children: "Summer Intern, SMEV"
+                                                                    children: "Machine Learning Research Intern"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 491,
+                                                                    lineNumber: 494,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "text-muted-foreground",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "Jun 2019 – Jun 2019"
+                                                                        children: "September 2019 - April 2021"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 492,
-                                                                        columnNumber: 64
+                                                                        lineNumber: 496,
+                                                                        columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 492,
+                                                                    lineNumber: 495,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 490,
+                                                            lineNumber: 493,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex flex-col md:flex-row md:items-center md:justify-between mb-4",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "font-medium",
+                                                                    children: "National Institute of Technology"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 500,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-muted-foreground",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        children: "New Delhi, India"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/about/page.tsx",
+                                                                        lineNumber: 502,
+                                                                        columnNumber: 27
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 501,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                            lineNumber: 499,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                            className: "list-disc list-inside text-muted-foreground space-y-3",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: [
+                                                                        "Led research on the ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "prediction of Dengue and Tuberculosis"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 507,
+                                                                            columnNumber: 47
+                                                                        }, this),
+                                                                        " using ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "ensemble-based forecasting techniques"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 507,
+                                                                            columnNumber: 144
+                                                                        }, this),
+                                                                        ", contributing to proactive public health measures."
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 506,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: [
+                                                                        "Co-authored and presented research papers at international conferences, including the ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "International Conference on AI"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 510,
+                                                                            columnNumber: 113
+                                                                        }, this),
+                                                                        " and the ",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-medium text-foreground",
+                                                                            children: "Swiss OpenTox Conference"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                                            lineNumber: 510,
+                                                                            columnNumber: 205
+                                                                        }, this),
+                                                                        "."
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 509,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                            lineNumber: 505,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                    lineNumber: 492,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/about/page.tsx",
+                                                lineNumber: 491,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/about/page.tsx",
+                                            lineNumber: 490,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$hover$2d$scale$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            scale: 1.01,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
+                                                    className: "pt-6",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex flex-col md:flex-row md:items-center md:justify-between mb-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                    className: "text-xl font-bold",
+                                                                    children: "Summer Intern, SMEV"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 521,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-muted-foreground",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        children: "Jun 2019 – Jun 2019"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/app/about/page.tsx",
+                                                                        lineNumber: 522,
+                                                                        columnNumber: 64
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/about/page.tsx",
+                                                                    lineNumber: 522,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/about/page.tsx",
+                                                            lineNumber: 520,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2777,7 +2875,7 @@ function AboutPage() {
                                                                     children: "Society of Manufacturers of Electric Vehicle"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 495,
+                                                                    lineNumber: 525,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2786,18 +2884,18 @@ function AboutPage() {
                                                                         children: "New Delhi, IN"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 502,
+                                                                        lineNumber: 532,
                                                                         columnNumber: 64
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 502,
+                                                                    lineNumber: 532,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 494,
+                                                            lineNumber: 524,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2810,7 +2908,7 @@ function AboutPage() {
                                                                             children: "Analyzed the Indian electric mobility value chain"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 506,
+                                                                            lineNumber: 536,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         " and ",
@@ -2819,14 +2917,14 @@ function AboutPage() {
                                                                             children: "market incentives"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 508,
+                                                                            lineNumber: 538,
                                                                             columnNumber: 39
                                                                         }, this),
                                                                         "."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 505,
+                                                                    lineNumber: 535,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2837,7 +2935,7 @@ function AboutPage() {
                                                                             children: "research on battery chemistries"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 511,
+                                                                            lineNumber: 541,
                                                                             columnNumber: 39
                                                                         }, this),
                                                                         " and",
@@ -2846,14 +2944,14 @@ function AboutPage() {
                                                                             children: " policy impacts on EV adoption"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 512,
+                                                                            lineNumber: 542,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         "."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 510,
+                                                                    lineNumber: 540,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2863,7 +2961,7 @@ function AboutPage() {
                                                                             children: "Collaborated cross‑functionally"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 515,
+                                                                            lineNumber: 545,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         " to develop",
@@ -2872,36 +2970,36 @@ function AboutPage() {
                                                                             children: "recommendations for two‑ and three‑wheeler transitions"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                                            lineNumber: 516,
+                                                                            lineNumber: 546,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         "."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 514,
+                                                                    lineNumber: 544,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 504,
+                                                            lineNumber: 534,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                    lineNumber: 489,
+                                                    lineNumber: 519,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                lineNumber: 488,
+                                                lineNumber: 518,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.tsx",
-                                            lineNumber: 487,
+                                            lineNumber: 517,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -2925,12 +3023,12 @@ function AboutPage() {
                                         children: "Publications"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/page.tsx",
-                                        lineNumber: 531,
+                                        lineNumber: 561,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/about/page.tsx",
-                                    lineNumber: 530,
+                                    lineNumber: 560,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$stagger$2d$in$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -2951,27 +3049,27 @@ function AboutPage() {
                                                                     children: "Health TrueInfo: A multilingual Android app and social media approach in tackling COVID-19 vaccine misinformation and hesitancy in Bolivia, India, and Canada"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 540,
+                                                                    lineNumber: 570,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "text-muted-foreground",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "February 2022"
+                                                                        children: "February 2022"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 544,
+                                                                        lineNumber: 574,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 543,
+                                                                    lineNumber: 573,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 539,
+                                                            lineNumber: 569,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2980,12 +3078,12 @@ function AboutPage() {
                                                                 children: "University of Toronto Journal of Public Health"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 548,
+                                                                lineNumber: 578,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 547,
+                                                            lineNumber: 577,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2993,7 +3091,7 @@ function AboutPage() {
                                                             children: "Developed and evaluated a multilingual Android app alongside targeted social media campaigns, achieving measurable reductions in vaccine hesitancy across three countries."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 550,
+                                                            lineNumber: 580,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3006,17 +3104,17 @@ function AboutPage() {
                                                                     children: "https://doi.org/10.33137/utjph.v9999i1.38113"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 555,
+                                                                    lineNumber: 585,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 554,
+                                                                lineNumber: 584,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 553,
+                                                            lineNumber: 583,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3030,33 +3128,33 @@ function AboutPage() {
                                                                     children: "Download PDF"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 568,
+                                                                    lineNumber: 598,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 567,
+                                                                lineNumber: 597,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 566,
+                                                            lineNumber: 596,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                    lineNumber: 538,
+                                                    lineNumber: 568,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                lineNumber: 537,
+                                                lineNumber: 567,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.tsx",
-                                            lineNumber: 536,
+                                            lineNumber: 566,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$hover$2d$scale$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -3073,41 +3171,41 @@ function AboutPage() {
                                                                     children: "Time Series Forecasting Techniques for Internet of Things: A Survey"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 586,
+                                                                    lineNumber: 616,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "text-muted-foreground",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "January 2022"
+                                                                        children: "January 2022"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 590,
+                                                                        lineNumber: 620,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 589,
+                                                                    lineNumber: 619,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 585,
+                                                            lineNumber: 615,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "text-muted-foreground mb-4",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                children: "In Handbook of Research on Machine Learning Foundations and Applications (Book Chapter)"
+                                                                children: "In Handbook of Research on Machine Learning Foundations and Applications (Book Chapter)"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 596,
+                                                                lineNumber: 626,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 595,
+                                                            lineNumber: 625,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3115,7 +3213,7 @@ function AboutPage() {
                                                             children: "Provides a comprehensive overview of time‑series forecasting methods, challenges, and enabling technologies for large‑scale IoT deployments."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 602,
+                                                            lineNumber: 632,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3128,17 +3226,17 @@ function AboutPage() {
                                                                     children: "https://doi.org/10.1201/9781003277330-13"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 609,
+                                                                    lineNumber: 639,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 608,
+                                                                lineNumber: 638,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 607,
+                                                            lineNumber: 637,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3152,33 +3250,33 @@ function AboutPage() {
                                                                     children: "Download PDF"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 622,
+                                                                    lineNumber: 652,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 621,
+                                                                lineNumber: 651,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 620,
+                                                            lineNumber: 650,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                    lineNumber: 583,
+                                                    lineNumber: 613,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                lineNumber: 582,
+                                                lineNumber: 612,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.tsx",
-                                            lineNumber: 581,
+                                            lineNumber: 611,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$hover$2d$scale$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -3195,27 +3293,27 @@ function AboutPage() {
                                                                     children: "A Heterogeneous Ensemble Forecasting Model for Disease Prediction"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 640,
+                                                                    lineNumber: 670,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "text-muted-foreground",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "January 2021"
+                                                                        children: "January 2021"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 644,
+                                                                        lineNumber: 674,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 643,
+                                                                    lineNumber: 673,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 639,
+                                                            lineNumber: 669,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3224,12 +3322,12 @@ function AboutPage() {
                                                                 children: "R, Ensemble Forecasting, CART, RPART, ARIMA, NNAR, CTREE"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 648,
+                                                                lineNumber: 678,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 647,
+                                                            lineNumber: 677,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3237,7 +3335,7 @@ function AboutPage() {
                                                             children: "Combined multiple forecasting algorithms into one ensemble to significantly improve the accuracy of outbreak predictions for diseases like dengue and tuberculosis."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 650,
+                                                            lineNumber: 680,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3249,17 +3347,17 @@ function AboutPage() {
                                                                     children: "https://doi.org/10.1007/s00354-020-00119-7"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 655,
+                                                                    lineNumber: 685,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 654,
+                                                                lineNumber: 684,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 653,
+                                                            lineNumber: 683,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3273,33 +3371,33 @@ function AboutPage() {
                                                                     children: "Download PDF"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 665,
+                                                                    lineNumber: 695,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 664,
+                                                                lineNumber: 694,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 663,
+                                                            lineNumber: 693,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                    lineNumber: 638,
+                                                    lineNumber: 668,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                lineNumber: 637,
+                                                lineNumber: 667,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.tsx",
-                                            lineNumber: 636,
+                                            lineNumber: 666,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$hover$2d$scale$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -3316,27 +3414,27 @@ function AboutPage() {
                                                                     children: "ARIMA Modelling for Time Series Forecasting"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 683,
+                                                                    lineNumber: 713,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "text-muted-foreground",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        children: "December 2020"
+                                                                        children: "December 2020"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/about/page.tsx",
-                                                                        lineNumber: 687,
+                                                                        lineNumber: 717,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 686,
+                                                                    lineNumber: 716,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 682,
+                                                            lineNumber: 712,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3345,12 +3443,12 @@ function AboutPage() {
                                                                 children: "R, Forecasting Algorithms, ARIMA"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 691,
+                                                                lineNumber: 721,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 690,
+                                                            lineNumber: 720,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3358,7 +3456,7 @@ function AboutPage() {
                                                             children: "Explored ARIMA-based techniques to optimize parameter selection and improve forecasting precision across diverse datasets."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 693,
+                                                            lineNumber: 723,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3370,17 +3468,17 @@ function AboutPage() {
                                                                     children: "https://doi.org/10.37418/amsj.9.6.75"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 698,
+                                                                    lineNumber: 728,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 697,
+                                                                lineNumber: 727,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 696,
+                                                            lineNumber: 726,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3394,45 +3492,45 @@ function AboutPage() {
                                                                     children: "Download PDF"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                                    lineNumber: 708,
+                                                                    lineNumber: 738,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                                lineNumber: 707,
+                                                                lineNumber: 737,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/about/page.tsx",
-                                                            lineNumber: 706,
+                                                            lineNumber: 736,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/about/page.tsx",
-                                                    lineNumber: 681,
+                                                    lineNumber: 711,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
-                                                lineNumber: 680,
+                                                lineNumber: 710,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.tsx",
-                                            lineNumber: 679,
+                                            lineNumber: 709,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/about/page.tsx",
-                                    lineNumber: 533,
+                                    lineNumber: 563,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/about/page.tsx",
-                            lineNumber: 529,
+                            lineNumber: 559,
                             columnNumber: 13
                         }, this)
                     ]
