@@ -18,14 +18,14 @@ export default function AboutPage() {
             <FadeIn>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">About Me</h1>
               <p className="text-xl text-foreground mb-6">
-                Hi there! I’m <strong>Jaiditya Dev</strong>, a Pearson Scholar and Data Science graduate from UofT Mississauga.
-                Ever since building my first word cloud in Python, I’ve been hooked on turning messy datasets into clear, impactful insights.
+                Hi there! I'm <strong>Jaiditya Dev</strong>, a Pearson Scholar and Data Science graduate from UofT Mississauga.
+                Ever since building my first word cloud in Python, I've been hooked on turning messy datasets into clear, impactful insights.
               </p>
               <div className="flex flex-wrap gap-2 mb-10">
                 <Badge>🥇 Lester B. Pearson Scholar</Badge>
                 <Badge>🔍 NLP & ML Enthusiast</Badge>
-                <Badge>📝 Published Researcher</Badge>
-                <Badge>💻 Data Scientist</Badge>
+                <Badge>📝 Published Researcher</Badge>
+                <Badge>💻 Data Scientist</Badge>
 
               </div>
             </FadeIn>
@@ -286,13 +286,42 @@ export default function AboutPage() {
                 <h2 className="text-2xl font-bold mb-6">Experience</h2>
               </FadeIn>
               <StaggerIn className="space-y-8" staggerDelay={0.15}>
+
+
+                {/* Software Engineer Full Time Role ADP*/}
+                <HoverScale scale={1.01}>
+                  <Card>
+                    <CardContent className="pt-6">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h3 className="text-xl font-bold">Associate Software Developer</h3>
+                        <div className="text-muted-foreground">
+                          <span>July 2025 - Present</span>
+                        </div>
+                      </div>
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <p className="font-medium">ADP Canada</p>
+                        <div className="text-muted-foreground">
+                          <span>Toronto, ON</span>
+                        </div>
+                      </div>
+                      <ul className="list-disc list-inside text-muted-foreground space-y-3">
+                        <li>
+                          Set to begin full-time as a Software Engineer at ADP Canada in July 2025, focusing on building scalable payroll and HR solutions.
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </HoverScale>
+
+
+                {/* Teaching Assistant */}
                 <HoverScale scale={1.01}>
                   <Card>
                     <CardContent className="pt-6">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                         <h3 className="text-xl font-bold">Teaching Assistant</h3>
                         <div className="text-muted-foreground">
-                          <span>January, 2025 - Present</span>
+                          <span>January 2025 - April 2025</span>
                         </div>
                       </div>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -316,6 +345,7 @@ export default function AboutPage() {
                   </Card>
                 </HoverScale>
 
+                {/* Data Science Intern */}
                 <HoverScale scale={1.01}>
                   <Card>
                     <CardContent className="pt-6">
@@ -351,7 +381,7 @@ export default function AboutPage() {
                     <CardContent className="pt-6">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                         <h3 className="text-xl font-bold">Research Assistant</h3>
-                        <div className="text-muted-foreground"><span>May 2023 – Aug 2023</span></div>
+                        <div className="text-muted-foreground"><span>May 2023 – Aug 2023</span></div>
                       </div>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <p className="font-medium">University of Toronto, Mississauga</p>
@@ -370,7 +400,7 @@ export default function AboutPage() {
                     <CardContent className="pt-6">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                         <h3 className="text-xl font-bold">LearnAI Program Teaching Assistant</h3>
-                        <div className="text-muted-foreground"><span>Oct 2022 – Apr 2023</span></div>
+                        <div className="text-muted-foreground"><span>Oct 2022 – Apr 2023</span></div>
                       </div>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <p className="font-medium">UofT AI</p>
@@ -401,7 +431,7 @@ export default function AboutPage() {
                     <CardContent className="pt-6">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                         <h3 className="text-xl font-bold">President, UTM Residence Council</h3>
-                        <div className="text-muted-foreground"><span>May 2022 – Apr 2024</span></div>
+                        <div className="text-muted-foreground"><span>May 2022 – Apr 2024</span></div>
                       </div>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <p className="font-medium">University of Toronto Mississauga</p>
@@ -489,7 +519,7 @@ export default function AboutPage() {
                     <CardContent className="pt-6">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                         <h3 className="text-xl font-bold">Summer Intern, SMEV</h3>
-                        <div className="text-muted-foreground"><span>Jun 2019 – Jun 2019</span></div>
+                        <div className="text-muted-foreground"><span>Jun 2019 – Jun 2019</span></div>
                       </div>
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <Link
@@ -541,7 +571,7 @@ export default function AboutPage() {
                           Health TrueInfo: A multilingual Android app and social media approach in tackling COVID-19 vaccine misinformation and hesitancy in Bolivia, India, and Canada
                         </h3>
                         <div className="text-muted-foreground">
-                          <span>February 2022</span>
+                          <span>February 2022</span>
                         </div>
                       </div>
                       <div className="text-muted-foreground mb-4">
@@ -587,14 +617,14 @@ export default function AboutPage() {
                           Time Series Forecasting Techniques for Internet of Things: A Survey
                         </h3>
                         <div className="text-muted-foreground">
-                          <span>January 2022</span>
+                          <span>January 2022</span>
                         </div>
                       </div>
 
                       {/* source info */}
                       <div className="text-muted-foreground mb-4">
                         <span>
-                          In Handbook of Research on Machine Learning Foundations and Applications (Book Chapter)
+                          In Handbook of Research on Machine Learning Foundations and Applications (Book Chapter)
                         </span>
                       </div>
 
@@ -641,7 +671,7 @@ export default function AboutPage() {
                           A Heterogeneous Ensemble Forecasting Model for Disease Prediction
                         </h3>
                         <div className="text-muted-foreground">
-                          <span>January 2021</span>
+                          <span>January 2021</span>
                         </div>
                       </div>
                       <div className="text-muted-foreground mb-4">
@@ -684,7 +714,7 @@ export default function AboutPage() {
                           ARIMA Modelling for Time Series Forecasting
                         </h3>
                         <div className="text-muted-foreground">
-                          <span>December 2020</span>
+                          <span>December 2020</span>
                         </div>
                       </div>
                       <div className="text-muted-foreground mb-4">
