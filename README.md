@@ -2,7 +2,7 @@
 
 A responsive, modern portfolio showcasing my expertise in **Data Science** and **Full Stack Development**. Explore case studies, publications, and interactive demos built with Next.js and React.
 
-[![Deployment Status](https://api.netlify.com/api/v1/badges/<YOUR_NETLIFY_BADGE_ID>/deploy-status)](https://jaiditya-dev.netlify.app/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8ece75d4-c709-493d-8d40-a66c1a39c872/deploy-status)](https://app.netlify.com/projects/jaiditya-dev/deploys) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Live Demo:** [https://jaiditya-dev.netlify.app/](https://jaiditya-dev.netlify.app/)
 
