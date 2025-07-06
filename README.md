@@ -1,10 +1,10 @@
-# Jaiditya Dev's Personal Portfolio
+# Jaiditya Dev’s Personal Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://jaiditya-dev.netlify.app/) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+A responsive, modern portfolio showcasing my expertise in **Data Science** and **Full Stack Development**. Explore case studies, publications, and interactive demos built with Next.js and React.
 
-**Live Demo:** [jaiditya-dev.netlify.app](https://jaiditya-dev.netlify.app/)
+[![Deployment Status](https://api.netlify.com/api/v1/badges/<YOUR_NETLIFY_BADGE_ID>/deploy-status)](https://jaiditya-dev.netlify.app/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A modern, responsive personal website showcasing my work and expertise as a **Data Scientist & Full Stack Developer**. Built with Next.js 13 (App Router), TypeScript, and a suite of modern UI libraries and animations.
+**Live Demo:** [https://jaiditya-dev.netlify.app/](https://jaiditya-dev.netlify.app/)
 
 ---
 
@@ -24,7 +24,7 @@ A modern, responsive personal website showcasing my work and expertise as a **Da
 
 ## 🧐 About
 
-This portfolio highlights my journey from developing word-clouds in Python to building scalable classification models in production, alongside my passion for data-driven storytelling and full-stack web development. Here you'll find:
+This portfolio highlights my journey from developing word-clouds in Python to building scalable classification models in production, alongside my passion for data-driven storytelling and full-stack web development. Here you’ll find:
 
 * **Home:** A quick intro, skills snapshot, and featured projects.
 * **About:** Detailed background, education, certifications, and professional experience.
