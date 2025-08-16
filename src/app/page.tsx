@@ -187,6 +187,10 @@ export default function HomePage() {
                         <Badge variant="secondary">TensorFlow</Badge>
                         <Badge variant="secondary">Flask</Badge>
                         <Badge variant="secondary">HTML/CSS</Badge>
+                        <Badge variant="secondary">JavaScript</Badge>
+                        <Badge variant="secondary">TypeScript</Badge>
+                        <Badge variant="secondary">React.js</Badge>
+                        <Badge variant="secondary">Node.js</Badge>
                       </div>
                     </CardContent>
                   </Card>
