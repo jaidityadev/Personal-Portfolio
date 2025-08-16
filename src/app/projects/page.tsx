@@ -11,6 +11,33 @@ import Image from "next/image";
 export default function ProjectsPage() {
   const projects = [
     {
+      id: 8,
+      title: "foliyo – Customer Management System",
+      description:
+        "A single-page React + TypeScript app (built with Vite) for admins to manage customer records. Features include secure login/registration, persistent sessions, search/filtering, avatar generation, and full CRUD operations on a remote API.",
+      image: "/images/foliyo.png",
+      tags: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "React Router",
+        "DiceBear Avatars",
+        "React Icons",
+        "REST API",
+      ],
+      links: [
+        {
+          label: "View Repository",
+          url: "https://github.com/jaidityadev/foliyo",
+        },
+        {
+          label: "Live Demo",
+          url: "https://react-project-sghu.onrender.com/",
+        },
+      ],
+      featured: true,
+    },
+    {
       id: 1,
       title: "Heterogeneous Ensemble Forecasting for Disease Prediction",
       description:
