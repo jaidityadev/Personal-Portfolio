@@ -258,7 +258,53 @@ export default function HomePage() {
             </FadeIn>
 
             <StaggerIn className="space-y-8" delay={0.1} staggerDelay={0.2}>
-              {/* Project 1 */}
+              <HoverScale scale={1.01}>
+                <Card className="overflow-hidden">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
+                      <Image
+                        src="/images/foliyo.png"
+                        alt="foliyo – Customer Management System"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        priority
+                        className="object-cover object-center"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-2xl font-bold mb-2">
+                          foliyo – Customer Management System
+                        </h3>
+                        <p className="text-muted-foreground mb-4">
+                          A single-page React + TypeScript app (built with Vite) for admins to manage customer records. Features include secure login/registration, persistent sessions, search/filtering, avatar generation, and full CRUD operations on a remote API.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-6">
+                          <Badge>React</Badge>
+                          <Badge>TypeScript</Badge>
+                          <Badge>Vite</Badge>
+                          <Badge>React Router</Badge>
+                          <Badge>DiceBear Avatars</Badge>
+                          <Badge>React Icons</Badge>
+                          <Badge>REST API</Badge>
+                        </div>
+                        <div className="space-x-4">
+                          <Button variant="outline" asChild>
+                            <Link href="https://github.com/jaidityadev/foliyo">
+                              View Repository
+                            </Link>
+                          </Button>
+                          <Button variant="outline" asChild>
+                            <Link href="https://react-project-sghu.onrender.com/">
+                              Live Demo
+                            </Link>
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+                </HoverScale>
+              
+              {/* Project  2 */}
               <HoverScale scale={1.01}>
                 <Card className="overflow-hidden">
                   <div className="grid md:grid-cols-2 gap-6">
