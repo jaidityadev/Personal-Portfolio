@@ -28,7 +28,7 @@ export default function ProjectsPage() {
             ],
             links: [
                 {
-                    label: "View README",
+                    label: "View Repository",
                     url: "https://github.com/jaidityadev/foliyo_2.0",
                 },
                 {
