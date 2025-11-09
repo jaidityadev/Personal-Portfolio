@@ -19,3 +19,6 @@ node_modules
 
 # Ignore all .history directories
 .history
+
+# add .next files
+.next
