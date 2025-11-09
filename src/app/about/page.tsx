@@ -337,7 +337,7 @@ export default function AboutPage() {
                                         <CardContent className="pt-6">
                                             <div
                                                 className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                                                <h3 className="text-xl font-bold">Associate Software Developer</h3>
+                                                <h3 className="text-xl font-bold">Associate Application Developer</h3>
                                                 <div className="text-muted-foreground">
                                                     <span>July 2025 - Present</span>
                                                 </div>
@@ -351,8 +351,25 @@ export default function AboutPage() {
                                             </div>
                                             <ul className="list-disc list-inside text-muted-foreground space-y-3">
                                                 <li>
-                                                    Set to begin full-time as a Software Engineer at ADP Canada in July
-                                                    2025, focusing on building scalable payroll and HR solutions.
+                                                    Built and optimized{" "}
+                                                    <span className="font-medium text-foreground">
+                                                        data-driven enterprise workflows
+                                                    </span>{" "}using the{" "}
+                                                    <span className="font-medium text-foreground">
+                                                        ADP Lyric low-code platform
+                                                    </span>{" "}to automate HR and payroll operations.
+                                                </li>
+                                                <li>
+                                                    Developed backend systems with{" "}
+                                                    <span className="font-medium text-foreground">Spring Boot</span>{" "}and{" "}
+                                                    <span className="font-medium text-foreground">SQL</span>, enhancing data
+                                                    flow and integrating analytics for performance tracking.
+                                                </li>
+                                                <li>
+                                                    Enabled{" "}
+                                                    <span className="font-medium text-foreground">
+                                                        data-informed product decisions
+                                                    </span>{" "}by embedding analytics frameworks to monitor feature impact.
                                                 </li>
                                             </ul>
                                         </CardContent>
