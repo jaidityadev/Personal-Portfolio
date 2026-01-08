@@ -105,7 +105,10 @@ export default function Typewriter({
   return (
     <span
       className={className ? `inline-block ${className}` : "inline-block"}
-      style={{minWidth: maxPhraseLength > 0 ? `${maxPhraseLength}ch` : undefined}}
+      style={{
+        minWidth:
+          maxPhraseLength > 0 ? `min(100%, ${maxPhraseLength}ch)` : undefined,
+      }}
     >
       <span className="inline-block">{displayText}</span>
       {!prefersReducedMotion && cursor && <span className="typewriter-cursor">|</span>}
