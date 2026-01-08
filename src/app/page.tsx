@@ -45,7 +45,7 @@ export default function HomePage() {
                                     cursor
                                 />
                                 <p className="mt-3 text-muted-foreground mx-auto max-w-2xl">
-                                    I build end-to-end ML products — from data pipelines and models to dashboards and full-stack apps.
+                                    I build end-to-end ML products, from data pipelines and models to dashboards and full-stack apps.
                                 </p>
                             </div>
                         </FadeIn>
