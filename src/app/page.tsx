@@ -8,6 +8,7 @@ import FadeIn from "@/components/animations/fade-in";
 import StaggerIn from "@/components/animations/stagger-in";
 import HoverScale from "@/components/animations/hover-scale";
 import PageTransition from "@/components/animations/page-transition";
+import Typewriter from "@/components/typewriter";
 
 export default function HomePage() {
     return (
@@ -34,9 +35,19 @@ export default function HomePage() {
                             </h1>
                         </FadeIn>
                         <FadeIn delay={0.2}>
-                            <p className="text-xl md:text-2xl text-muted-foreground mx-auto max-w-2xl">
-                                Data Scientist | Full Stack Developer | Data Analyst
-                            </p>
+                            <div className="text-xl md:text-2xl text-muted-foreground mx-auto max-w-2xl">
+                                <Typewriter
+                                    phrases={[
+                                        "Data Scientist",
+                                        "ML Engineer (NLP • Forecasting)",
+                                        "Full-Stack Builder (React • Spring Boot)"
+                                    ]}
+                                    cursor
+                                />
+                                <p className="mt-3 text-muted-foreground mx-auto max-w-2xl">
+                                    I build end-to-end ML products — from data pipelines and models to dashboards and full-stack apps.
+                                </p>
+                            </div>
                         </FadeIn>
                         <FadeIn delay={0.3}>
                             <div className="flex flex-wrap justify-center gap-4 mt-8">
@@ -67,14 +78,12 @@ export default function HomePage() {
 
                         <FadeIn delay={0.1}>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                                Data Scientist
+                                Data Scientist who builds end-to-end products
                             </h2>
                             <p className="text-muted-foreground mb-12 max-w-3xl">
-                                I’m a Data Scientist with an H.B.Sc. in Applied Statistics and minors in Computer
-                                Science & Mathematics from the University of Toronto Mississauga. I specialize in
-                                statistical modeling, machine learning, and data visualization, and have applied these
-                                skills in academic research, teaching, and real-world projects.
+                                I sit at the intersection of Data Science and Software Engineering. Instead of just handing off models, I build the full-stack systems that power them. With a strong foundation in Applied Statistics and Computer Science, I focus on shipping end-to-end ML products, blending rigorous analysis with production-grade code.
                             </p>
+
                         </FadeIn>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
