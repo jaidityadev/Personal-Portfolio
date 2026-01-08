@@ -57,3 +57,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@keyframes typewriter-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  margin-left: 0.125rem;
+  animation: typewriter-blink 1s step-start infinite;
+}
