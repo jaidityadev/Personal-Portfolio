@@ -5,7 +5,13 @@ import { usePathname } from "next/navigation";
 import { LucideIcon, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -107,6 +113,10 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent>
+              <div className="sr-only">
+                <SheetTitle>Navigation</SheetTitle>
+                <SheetDescription>Mobile navigation menu</SheetDescription>
+              </div>
               <div className="flex flex-col space-y-4 mt-8">
                 {navItems.map((item) => (
                   <Link
