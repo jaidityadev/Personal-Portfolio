@@ -154,7 +154,7 @@ export default function ProjectsPage() {
                 },
                 {
                     label: "Download PDF",
-                    url: "https://drive.google.com/file/d/1KcsjoFHFaHqDlrcvc3WPUNjAn0bmwDI4/view?usp=sharing",
+                    url: "https://drive.google.com/file/d/1Mime_QXRtmFHFVR_BPnpifTOcWbbIYaZ/view?usp=sharing",
                 },
             ],
             featured: true,

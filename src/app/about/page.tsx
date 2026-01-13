@@ -18,17 +18,16 @@ export default function AboutPage() {
                         <FadeIn>
                             <h1 className="text-3xl md:text-4xl font-bold mb-4">About Me</h1>
                             <p className="text-xl text-foreground mb-6">
-                                Hi there! I'm <strong>Jaiditya Dev</strong>, a Pearson Scholar and Data Science graduate
-                                from UofT Mississauga.
-                                Ever since building my first word cloud in Python, I've been hooked on turning messy
-                                datasets into clear, impactful insights.
+                                I&apos;m <strong>Jaiditya Dev</strong>, a Pearson Scholar and Data Science graduate from
+                                UofT Mississauga. I turn messy datasets into clear stories, practical models, and
+                                decisions people can trust. My spark started with a Python word cloud, and it grew into
+                                a focus on NLP, explainable ML, and research that makes impact feel tangible.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-10">
                                 <Badge>🥇 Lester B. Pearson Scholar</Badge>
-                                <Badge>🔍 NLP & ML Enthusiast</Badge>
+                                <Badge>🔍 NLP & ML Builder</Badge>
                                 <Badge>📝 Published Researcher</Badge>
-                                <Badge>💻 Data Scientist</Badge>
-
+                                <Badge>📊 Data Storyteller</Badge>
                             </div>
                         </FadeIn>
 
@@ -778,7 +777,7 @@ export default function AboutPage() {
                                             <div className="mt-4">
                                                 <Button variant="outline" asChild>
                                                     <Link
-                                                        href="https://drive.google.com/file/d/1KcsjoFHFaHqDlrcvc3WPUNjAn0bmwDI4/view?usp=sharing"
+                                                        href="https://drive.google.com/file/d/1Mime_QXRtmFHFVR_BPnpifTOcWbbIYaZ/view?usp=sharing"
                                                         target="_blank"
                                                     >
                                                         Download PDF

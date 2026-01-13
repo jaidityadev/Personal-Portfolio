@@ -62,7 +62,7 @@ export default function Footer() {
               <Linkedin className="h-5 w-5" />
             </Link>
             <Link 
-              href="https://drive.google.com/file/d/1ugwHznEzrnilO2pXeAgk8hEnJg3WScfj/view?usp=share_link" 
+              href="https://drive.google.com/file/d/1Mime_QXRtmFHFVR_BPnpifTOcWbbIYaZ/view?usp=sharing" 
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View Resume" 
