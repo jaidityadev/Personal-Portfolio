@@ -12,7 +12,7 @@ export default function Footer() {
         <div>
           <h3 className="font-medium mb-2">Portfolio</h3>
           <p className="text-sm text-muted-foreground">
-            © {year} Jaiditya Dev. All rights reserved.
+            ©{year} Jaiditya Dev. All rights reserved.
           </p>
         </div>
 

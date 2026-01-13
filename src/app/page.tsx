@@ -263,6 +263,260 @@ export default function HomePage() {
                     </div>
                 </section>
 
+                {/* Leadership & Experience */}
+                <section className="py-12">
+                    <div className="container mx-auto px-4">
+                        <FadeIn>
+                            <div className="flex items-center gap-2 mb-8">
+                                <div className="size-5 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <span className="size-2 rounded-full bg-primary"/>
+                                </div>
+                                <h2 className="text-sm font-medium uppercase text-muted-foreground">
+                                    Leadership & Experience
+                                </h2>
+                            </div>
+                        </FadeIn>
+
+                        <FadeIn delay={0.1}>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                                Technical leadership with measurable outcomes
+                            </h2>
+                            <p className="text-muted-foreground mb-10 max-w-3xl">
+                                Highlights from roles where I led teams, delivered ML products, and scaled
+                                data-driven systems. Each experience reflects ownership from strategy to
+                                execution.
+                            </p>
+                        </FadeIn>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <FadeIn delay={0.2} direction="up">
+                                <HoverScale>
+                                    <Card className="bg-card/50 h-full">
+                                        <CardHeader className="pb-2">
+                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                                <span className="size-8 rounded-full bg-blue-500/10 flex items-center justify-center">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        className="text-blue-500"
+                                                    >
+                                                        <circle cx="12" cy="12" r="10"/>
+                                                        <path d="M12 6v6l4 2"/>
+                                                    </svg>
+                                                </span>
+                                                2+ Years
+                                            </div>
+                                            <CardTitle className="text-lg mt-3">Data Scientist / ML Engineer</CardTitle>
+                                        </CardHeader>
+                                        <CardContent className="pt-2">
+                                            <p className="text-sm text-muted-foreground">
+                                                Led end-to-end ML delivery from experimentation to production, building
+                                                forecasting and NLP pipelines that improved decision-making and reduced
+                                                manual analysis.
+                                            </p>
+                                        </CardContent>
+                                    </Card>
+                                </HoverScale>
+                            </FadeIn>
+
+                            <FadeIn delay={0.3} direction="up">
+                                <HoverScale>
+                                    <Card className="bg-card/50 h-full">
+                                        <CardHeader className="pb-2">
+                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                                <span className="size-8 rounded-full bg-purple-500/10 flex items-center justify-center">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        className="text-purple-500"
+                                                    >
+                                                        <path d="M8 21h8"/>
+                                                        <path d="M12 17v4"/>
+                                                        <path d="M8 7V5a4 4 0 0 1 8 0v2"/>
+                                                        <path d="M6 7h12a2 2 0 0 1 2 2v3a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V9a2 2 0 0 1 2-2Z"/>
+                                                    </svg>
+                                                </span>
+                                                1 Year
+                                            </div>
+                                            <CardTitle className="text-lg mt-3">Generative AI Engineer</CardTitle>
+                                        </CardHeader>
+                                        <CardContent className="pt-2">
+                                            <p className="text-sm text-muted-foreground">
+                                                Designed retrieval-augmented workflows and prompt libraries, shipping
+                                                GenAI features that accelerated content workflows and internal support
+                                                operations.
+                                            </p>
+                                        </CardContent>
+                                    </Card>
+                                </HoverScale>
+                            </FadeIn>
+
+                            <FadeIn delay={0.4} direction="up">
+                                <HoverScale>
+                                    <Card className="bg-card/50 h-full">
+                                        <CardHeader className="pb-2">
+                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                                <span className="size-8 rounded-full bg-emerald-500/10 flex items-center justify-center">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        className="text-emerald-500"
+                                                    >
+                                                        <path d="M3 7h18"/>
+                                                        <path d="M6 7v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7"/>
+                                                        <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/>
+                                                    </svg>
+                                                </span>
+                                                1 Year
+                                            </div>
+                                            <CardTitle className="text-lg mt-3">Full Stack Engineer</CardTitle>
+                                        </CardHeader>
+                                        <CardContent className="pt-2">
+                                            <p className="text-sm text-muted-foreground">
+                                                Built responsive web apps with React and Spring Boot, delivering secure
+                                                APIs, analytics dashboards, and production-ready deployments.
+                                            </p>
+                                        </CardContent>
+                                    </Card>
+                                </HoverScale>
+                            </FadeIn>
+
+                            <FadeIn delay={0.5} direction="up">
+                                <HoverScale>
+                                    <Card className="bg-card/50 h-full">
+                                        <CardHeader className="pb-2">
+                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                                <span className="size-8 rounded-full bg-red-500/10 flex items-center justify-center">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        className="text-red-500"
+                                                    >
+                                                        <path d="M12 2v20"/>
+                                                        <path d="M2 12h20"/>
+                                                        <path d="m5 7 14 10"/>
+                                                        <path d="m19 7-14 10"/>
+                                                    </svg>
+                                                </span>
+                                                2+ Years
+                                            </div>
+                                            <CardTitle className="text-lg mt-3">Data Engineer</CardTitle>
+                                        </CardHeader>
+                                        <CardContent className="pt-2">
+                                            <p className="text-sm text-muted-foreground">
+                                                Owned ETL pipelines, data quality checks, and warehouse migrations,
+                                                enabling faster analytics and reliable reporting at scale.
+                                            </p>
+                                        </CardContent>
+                                    </Card>
+                                </HoverScale>
+                            </FadeIn>
+
+                            <FadeIn delay={0.6} direction="up">
+                                <HoverScale>
+                                    <Card className="bg-card/50 h-full">
+                                        <CardHeader className="pb-2">
+                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                                <span className="size-8 rounded-full bg-orange-500/10 flex items-center justify-center">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        className="text-orange-500"
+                                                    >
+                                                        <path d="M12 2 6 7l6 5 6-5-6-5Z"/>
+                                                        <path d="M6 12v5a6 6 0 0 0 12 0v-5"/>
+                                                    </svg>
+                                                </span>
+                                                3+ Years
+                                            </div>
+                                            <CardTitle className="text-lg mt-3">Teaching Assistant</CardTitle>
+                                        </CardHeader>
+                                        <CardContent className="pt-2">
+                                            <p className="text-sm text-muted-foreground">
+                                                Mentored students in AI (regression to neural networks), programming fundamentals, and statistics; built lesson plans and coached them through challenging concepts and projects.
+                                            </p>
+                                        </CardContent>
+                                    </Card>
+                                </HoverScale>
+                            </FadeIn>
+
+                            <FadeIn delay={0.7} direction="up">
+                                <HoverScale>
+                                    <Card className="bg-card/50 h-full">
+                                        <CardHeader className="pb-2">
+                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                                <span className="size-8 rounded-full bg-cyan-500/10 flex items-center justify-center">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        className="text-cyan-500"
+                                                    >
+                                                        <path d="M2 20h20"/>
+                                                        <path d="M6 20V10"/>
+                                                        <path d="M12 20V4"/>
+                                                        <path d="M18 20v-6"/>
+                                                    </svg>
+                                                </span>
+                                                2 Years
+                                            </div>
+                                            <CardTitle className="text-lg mt-3">President, Residence Council</CardTitle>
+                                        </CardHeader>
+                                        <CardContent className="pt-2">
+                                            <p className="text-sm text-muted-foreground">
+                                                Led a 25-person team to deliver events for 200+ attendees, managing annual budgets of $20,000+, 
+                                                sponsorships, and cross‑functional execution over two years.
+                                            </p>
+                                        </CardContent>
+                                    </Card>
+                                </HoverScale>
+                            </FadeIn>
+                        </div>
+                    </div>
+                </section>
+
+
                 {/* Featured Projects */}
                 <section className="py-12">
                     <div className="container mx-auto px-4">
