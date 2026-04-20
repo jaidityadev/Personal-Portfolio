@@ -350,25 +350,20 @@ export default function AboutPage() {
                                             </div>
                                             <ul className="list-disc list-inside text-muted-foreground space-y-3">
                                                 <li>
-                                                    Built and optimized{" "}
-                                                    <span className="font-medium text-foreground">
-                                                        data-driven enterprise workflows
-                                                    </span>{" "}using the{" "}
-                                                    <span className="font-medium text-foreground">
-                                                        ADP Lyric low-code platform
-                                                    </span>{" "}to automate HR and payroll operations.
+                                                    Built and improved ML-powered tax workflows, including document
+                                                    classification and role-based routing pipelines that support production
+                                                    HR and payroll operations.
                                                 </li>
                                                 <li>
-                                                    Developed backend systems with{" "}
-                                                    <span className="font-medium text-foreground">Spring Boot</span>{" "}and{" "}
-                                                    <span className="font-medium text-foreground">SQL</span>, enhancing data
-                                                    flow and integrating analytics for performance tracking.
+                                                    <span className="font-medium text-foreground">MCP server</span>{" "}
+                                                    (Model Context Protocol) wrapping enterprise REST endpoints, enabling
+                                                    structured tool-use for LLM-based assistants in production.
                                                 </li>
                                                 <li>
-                                                    Enabled{" "}
-                                                    <span className="font-medium text-foreground">
-                                                        data-informed product decisions
-                                                    </span>{" "}by embedding analytics frameworks to monitor feature impact.
+                                                    Migrated a tax assistant from a custom RAG orchestrator to an{" "}
+                                                    <span className="font-medium text-foreground">agentic architecture</span>{" "}
+                                                    using Strands Agents, improving modularity and tool-routing across five
+                                                    specialized endpoints while improving observability of model outcomes.
                                                 </li>
                                             </ul>
                                         </CardContent>
