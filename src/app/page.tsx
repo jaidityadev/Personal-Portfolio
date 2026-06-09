@@ -1,732 +1,364 @@
 import Image from "next/image";
 import Link from "next/link";
-import {Button} from "@/components/ui/button";
-import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
-import {Separator} from "@/components/ui/separator";
-import {Badge} from "@/components/ui/badge";
+import { ArrowRight, FileText, Github, Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import FadeIn from "@/components/animations/fade-in";
 import StaggerIn from "@/components/animations/stagger-in";
-import HoverScale from "@/components/animations/hover-scale";
 import PageTransition from "@/components/animations/page-transition";
-import Typewriter from "@/components/typewriter";
+import ProofBar from "@/components/proof-bar";
+import SectionHeading from "@/components/section-heading";
+import ForecastChart from "@/components/forecast-chart";
+import DecodeText from "@/components/decode-text";
+import ProjectCaseStudyCard, {
+  type CaseStudyProject,
+} from "@/components/project-case-study-card";
+
+const RESUME_URL =
+  "https://drive.google.com/file/d/1Mime_QXRtmFHFVR_BPnpifTOcWbbIYaZ/view?usp=sharing";
+
+const pillars = [
+  {
+    title: "ML & Forecasting",
+    description:
+      "Classification, ensemble forecasting, and statistical modeling, grounded in an Applied Statistics degree and peer-reviewed research.",
+    tags: ["Python", "R", "scikit-learn", "PyTorch", "ARIMA", "Ensembles"],
+  },
+  {
+    title: "GenAI & Agentic Systems",
+    description:
+      "RAG pipelines, MCP servers, and agentic architectures running in production. Structured tool use for LLM assistants over enterprise APIs.",
+    tags: ["MCP", "Strands Agents", "RAG", "OpenAI API", "Hugging Face"],
+  },
+  {
+    title: "Full-Stack Engineering",
+    description:
+      "The product around the model: secure APIs, dashboards, and deployed apps with auth, persistence, and CI-ready tooling.",
+    tags: ["React", "TypeScript", "Spring Boot", "MongoDB", "Docker"],
+  },
+];
+
+const highlights = [
+  {
+    role: "AI Engineering @ ADP Canada",
+    period: "2024 – Present",
+    detail:
+      "Production MCP server, a RAG-to-agentic migration across five tool endpoints, and ML document pipelines for HR and payroll tax systems.",
+  },
+  {
+    role: "Published Researcher",
+    period: "2020 – 2022",
+    detail:
+      "Four peer-reviewed publications, including Springer's New Generation Computing, a CRC Press book chapter, and the UofT Journal of Public Health.",
+  },
+  {
+    role: "Teaching ML & Statistics",
+    period: "3+ years",
+    detail:
+      "TA for probability and modelling at UofT and for the LearnAI program, covering everything from regression to neural networks and computer vision.",
+  },
+  {
+    role: "President, UTM Residence Council",
+    period: "2022 – 2024",
+    detail:
+      "Led a 25-person team, managed $20K+ annual budgets, and delivered events for 200+ attendees over two years.",
+  },
+];
+
+const featuredProjects: CaseStudyProject[] = [
+  {
+    title: "Foliyo 2.0: AI-Powered Event Management Platform",
+    category: "Full-Stack · GenAI",
+    image: "/images/foliyo2.png",
+    problem:
+      "Event organizers juggle registration, role management, and attendee questions across disconnected tools.",
+    built:
+      "A Spring Boot + React platform with role-aware dashboards, RS256 JWT auth, MongoDB persistence, OpenAPI-documented REST APIs, and an OpenAI-powered copilot for natural-language event discovery, all containerized and deployed.",
+    impact:
+      "I owned every layer in one codebase: auth, the data model, API design, LLM integration, and deployment.",
+    tags: ["Spring Boot", "React", "TypeScript", "MongoDB", "OpenAI", "Docker"],
+    links: [
+      { label: "Live App", url: "https://foliyo-2-0.onrender.com" },
+      { label: "Repository", url: "https://github.com/jaidityadev/foliyo_2.0" },
+    ],
+    priority: true,
+  },
+  {
+    title: "Tax Document Intelligence at ADP",
+    category: "NLP · Production ML",
+    image: "/images/tax.png",
+    problem:
+      "Classifying tax forms manually across 800,000+ live records doesn't scale.",
+    built:
+      "An ML classification system identifying tax form types in real time, with refined keyword-search algorithms and stakeholder-facing visualizations.",
+    impact:
+      "Runs against production payroll data and became the foundation for the document-routing pipelines I now own full-time.",
+    tags: ["Python", "Classification", "NLP", "Data Viz", "800K+ records"],
+    links: [],
+  },
+  {
+    title: "Disease Outbreak Forecasting (Springer)",
+    category: "Research · Machine Learning",
+    image: "/images/disease_prediction.png",
+    problem:
+      "Single-model forecasts of dengue and tuberculosis outbreaks are brittle across regions and seasons.",
+    built:
+      "A heterogeneous ensemble (ARIMA, NNAR, CART, CTREE) combining statistical and tree-based learners to stabilize outbreak predictions.",
+    impact:
+      "Peer-reviewed and published in New Generation Computing (Springer); supports proactive public-health planning.",
+    tags: ["R", "Ensemble Forecasting", "ARIMA", "NNAR", "CART"],
+    links: [
+      { label: "Publication", url: "https://doi.org/10.1007/s00354-020-00119-7" },
+    ],
+  },
+];
 
 export default function HomePage() {
-    return (
-        <PageTransition>
-            <div className="flex flex-col min-h-screen">
-                {/* Hero Section */}
-                <section className="py-12 md:py-16 text-center">
-                    <div className="container mx-auto px-4">
-                        <FadeIn>
-                            <div
-                                className="relative mx-auto mb-8 w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-muted bg-muted">
-                                <Image
-                                    src="/images/profile.jpg"
-                                    alt="Jaiditya Dev"
-                                    width={160}
-                                    height={160}
-                                    className="object-cover"
-                                />
-                            </div>
-                        </FadeIn>
-                        <FadeIn delay={0.1}>
-                            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                                Hi, I&apos;m Jaiditya Dev
-                            </h1>
-                        </FadeIn>
-                        <FadeIn delay={0.2}>
-                            <div className="text-xl md:text-2xl text-muted-foreground mx-auto max-w-2xl">
-                                <Typewriter
-                                    phrases={[
-                                        "Data Scientist",
-                                        "ML Engineer (NLP • Forecasting)",
-                                        "Full-Stack Builder (React • Spring Boot)"
-                                    ]}
-                                    cursor
-                                />
-                                <p className="mt-3 text-muted-foreground mx-auto max-w-2xl">
-                                    I build end-to-end ML products, from data pipelines and models to dashboards and full-stack apps.
-                                </p>
-                            </div>
-                        </FadeIn>
-                        <FadeIn delay={0.3}>
-                            <div className="flex flex-wrap justify-center gap-4 mt-8">
-                                <Button asChild variant="default" size="lg">
-                                    <Link href="/contact">Get in Touch</Link>
-                                </Button>
-                                <Button asChild variant="outline" size="lg">
-                                    <Link href="/projects">View Projects</Link>
-                                </Button>
-                            </div>
-                        </FadeIn>
+  return (
+    <PageTransition>
+      <div className="flex flex-col min-h-screen">
+        {/* Hero */}
+        <section className="relative overflow-hidden">
+          <div className="absolute inset-0 bg-dots bg-dots-fade pointer-events-none" />
+          {/* cinematic depth: soft accent washes behind the headline */}
+          <div className="absolute -top-32 -left-32 h-[480px] w-[600px] rounded-full bg-primary/[0.08] blur-3xl pointer-events-none" />
+          <div className="absolute top-40 right-0 h-[320px] w-[400px] rounded-full bg-primary/[0.05] blur-3xl pointer-events-none" />
+          <div className="container mx-auto px-4 relative py-20 md:py-28">
+            <div className="grid lg:grid-cols-[1.4fr_1fr] gap-12 items-center mb-16">
+              <div>
+                <FadeIn>
+                  <div className="inline-flex items-center gap-2 rounded-full border bg-background/60 px-3 py-1 mb-6">
+                    <span className="relative flex size-2">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60" />
+                      <span className="relative inline-flex size-2 rounded-full bg-primary" />
+                    </span>
+                    <span className="font-mono text-xs text-muted-foreground">
+                      Currently: building agentic AI for tax systems at ADP
+                      Canada
+                    </span>
+                  </div>
+                </FadeIn>
+                <FadeIn delay={0.1}>
+                  <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] mb-6">
+                    Published at 17.
+                    <br />
+                    Shipping production AI at{" "}
+                    <span className="text-primary">ADP</span>.
+                  </h1>
+                </FadeIn>
+                <FadeIn delay={0.2}>
+                  <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4">
+                    I&apos;m Jaiditya Dev, a data scientist and AI engineer. I
+                    own the whole pipeline: data, models, APIs, and the product
+                    around them.
+                  </p>
+                  <p className="font-mono text-sm uppercase tracking-[0.2em] text-muted-foreground mb-8">
+                    <DecodeText text="DATA SCIENCE · ML ENGINEERING · GENAI SYSTEMS" />
+                  </p>
+                </FadeIn>
+                <FadeIn delay={0.25}>
+                  <div className="flex flex-wrap items-center gap-4">
+                    <Button asChild size="lg">
+                      <Link href="/projects">
+                        See my work
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                    <Button asChild variant="outline" size="lg">
+                      <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
+                        <FileText className="mr-2 h-4 w-4" />
+                        View resume
+                      </a>
+                    </Button>
+                    <div className="flex items-center gap-3 sm:ml-2">
+                      <a
+                        href="https://github.com/jaidityadev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <Github className="h-5 w-5" />
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/jaidityadev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <Linkedin className="h-5 w-5" />
+                      </a>
                     </div>
-                </section>
-
-                {/* About Me Section */}
-                <section className="py-12 bg-muted/50">
-                    <div className="container mx-auto px-4">
-                        <FadeIn>
-                            <div className="flex items-center gap-2 mb-8">
-                                <div className="size-5 rounded-full bg-primary/20 flex items-center justify-center">
-                                    <span className="size-2 rounded-full bg-primary"/>
-                                </div>
-                                <h2 className="text-sm font-medium uppercase text-muted-foreground">
-                                    About Me
-                                </h2>
-                            </div>
-                        </FadeIn>
-
-                        <FadeIn delay={0.1}>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                                Data Scientist who builds end-to-end products
-                            </h2>
-                            <p className="text-muted-foreground mb-12 max-w-3xl">
-                                I sit at the intersection of Data Science and Software Engineering. Instead of just handing off models, I build the full-stack systems that power them. With a strong foundation in Applied Statistics and Computer Science, I focus on shipping end-to-end ML products, blending rigorous analysis with production-grade code.
-                            </p>
-
-                        </FadeIn>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {/* Background */}
-                            <FadeIn delay={0.2} direction="up">
-                                <HoverScale>
-                                    <Card className="bg-card/50 h-full">
-                                        <CardHeader className="pb-2">
-                                            <div className="flex items-center gap-2">
-                        <span className="bg-blue-500/10 p-2 rounded-full">
-                          <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              className="text-blue-500"
-                          >
-                            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
-                          </svg>
-                        </span>
-                                                <CardTitle className="text-lg">Background</CardTitle>
-                                            </div>
-                                        </CardHeader>
-                                        <CardContent className="pt-2">
-                                            <p className="text-sm text-muted-foreground">
-                                                Graduated with an H.B.Sc. in Applied Statistics, with minors in Computer
-                                                Science & Mathematics, from the University of Toronto Mississauga.
-                                                Recipient of the Lester B. Pearson International Scholarship (Full-Ride)
-                                                and a Dean’s List Scholar.
-                                            </p>
-                                        </CardContent>
-                                    </Card>
-                                </HoverScale>
-                            </FadeIn>
-
-                            {/* AI & Machine Learning */}
-                            <FadeIn delay={0.3} direction="up">
-                                <HoverScale>
-                                    <Card className="bg-card/50 h-full">
-                                        <CardHeader className="pb-2">
-                                            <div className="flex items-center gap-2">
-                        <span className="bg-purple-500/10 p-2 rounded-full">
-                          <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              className="text-purple-500"
-                          >
-                            <path d="M12 2H2v10h10V2Z"/>
-                            <path d="M22 2h-5v5h5V2Z"/>
-                            <path d="M22 12h-5v10h5V12Z"/>
-                            <path d="M12 12H7v5h5v-5Z"/>
-                            <path d="M7 17H2v5h5v-5Z"/>
-                          </svg>
-                        </span>
-                                                <CardTitle className="text-lg">Machine Learning</CardTitle>
-                                            </div>
-                                        </CardHeader>
-                                        <CardContent className="pt-2">
-                                            <div className="flex flex-wrap gap-2">
-                                                <Badge variant="secondary">Classification Models</Badge>
-                                                <Badge variant="secondary">Ensemble Forecasting</Badge>
-                                                <Badge variant="secondary">Predictive Modeling</Badge>
-                                                <Badge variant="secondary">ARIMA</Badge>
-                                                <Badge variant="secondary">CART</Badge>
-                                                <Badge variant="secondary">Random Forest</Badge>
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                </HoverScale>
-                            </FadeIn>
-
-                            {/* Programming */}
-                            <FadeIn delay={0.4} direction="up">
-                                <HoverScale>
-                                    <Card className="bg-card/50 h-full">
-                                        <CardHeader className="pb-2">
-                                            <div className="flex items-center gap-2">
-                        <span className="bg-green-500/10 p-2 rounded-full">
-                          <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              className="text-green-500"
-                          >
-                            <polyline points="16 18 22 12 16 6"/>
-                            <polyline points="8 6 2 12 8 18"/>
-                          </svg>
-                        </span>
-                                                <CardTitle className="text-lg">Programming</CardTitle>
-                                            </div>
-                                        </CardHeader>
-                                        <CardContent className="pt-2">
-                                            <div className="flex flex-wrap gap-2">
-                                                <Badge variant="secondary">R</Badge>
-                                                <Badge variant="secondary">Python</Badge>
-                                                <Badge variant="secondary">Java</Badge>
-                                                <Badge variant="secondary">SQL</Badge>
-                                                <Badge variant="secondary">PyTorch</Badge>
-                                                <Badge variant="secondary">TensorFlow</Badge>
-                                                <Badge variant="secondary">Flask</Badge>
-                                                <Badge variant="secondary">HTML/CSS</Badge>
-                                                <Badge variant="secondary">JavaScript</Badge>
-                                                <Badge variant="secondary">TypeScript</Badge>
-                                                <Badge variant="secondary">React.js</Badge>
-                                                <Badge variant="secondary">Node.js</Badge>
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                </HoverScale>
-                            </FadeIn>
-
-                            {/* Data Science */}
-                            <FadeIn delay={0.5} direction="up">
-                                <HoverScale>
-                                    <Card className="bg-card/50 h-full">
-                                        <CardHeader className="pb-2">
-                                            <div className="flex items-center gap-2">
-                        <span className="bg-red-500/10 p-2 rounded-full">
-                          <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              className="text-red-500"
-                          >
-                            <path d="M12 22s8-4 8-10V4l-8-2-8 2v8c0 6 8 10 8 10Z"/>
-                          </svg>
-                        </span>
-                                                <CardTitle className="text-lg">Data Science</CardTitle>
-                                            </div>
-                                        </CardHeader>
-                                        <CardContent className="pt-2">
-                                            <div className="flex flex-wrap gap-2">
-                                                <Badge variant="secondary">Statistical Modeling</Badge>
-                                                <Badge variant="secondary">Data Visualization</Badge>
-                                                <Badge variant="secondary">Pandas</Badge>
-                                                <Badge variant="secondary">NumPy</Badge>
-                                                <Badge variant="secondary">scikit-learn</Badge>
-                                                <Badge variant="secondary">Hugging Face</Badge>
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                </HoverScale>
-                            </FadeIn>
-                        </div>
-
-                        <FadeIn delay={0.6}>
-                            <div className="flex justify-center mt-10">
-                                <Button asChild variant="outline">
-                                    <Link href="/about">Learn More About Me →</Link>
-                                </Button>
-                            </div>
-                        </FadeIn>
+                  </div>
+                </FadeIn>
+              </div>
+              <FadeIn delay={0.2} direction="left" className="hidden lg:block">
+                <div className="mx-auto w-72 space-y-4">
+                  <div className="relative w-72 h-72">
+                    <div className="absolute -inset-3 rounded-3xl bg-primary/10 blur-2xl" />
+                    <div className="relative w-full h-full rounded-2xl overflow-hidden border border-primary/30">
+                      <Image
+                        src="/images/profile.jpg"
+                        alt="Jaiditya Dev"
+                        fill
+                        sizes="288px"
+                        priority
+                        className="object-cover"
+                      />
                     </div>
-                </section>
-
-                {/* Leadership & Experience */}
-                <section className="py-12">
-                    <div className="container mx-auto px-4">
-                        <FadeIn>
-                            <div className="flex items-center gap-2 mb-8">
-                                <div className="size-5 rounded-full bg-primary/20 flex items-center justify-center">
-                                    <span className="size-2 rounded-full bg-primary"/>
-                                </div>
-                                <h2 className="text-sm font-medium uppercase text-muted-foreground">
-                                    Leadership & Experience
-                                </h2>
-                            </div>
-                        </FadeIn>
-
-                        <FadeIn delay={0.1}>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                                Technical leadership with measurable outcomes
-                            </h2>
-                            <p className="text-muted-foreground mb-10 max-w-3xl">
-                                Highlights from roles where I led teams, delivered ML products, and scaled
-                                data-driven systems. Each experience reflects ownership from strategy to
-                                execution.
-                            </p>
-                        </FadeIn>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <FadeIn delay={0.2} direction="up">
-                                <HoverScale>
-                                    <Card className="bg-card/50 h-full">
-                                        <CardHeader className="pb-2">
-                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                                                <span className="size-8 rounded-full bg-blue-500/10 flex items-center justify-center">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="16"
-                                                        height="16"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                        className="text-blue-500"
-                                                    >
-                                                        <circle cx="12" cy="12" r="10"/>
-                                                        <path d="M12 6v6l4 2"/>
-                                                    </svg>
-                                                </span>
-                                                2+ Years
-                                            </div>
-                                            <CardTitle className="text-lg mt-3">Data Scientist / ML Engineer</CardTitle>
-                                        </CardHeader>
-                                        <CardContent className="pt-2">
-                                            <p className="text-sm text-muted-foreground">
-                                                Led end-to-end ML delivery from experimentation to production, building
-                                                forecasting and NLP pipelines that improved decision-making and reduced
-                                                manual analysis.
-                                            </p>
-                                        </CardContent>
-                                    </Card>
-                                </HoverScale>
-                            </FadeIn>
-
-                            <FadeIn delay={0.3} direction="up">
-                                <HoverScale>
-                                    <Card className="bg-card/50 h-full">
-                                        <CardHeader className="pb-2">
-                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                                                <span className="size-8 rounded-full bg-purple-500/10 flex items-center justify-center">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="16"
-                                                        height="16"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                        className="text-purple-500"
-                                                    >
-                                                        <path d="M8 21h8"/>
-                                                        <path d="M12 17v4"/>
-                                                        <path d="M8 7V5a4 4 0 0 1 8 0v2"/>
-                                                        <path d="M6 7h12a2 2 0 0 1 2 2v3a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V9a2 2 0 0 1 2-2Z"/>
-                                                    </svg>
-                                                </span>
-                                                1 Year
-                                            </div>
-                                            <CardTitle className="text-lg mt-3">Generative AI Engineer</CardTitle>
-                                        </CardHeader>
-                                        <CardContent className="pt-2">
-                                            <p className="text-sm text-muted-foreground">
-                                                Designed retrieval-augmented workflows and prompt libraries, shipping
-                                                GenAI features that accelerated content workflows and internal support
-                                                operations.
-                                            </p>
-                                        </CardContent>
-                                    </Card>
-                                </HoverScale>
-                            </FadeIn>
-
-                            <FadeIn delay={0.4} direction="up">
-                                <HoverScale>
-                                    <Card className="bg-card/50 h-full">
-                                        <CardHeader className="pb-2">
-                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                                                <span className="size-8 rounded-full bg-emerald-500/10 flex items-center justify-center">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="16"
-                                                        height="16"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                        className="text-emerald-500"
-                                                    >
-                                                        <path d="M3 7h18"/>
-                                                        <path d="M6 7v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7"/>
-                                                        <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/>
-                                                    </svg>
-                                                </span>
-                                                1 Year
-                                            </div>
-                                            <CardTitle className="text-lg mt-3">Full Stack Engineer</CardTitle>
-                                        </CardHeader>
-                                        <CardContent className="pt-2">
-                                            <p className="text-sm text-muted-foreground">
-                                                Built responsive web apps with React and Spring Boot, delivering secure
-                                                APIs, analytics dashboards, and production-ready deployments.
-                                            </p>
-                                        </CardContent>
-                                    </Card>
-                                </HoverScale>
-                            </FadeIn>
-
-                            <FadeIn delay={0.5} direction="up">
-                                <HoverScale>
-                                    <Card className="bg-card/50 h-full">
-                                        <CardHeader className="pb-2">
-                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                                                <span className="size-8 rounded-full bg-red-500/10 flex items-center justify-center">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="16"
-                                                        height="16"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                        className="text-red-500"
-                                                    >
-                                                        <path d="M12 2v20"/>
-                                                        <path d="M2 12h20"/>
-                                                        <path d="m5 7 14 10"/>
-                                                        <path d="m19 7-14 10"/>
-                                                    </svg>
-                                                </span>
-                                                2+ Years
-                                            </div>
-                                            <CardTitle className="text-lg mt-3">Data Engineer</CardTitle>
-                                        </CardHeader>
-                                        <CardContent className="pt-2">
-                                            <p className="text-sm text-muted-foreground">
-                                                Owned ETL pipelines, data quality checks, and warehouse migrations,
-                                                enabling faster analytics and reliable reporting at scale.
-                                            </p>
-                                        </CardContent>
-                                    </Card>
-                                </HoverScale>
-                            </FadeIn>
-
-                            <FadeIn delay={0.6} direction="up">
-                                <HoverScale>
-                                    <Card className="bg-card/50 h-full">
-                                        <CardHeader className="pb-2">
-                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                                                <span className="size-8 rounded-full bg-orange-500/10 flex items-center justify-center">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="16"
-                                                        height="16"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                        className="text-orange-500"
-                                                    >
-                                                        <path d="M12 2 6 7l6 5 6-5-6-5Z"/>
-                                                        <path d="M6 12v5a6 6 0 0 0 12 0v-5"/>
-                                                    </svg>
-                                                </span>
-                                                3+ Years
-                                            </div>
-                                            <CardTitle className="text-lg mt-3">Teaching Assistant</CardTitle>
-                                        </CardHeader>
-                                        <CardContent className="pt-2">
-                                            <p className="text-sm text-muted-foreground">
-                                                Mentored students in AI (regression to neural networks), programming fundamentals, and statistics; built lesson plans and coached them through challenging concepts and projects.
-                                            </p>
-                                        </CardContent>
-                                    </Card>
-                                </HoverScale>
-                            </FadeIn>
-
-                            <FadeIn delay={0.7} direction="up">
-                                <HoverScale>
-                                    <Card className="bg-card/50 h-full">
-                                        <CardHeader className="pb-2">
-                                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                                                <span className="size-8 rounded-full bg-cyan-500/10 flex items-center justify-center">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="16"
-                                                        height="16"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                        className="text-cyan-500"
-                                                    >
-                                                        <path d="M2 20h20"/>
-                                                        <path d="M6 20V10"/>
-                                                        <path d="M12 20V4"/>
-                                                        <path d="M18 20v-6"/>
-                                                    </svg>
-                                                </span>
-                                                2 Years
-                                            </div>
-                                            <CardTitle className="text-lg mt-3">President, Residence Council</CardTitle>
-                                        </CardHeader>
-                                        <CardContent className="pt-2">
-                                            <p className="text-sm text-muted-foreground">
-                                                Led a 25-person team to deliver events for 200+ attendees, managing annual budgets of $20,000+, 
-                                                sponsorships, and cross‑functional execution over two years.
-                                            </p>
-                                        </CardContent>
-                                    </Card>
-                                </HoverScale>
-                            </FadeIn>
-                        </div>
-                    </div>
-                </section>
-
-
-                {/* Featured Projects */}
-                <section className="py-12">
-                    <div className="container mx-auto px-4">
-                        <FadeIn>
-                            <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
-                            <p className="text-muted-foreground mb-12">
-                                A selection of my recent work in data science and machine learning
-                            </p>
-                        </FadeIn>
-
-                        <StaggerIn className="space-y-8" delay={0.1} staggerDelay={0.2}>
-                            <HoverScale scale={1.01}>
-                                <Card className="overflow-hidden">
-                                    <div className="grid md:grid-cols-2 gap-6">
-                                        <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
-
-                                            <Image
-                                                src="/images/foliyo2.png"
-                                                alt="Foliyo 2.0 – AI-Powered Event Management Platform"
-                                                fill
-                                                sizes="(max-width: 768px) 100vw, 50vw"
-                                                priority
-                                                className="object-cover object-center"
-                                            />
-
-                                        </div>
-                                        <div className="p-6">
-                                            <h3 className="text-2xl font-bold mb-2">
-                                                Foliyo 2.0 – AI-Powered Event Management Platform
-                                            </h3>
-                                            <p className="text-muted-foreground mb-4">
-                                                A full-stack Spring Boot + React platform that streamlines the entire
-                                                event lifecycle with role-aware dashboards, secure JWT auth, MongoDB
-                                                persistence, and an OpenAI-assisted chat copilot. Features include REST
-                                                + OpenAPI APIs, admin + attendee workflows, and AI-powered event
-                                                discovery.
-                                            </p>
-                                            <div className="flex flex-wrap gap-2 mb-6">
-                                                <Badge>Spring Boot</Badge>
-                                                <Badge>React</Badge>
-                                                <Badge>TypeScript</Badge>
-                                                <Badge>MongoDB</Badge>
-                                                <Badge>JWT</Badge>
-                                                <Badge>OpenAI API</Badge>
-                                                <Badge>Gradle</Badge>
-                                                <Badge>Docker</Badge>
-                                            </div>
-                                            <div className="space-x-4">
-                                                <Button variant="outline" asChild>
-                                                    <Link href="https://github.com/jaidityadev/foliyo_2.0">
-                                                        View Repository
-                                                    </Link>
-                                                </Button>
-                                                <Button variant="outline" asChild>
-                                                    <Link href="https://foliyo-2-0.onrender.com">
-                                                        Live App
-                                                    </Link>
-                                                </Button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Card>
-                            </HoverScale>
-
-
-                            <HoverScale scale={1.01}>
-                                <Card className="overflow-hidden">
-                                    <div className="grid md:grid-cols-2 gap-6">
-                                        <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
-                                            <Image
-                                                src="/images/foliyo.png"
-                                                alt="foliyo – Customer Management System"
-                                                fill
-                                                sizes="(max-width: 768px) 100vw, 50vw"
-                                                priority
-                                                className="object-cover object-center"
-                                            />
-                                        </div>
-                                        <div className="p-6">
-                                            <h3 className="text-2xl font-bold mb-2">
-                                                foliyo – Customer Management System
-                                            </h3>
-                                            <p className="text-muted-foreground mb-4">
-                                                A single-page React + TypeScript app (built with Vite) for admins to
-                                                manage customer records. Features include secure login/registration,
-                                                persistent sessions, search/filtering, avatar generation, and full CRUD
-                                                operations on a remote API.
-                                            </p>
-                                            <div className="flex flex-wrap gap-2 mb-6">
-                                                <Badge>React</Badge>
-                                                <Badge>TypeScript</Badge>
-                                                <Badge>Vite</Badge>
-                                                <Badge>React Router</Badge>
-                                                <Badge>DiceBear Avatars</Badge>
-                                                <Badge>React Icons</Badge>
-                                                <Badge>REST API</Badge>
-                                            </div>
-                                            <div className="space-x-4">
-                                                <Button variant="outline" asChild>
-                                                    <Link href="https://github.com/jaidityadev/foliyo">
-                                                        View Repository
-                                                    </Link>
-                                                </Button>
-                                                <Button variant="outline" asChild>
-                                                    <Link href="https://react-project-sghu.onrender.com/">
-                                                        Live Demo
-                                                    </Link>
-                                                </Button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Card>
-                            </HoverScale>
-
-                            {/* Project  2 */}
-                            <HoverScale scale={1.01}>
-                                <Card className="overflow-hidden">
-                                    <div className="grid md:grid-cols-2 gap-6">
-                                        <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
-                                            <Image
-                                                src="/images/disease_prediction.png"
-                                                alt="Disease Prediction Model"
-                                                fill
-                                                sizes="(max-width: 768px) 100vw, 50vw"
-                                                priority
-                                                className="object-cover object-center"
-                                            />
-                                        </div>
-                                        <div className="p-6">
-                                            <h3 className="text-2xl font-bold mb-2">
-                                                Heterogeneous Ensemble Forecasting for Disease Prediction
-                                            </h3>
-                                            <p className="text-muted-foreground mb-4">
-                                                Developed machine learning models to predict the spread of diseases
-                                                using ensemble-based forecasting techniques. Published in a
-                                                peer-reviewed journal.
-                                            </p>
-                                            <div className="flex flex-wrap gap-2 mb-6">
-                                                <Badge>R</Badge>
-                                                <Badge>Ensemble Forecasting</Badge>
-                                                <Badge>CART</Badge>
-                                                <Badge>ARIMA</Badge>
-                                                <Badge>NNAR</Badge>
-                                                <Badge>CTREE</Badge>
-                                            </div>
-                                            <div className="space-x-4">
-                                                <Button variant="outline" asChild>
-                                                    <Link href="https://doi.org/10.1007/s00354-020-00119-7">
-                                                        View Publication
-                                                    </Link>
-                                                </Button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Card>
-                            </HoverScale>
-
-                            {/* Project 2 */}
-                            <HoverScale scale={1.01}>
-                                <Card className="overflow-hidden">
-                                    <div className="grid md:grid-cols-2 gap-6">
-                                        <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
-                                            <Image
-                                                src="/images/arima_forecasting.png"
-                                                alt="ARIMA Time Series Forecasting"
-                                                fill
-                                                sizes="(max-width: 768px) 100vw, 50vw"
-                                                priority
-                                                className="object-cover object-center"
-                                            />
-                                        </div>
-                                        <div className="p-6">
-                                            <h3 className="text-2xl font-bold mb-2">
-                                                ARIMA Modelling for Time Series Forecasting
-                                            </h3>
-                                            <p className="text-muted-foreground mb-4">
-                                                Researched efficient techniques to forecast time series data using the
-                                                ARIMA Modelling Techniques. This project focused on improving
-                                                forecasting accuracy.
-                                            </p>
-                                            <div className="flex flex-wrap gap-2 mb-6">
-                                                <Badge>R</Badge>
-                                                <Badge>Forecasting Algorithms</Badge>
-                                                <Badge>ARIMA</Badge>
-                                                <Badge>Time Series Analysis</Badge>
-                                            </div>
-                                            <div className="space-x-4">
-                                                <Button variant="outline" asChild>
-                                                    <Link
-                                                        href="https://www.research-publication.com/amsj/uploads/papers/vol-09/iss-06/AMSJ-2020-N6-75.pdf">
-                                                        View Publication
-                                                    </Link>
-                                                </Button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Card>
-                            </HoverScale>
-                        </StaggerIn>
-
-                        <FadeIn delay={0.6}>
-                            <div className="flex justify-center mt-10">
-                                <Button variant="outline" asChild>
-                                    <Link href="/projects">View All Projects</Link>
-                                </Button>
-                            </div>
-                        </FadeIn>
-                    </div>
-                </section>
+                  </div>
+                  <ForecastChart />
+                </div>
+              </FadeIn>
             </div>
-        </PageTransition>
-    );
+            <ProofBar />
+          </div>
+        </section>
+
+        {/* About */}
+        <section className="py-24 md:py-28 bg-muted/40">
+          <div className="container mx-auto px-4">
+            <SectionHeading
+              number="01"
+              label="About"
+              title="From research papers to production systems"
+              lede="I started in research, co-authoring peer-reviewed papers on ensemble disease forecasting before I finished high school. A Lester B. Pearson Scholarship (one of about 37 full-ride awards worldwide) took me to the University of Toronto for Applied Statistics, with minors in Computer Science and Mathematics. These days I build production AI at ADP Canada. Whatever the project, my goal stays the same: statistical rigor where it matters, engineering discipline everywhere else, and a finished product at the end."
+            />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {pillars.map((pillar, i) => (
+                <FadeIn key={pillar.title} delay={0.1 + i * 0.1} direction="up">
+                  <div className="card-premium h-full p-6">
+                    <span className="font-mono text-xs text-primary">
+                      0{i + 1}
+                    </span>
+                    <h3 className="text-lg font-bold mt-2 mb-3">
+                      {pillar.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-5">
+                      {pillar.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {pillar.tags.map((tag) => (
+                        <Badge
+                          key={tag}
+                          variant="secondary"
+                          className="font-mono text-xs"
+                        >
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+            <FadeIn delay={0.3}>
+              <div className="mt-10">
+                <Button asChild variant="outline">
+                  <Link href="/about">
+                    Full background & publications
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* Experience highlights */}
+        <section className="py-24 md:py-28">
+          <div className="container mx-auto px-4">
+            <SectionHeading
+              number="02"
+              label="Experience"
+              title="Where the work happened"
+              lede="Real roles at real companies, plus the leadership work alongside them."
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {highlights.map((item, i) => (
+                <FadeIn key={item.role} delay={0.1 + i * 0.08} direction="up">
+                  <div className="card-premium h-full p-6">
+                    <div className="flex items-baseline justify-between gap-4 mb-3">
+                      <h3 className="text-lg font-bold">{item.role}</h3>
+                      <span className="font-mono text-xs text-muted-foreground whitespace-nowrap">
+                        {item.period}
+                      </span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      {item.detail}
+                    </p>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Featured work */}
+        <section className="py-24 md:py-28 bg-muted/40">
+          <div className="container mx-auto px-4">
+            <SectionHeading
+              number="03"
+              label="Featured Work"
+              title="Selected projects & research"
+              lede="Each one is framed the way I approach work: a real problem, a system built to solve it, and why it matters."
+            />
+            <StaggerIn className="space-y-8" delay={0.1} staggerDelay={0.12}>
+              {featuredProjects.map((project) => (
+                <ProjectCaseStudyCard key={project.title} project={project} />
+              ))}
+            </StaggerIn>
+            <FadeIn delay={0.2}>
+              <div className="flex justify-center mt-12">
+                <Button asChild variant="outline" size="lg">
+                  <Link href="/projects">
+                    All projects & publications
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* Contact CTA */}
+        <section className="py-24 md:py-28">
+          <div className="container mx-auto px-4">
+            <FadeIn>
+              <div className="card-premium p-10 md:p-16 text-center">
+                <span className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+                  04 · Contact
+                </span>
+                <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-4">
+                  Let&apos;s build something that ships.
+                </h2>
+                <p className="text-muted-foreground max-w-xl mx-auto mb-8">
+                  Open to Data Science, ML/AI Engineering, and technology
+                  consulting roles. Always happy to talk research, too.
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <Button asChild size="lg">
+                    <a href="mailto:jaidityadev1402@gmail.com">
+                      jaidityadev1402@gmail.com
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline" size="lg">
+                    <a
+                      href="https://www.linkedin.com/in/jaidityadev/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Linkedin className="mr-2 h-4 w-4" />
+                      LinkedIn
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+      </div>
+    </PageTransition>
+  );
 }

@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LucideIcon, Moon, Sun } from "lucide-react";
+import { FileText, Github, Linkedin, Moon, Sun } from "lucide-react";
+import { motion, useScroll, useSpring } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import {
@@ -15,11 +16,19 @@ import {
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+const RESUME_URL =
+  "https://drive.google.com/file/d/1Mime_QXRtmFHFVR_BPnpifTOcWbbIYaZ/view?usp=sharing";
 
 export default function Header() {
   const pathname = usePathname();
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [isClient, setIsClient] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const progress = useSpring(scrollYProgress, {
+    stiffness: 180,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   useEffect(() => {
     setIsClient(true);
@@ -27,26 +36,33 @@ export default function Header() {
 
   const navItems = [
     { name: "Home", path: "/" },
+    { name: "Work", path: "/projects" },
     { name: "About", path: "/about" },
-    { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/contact" },
   ];
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
   };
 
   return (
-    <header className="py-4 border-b border-border bg-background sticky top-0 z-30">
+    <header className="relative py-3 border-b border-border/60 bg-background/80 backdrop-blur-md sticky top-0 z-30">
+      <motion.div
+        style={{ scaleX: progress }}
+        className="absolute bottom-0 left-0 right-0 h-[2px] bg-primary origin-left"
+        aria-hidden
+      />
       <div className="container flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="images/logo.png"      
+            src="/images/logo.png"
             alt="Jaiditya Dev logo"
-            width={40}
-            height={40}
+            width={36}
+            height={36}
           />
-          <span className="text-lg font-medium">Jaiditya Dev</span>
+          <span className="font-display text-lg font-semibold tracking-tight">
+            Jaiditya Dev
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -55,24 +71,54 @@ export default function Header() {
             <Link
               key={item.path}
               href={item.path}
-              className={`hover:text-foreground/80 ${
-                pathname === item.path ? "text-foreground" : "text-foreground/60"
+              className={`text-sm transition-colors hover:text-primary ${
+                pathname === item.path
+                  ? "text-foreground font-medium"
+                  : "text-foreground/60"
               }`}
             >
               {item.name}
             </Link>
           ))}
-          <Button
-            variant="ghost"
-            size="icon"
-            aria-label="Toggle theme"
-            onClick={toggleTheme}
-          >
-            {isClient && theme === "dark" ? (
-              <Sun className="h-5 w-5" />
-            ) : (
-              <Moon className="h-5 w-5" />
-            )}
+          <div className="flex items-center gap-1 pl-2 border-l border-border">
+            <Button variant="ghost" size="icon" asChild>
+              <a
+                href="https://github.com/jaidityadev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <Github className="h-4 w-4" />
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <a
+                href="https://www.linkedin.com/in/jaidityadev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-4 w-4" />
+              </a>
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label="Toggle theme"
+              onClick={toggleTheme}
+            >
+              {isClient && resolvedTheme === "dark" ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
+            </Button>
+          </div>
+          <Button size="sm" asChild>
+            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
+              <FileText className="mr-2 h-4 w-4" />
+              Resume
+            </a>
           </Button>
         </nav>
 
@@ -85,7 +131,7 @@ export default function Header() {
             onClick={toggleTheme}
             className="mr-2"
           >
-            {isClient && theme === "dark" ? (
+            {isClient && resolvedTheme === "dark" ? (
               <Sun className="h-5 w-5" />
             ) : (
               <Moon className="h-5 w-5" />
@@ -131,6 +177,15 @@ export default function Header() {
                     {item.name}
                   </Link>
                 ))}
+                <a
+                  href={RESUME_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg text-foreground/60 flex items-center gap-2"
+                >
+                  <FileText className="h-4 w-4" />
+                  Resume
+                </a>
               </div>
             </SheetContent>
           </Sheet>

@@ -22,3 +22,8 @@ node_modules
 
 # add .next files
 .next
+# Claude Code local config
+.claude/
+
+# TypeScript incremental build cache
+tsconfig.tsbuildinfo

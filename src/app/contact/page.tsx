@@ -103,7 +103,7 @@ export default function ContactPage() {
                   <CardContent>
                     <div className="flex items-center gap-2">
                       <FileText className="h-5 w-5 text-muted-foreground" />
-                      <Link href="/projects" className="text-primary hover:underline">
+                      <Link href="/about#publications" className="text-primary hover:underline">
                         Research Publications
                       </Link>
                     </div>
@@ -185,7 +185,7 @@ export default function ContactPage() {
                   </a>
                 </Button>
               </div>
-              <Button size="lg" asChild className="animate-pulse">
+              <Button size="lg" asChild>
                 <a href="mailto:jaidityadev1402@gmail.com">Send a Message</a>
               </Button>
             </FadeIn>
