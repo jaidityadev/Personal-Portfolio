@@ -42,6 +42,12 @@ export default function Footer() {
 
         <div>
           <h3 className="font-medium mb-2">Connect</h3>
+          <a
+            href="mailto:jaidityadev1402@gmail.com"
+            className="block text-sm text-muted-foreground hover:text-primary transition-colors mb-3 font-mono"
+          >
+            jaidityadev1402@gmail.com
+          </a>
           <div className="flex space-x-4">
             <Link 
               href="https://github.com/jaidityadev" 

@@ -1,16 +1,51 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-display",
+});
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
 
 export const metadata: Metadata = {
-  title: 'Jaiditya Dev | Data Scientist & Full Stack Developer',
-  description: "Portfolio of Jaiditya Dev, a Data Science professional with expertise in machine learning, statistical modeling, and R programming.",
+  metadataBase: new URL("https://jaiditya-dev.netlify.app"),
+  title: "Jaiditya Dev | Data Scientist & AI Engineer",
+  description:
+    "Data scientist and AI engineer building production ML systems, from published forecasting research to agentic AI and MCP servers at ADP. Python, PyTorch, GenAI, full-stack.",
+  keywords: [
+    "Jaiditya Dev",
+    "Data Scientist",
+    "Machine Learning Engineer",
+    "AI Engineer",
+    "GenAI",
+    "MCP",
+    "Full-Stack Developer",
+    "Toronto",
+  ],
   icons: {
     icon: "/images/logo.png",
     apple: "/images/logo.png",
+  },
+  openGraph: {
+    title: "Jaiditya Dev | Data Scientist & AI Engineer",
+    description:
+      "From published forecasting research to production agentic AI at ADP. I build ML systems that ship.",
+    url: "https://jaiditya-dev.netlify.app",
+    siteName: "Jaiditya Dev",
+    type: "website",
+    images: [{ url: "/images/profile.jpg", width: 800, height: 800 }],
+  },
+  twitter: {
+    card: "summary",
+    title: "Jaiditya Dev | Data Scientist & AI Engineer",
+    description:
+      "From published forecasting research to production agentic AI at ADP. I build ML systems that ship.",
   },
 };
 
@@ -21,7 +56,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body
+        className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${inter.className}`}
+      >
         <ClientBody>{children}</ClientBody>
       </body>
     </html>
