@@ -16,11 +16,11 @@ const featuredProjects: CaseStudyProject[] = [
     category: "Full-Stack · GenAI",
     image: "/images/foliyo2.png",
     problem:
-      "Event organizers juggle registration, role management, and attendee questions across disconnected tools.",
+      "Event organizers juggle registration, roles, and attendee questions across disconnected tools.",
     built:
-      "A Spring Boot + React platform with role-aware dashboards, RS256 JWT auth, MongoDB persistence, OpenAPI-documented REST APIs, and an OpenAI-powered copilot for natural-language event discovery, all containerized and deployed.",
+      "A Spring Boot + React platform: role-aware dashboards, RS256 JWT auth, MongoDB, OpenAPI-documented REST APIs, and an OpenAI copilot for natural-language event discovery — containerized and deployed.",
     impact:
-      "I owned every layer in one codebase: auth, the data model, API design, LLM integration, and deployment.",
+      "One person, every layer: auth, data model, API design, LLM integration, and deployment.",
     tags: ["Spring Boot", "React", "TypeScript", "MongoDB", "OpenAI", "JWT", "Docker"],
     links: [
       { label: "Live App", url: "https://foliyo-2-0.onrender.com" },
@@ -33,11 +33,11 @@ const featuredProjects: CaseStudyProject[] = [
     category: "NLP · Production ML",
     image: "/images/tax.png",
     problem:
-      "Classifying tax forms manually across 800,000+ live records doesn't scale for production HR and payroll operations.",
+      "Manually classifying tax forms across 800,000+ live records doesn't scale for HR and payroll operations.",
     built:
-      "An ML classification system identifying tax form types in real time, with refined keyword-search algorithms and stakeholder-facing visualizations such as word clouds.",
+      "An ML classification system that identifies tax form types in real time, with refined keyword search and stakeholder-facing visualizations.",
     impact:
-      "Runs against production payroll data and became the foundation for the document-classification and routing pipelines I now own full-time at ADP.",
+      "Runs on production payroll data and became the foundation for the document-routing pipelines I now own full-time at ADP.",
     tags: ["Python", "Classification", "NLP", "Data Visualization", "800K+ records"],
     links: [],
   },
@@ -130,7 +130,7 @@ export default function ProjectsPage() {
             number="01"
             label="Work"
             title="Projects & Research"
-            lede="Production ML systems, full-stack products, and peer-reviewed research. Each is framed by the problem it solves, what I built, and why it matters."
+            lede="Production ML, full-stack products, and peer-reviewed research — each framed by the problem, the build, and the impact."
           />
 
           {/* Featured Projects */}
