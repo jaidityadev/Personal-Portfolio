@@ -66,24 +66,23 @@ const experience = [
         <span className="font-medium text-foreground">
           Re-architected a production tax assistant
         </span>{" "}
-        from a custom RAG orchestrator to an agentic architecture using Strands
-        Agents, routing across five specialized tool endpoints. The new design
-        improved modularity, tool-routing accuracy, and observability of model
-        outcomes.
+        from a custom RAG orchestrator to an agentic system (Strands Agents)
+        routing across 5 tool endpoints — improving modularity, routing
+        accuracy, and observability.
       </>,
       <>
         <span className="font-medium text-foreground">
-          Built an MCP (Model Context Protocol) server
+          Built an MCP server
         </span>{" "}
-        wrapping enterprise REST endpoints, enabling structured, auditable
-        tool-use for LLM assistants in production.
+        over enterprise REST APIs, enabling structured, auditable tool use for
+        LLM assistants in production.
       </>,
       <>
         <span className="font-medium text-foreground">
-          Own ML-powered document workflows
-        </span>
-        : classification and role-based routing pipelines that production HR
-        and payroll operations depend on daily.
+          Own ML document pipelines
+        </span>{" "}
+        — classification and role-based routing that live HR and payroll
+        operations depend on daily.
       </>,
     ],
   },
@@ -115,20 +114,20 @@ const experience = [
     period: "May 2024 – August 2024",
     bullets: [
       <>
-        Developed an{" "}
+        Built an{" "}
         <span className="font-medium text-foreground">
-          ML classification model identifying tax form types
+          ML classification model for tax form types
         </span>{" "}
         over a real-time dataset of{" "}
         <span className="font-medium text-foreground">800,000+ entries</span>.
       </>,
       <>
-        Refined keyword-search algorithms and shipped stakeholder-facing data
-        visualizations, improving analysis speed and engagement.
+        Refined keyword-search algorithms and shipped stakeholder-facing
+        visualizations that sped up analysis.
       </>,
       <>
-        Integrated data-driven solutions with cross-functional teams to improve
-        strategic decision-making and operational efficiency.
+        Partnered with cross-functional teams to turn data into operational
+        decisions.
       </>,
     ],
   },
@@ -296,25 +295,23 @@ export default function AboutPage() {
                 <p>
                   I&apos;m{" "}
                   <strong className="text-foreground">Jaiditya Dev</strong>, a
-                  data scientist and AI engineer. I started in research: by the
-                  time I finished high school I&apos;d co-authored peer-reviewed
-                  papers on ensemble disease forecasting (Springer,{" "}
-                  <em>New Generation Computing</em>) and time-series methods. A
-                  Lester B. Pearson Scholarship, one of about 37 full-ride
-                  awards worldwide, took me to the University of Toronto, where
-                  I studied Applied Statistics with minors in Computer Science
-                  and Mathematics.
+                  data scientist and AI engineer who bridges technical depth and
+                  business impact. I co-authored peer-reviewed ML research before
+                  finishing high school, then earned a full-ride{" "}
+                  <strong className="text-foreground">
+                    Pearson Scholarship
+                  </strong>{" "}
+                  to study Applied Statistics at the University of Toronto.
                 </p>
                 <p>
-                  Today I work on production AI at ADP Canada:
-                  document-classification pipelines over 800,000+ real tax
-                  records, an MCP server that gives LLM assistants structured
-                  access to enterprise APIs, and the migration of a tax
-                  assistant from custom RAG orchestration to an agentic
-                  architecture. Whatever I&apos;m working on, the goal stays
-                  the same: statistical rigor where it matters, engineering
-                  discipline everywhere else, and a finished product at the
-                  end.
+                  Today I ship production AI at{" "}
+                  <strong className="text-foreground">ADP Canada</strong>:
+                  classification pipelines over 800,000+ tax records, an MCP
+                  server that gives LLMs structured access to enterprise APIs,
+                  and a tax assistant migrated from RAG to an agentic
+                  architecture. The goal never changes — statistical rigor where
+                  it matters, engineering discipline everywhere else, and a
+                  finished product at the end.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mb-16">
