@@ -21,20 +21,20 @@ const pillars = [
   {
     title: "ML & Forecasting",
     description:
-      "Classification, ensemble forecasting, and statistical modeling, grounded in an Applied Statistics degree and peer-reviewed research.",
-    tags: ["Python", "R", "scikit-learn", "PyTorch", "ARIMA", "Ensembles"],
+      "Statistical modeling and forecasting, backed by an Applied Statistics degree and 4 published papers.",
+    tags: ["Python", "R", "scikit-learn", "PyTorch", "ARIMA"],
   },
   {
     title: "GenAI & Agentic Systems",
     description:
-      "RAG pipelines, MCP servers, and agentic architectures running in production. Structured tool use for LLM assistants over enterprise APIs.",
-    tags: ["MCP", "Strands Agents", "RAG", "OpenAI API", "Hugging Face"],
+      "Production RAG pipelines and MCP servers giving LLMs structured access to enterprise tools.",
+    tags: ["MCP", "Strands Agents", "RAG", "OpenAI API"],
   },
   {
-    title: "Full-Stack Engineering",
+    title: "Full-Stack Delivery",
     description:
-      "The product around the model: secure APIs, dashboards, and deployed apps with auth, persistence, and CI-ready tooling.",
-    tags: ["React", "TypeScript", "Spring Boot", "MongoDB", "Docker"],
+      "From model to shipped product: APIs, dashboards, auth, and deployment.",
+    tags: ["React", "TypeScript", "Spring Boot", "Docker"],
   },
 ];
 
@@ -43,25 +43,22 @@ const highlights = [
     role: "AI Engineering @ ADP Canada",
     period: "2024 – Present",
     detail:
-      "Production MCP server, a RAG-to-agentic migration across five tool endpoints, and ML document pipelines for HR and payroll tax systems.",
+      "Production MCP server and an agentic re-architecture powering payroll & tax systems.",
   },
   {
     role: "Published Researcher",
     period: "2020 – 2022",
-    detail:
-      "Four peer-reviewed publications, including Springer's New Generation Computing, a CRC Press book chapter, and the UofT Journal of Public Health.",
+    detail: "4 peer-reviewed papers, incl. Springer and CRC Press.",
   },
   {
     role: "Teaching ML & Statistics",
     period: "3+ years",
-    detail:
-      "TA for probability and modelling at UofT and for the LearnAI program, covering everything from regression to neural networks and computer vision.",
+    detail: "TA at UofT and the LearnAI program, regression to neural nets.",
   },
   {
     role: "President, UTM Residence Council",
     period: "2022 – 2024",
-    detail:
-      "Led a 25-person team, managed $20K+ annual budgets, and delivered events for 200+ attendees over two years.",
+    detail: "Led 25 people, $20K+ budgets, 200+ attendee events.",
   },
 ];
 
@@ -71,11 +68,10 @@ const featuredProjects: CaseStudyProject[] = [
     category: "Full-Stack · GenAI",
     image: "/images/foliyo2.png",
     problem:
-      "Event organizers juggle registration, role management, and attendee questions across disconnected tools.",
+      "Event organizers juggle registration, roles, and attendee Q&A across disconnected tools.",
     built:
-      "A Spring Boot + React platform with role-aware dashboards, RS256 JWT auth, MongoDB persistence, OpenAPI-documented REST APIs, and an OpenAI-powered copilot for natural-language event discovery, all containerized and deployed.",
-    impact:
-      "I owned every layer in one codebase: auth, the data model, API design, LLM integration, and deployment.",
+      "Spring Boot + React platform: role-aware dashboards, JWT auth, MongoDB, REST APIs, and an OpenAI copilot for natural-language event discovery. Containerized and deployed.",
+    impact: "Owned every layer solo: auth, data model, APIs, LLM, deployment.",
     tags: ["Spring Boot", "React", "TypeScript", "MongoDB", "OpenAI", "Docker"],
     links: [
       { label: "Live App", url: "https://foliyo-2-0.onrender.com" },
@@ -87,12 +83,10 @@ const featuredProjects: CaseStudyProject[] = [
     title: "Tax Document Intelligence at ADP",
     category: "NLP · Production ML",
     image: "/images/tax.png",
-    problem:
-      "Classifying tax forms manually across 800,000+ live records doesn't scale.",
+    problem: "Manually classifying tax forms across 800K+ live records doesn't scale.",
     built:
-      "An ML classification system identifying tax form types in real time, with refined keyword-search algorithms and stakeholder-facing visualizations.",
-    impact:
-      "Runs against production payroll data and became the foundation for the document-routing pipelines I now own full-time.",
+      "Real-time ML classification system with refined keyword-search and stakeholder-facing dashboards.",
+    impact: "Live on production payroll data; now the foundation of pipelines I own full-time.",
     tags: ["Python", "Classification", "NLP", "Data Viz", "800K+ records"],
     links: [],
   },
@@ -101,11 +95,11 @@ const featuredProjects: CaseStudyProject[] = [
     category: "Research · Machine Learning",
     image: "/images/disease_prediction.png",
     problem:
-      "Single-model forecasts of dengue and tuberculosis outbreaks are brittle across regions and seasons.",
+      "Single-model outbreak forecasts for dengue and TB are brittle across regions and seasons.",
     built:
-      "A heterogeneous ensemble (ARIMA, NNAR, CART, CTREE) combining statistical and tree-based learners to stabilize outbreak predictions.",
+      "A heterogeneous ensemble (ARIMA, NNAR, CART, CTREE) blending statistical and tree-based learners to stabilize predictions.",
     impact:
-      "Peer-reviewed and published in New Generation Computing (Springer); supports proactive public-health planning.",
+      "Peer-reviewed in Springer's New Generation Computing; aids proactive public-health planning.",
     tags: ["R", "Ensemble Forecasting", "ARIMA", "NNAR", "CART"],
     links: [
       { label: "Publication", url: "https://doi.org/10.1007/s00354-020-00119-7" },
@@ -148,12 +142,11 @@ export default function HomePage() {
                 </FadeIn>
                 <FadeIn delay={0.2}>
                   <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4">
-                    I&apos;m Jaiditya Dev, a data scientist and AI engineer. I
-                    own the whole pipeline: data, models, APIs, and the product
-                    around them.
+                    Jaiditya Dev, data scientist and AI engineer. I turn messy
+                    data into systems that ship.
                   </p>
                   <p className="font-mono text-sm uppercase tracking-[0.2em] text-muted-foreground mb-8">
-                    <DecodeText text="DATA SCIENCE · ML ENGINEERING · GENAI SYSTEMS" />
+                    <DecodeText text="DATA SCIENCE · ML ENGINEERING · GENAI" />
                   </p>
                 </FadeIn>
                 <FadeIn delay={0.25}>
@@ -223,7 +216,7 @@ export default function HomePage() {
               number="01"
               label="About"
               title="From research papers to production systems"
-              lede="I started in research, co-authoring peer-reviewed papers on ensemble disease forecasting before I finished high school. A Lester B. Pearson Scholarship (one of about 37 full-ride awards worldwide) took me to the University of Toronto for Applied Statistics, with minors in Computer Science and Mathematics. These days I build production AI at ADP Canada. Whatever the project, my goal stays the same: statistical rigor where it matters, engineering discipline everywhere else, and a finished product at the end."
+              lede="Published researcher turned full-ride Pearson Scholar at the University of Toronto, now building production AI at ADP Canada. Rigorous with the data, disciplined with the engineering, focused on shipping."
             />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {pillars.map((pillar, i) => (
@@ -273,7 +266,7 @@ export default function HomePage() {
               number="02"
               label="Experience"
               title="Where the work happened"
-              lede="Real roles at real companies, plus the leadership work alongside them."
+              lede="Roles, research, and leadership at a glance."
             />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {highlights.map((item, i) => (
@@ -302,7 +295,7 @@ export default function HomePage() {
               number="03"
               label="Featured Work"
               title="Selected projects & research"
-              lede="Each one is framed the way I approach work: a real problem, a system built to solve it, and why it matters."
+              lede="Problem, build, impact. No fluff."
             />
             <StaggerIn className="space-y-8" delay={0.1} staggerDelay={0.12}>
               {featuredProjects.map((project) => (
@@ -334,8 +327,8 @@ export default function HomePage() {
                   Let&apos;s build something that ships.
                 </h2>
                 <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-                  Open to Data Science, ML/AI Engineering, and technology
-                  consulting roles. Always happy to talk research, too.
+                  Open to Data Science, ML/AI Engineering, and tech consulting
+                  roles.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button asChild size="lg">
