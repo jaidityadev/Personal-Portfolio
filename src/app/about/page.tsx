@@ -66,24 +66,21 @@ const experience = [
         <span className="font-medium text-foreground">
           Re-architected a production tax assistant
         </span>{" "}
-        from a custom RAG orchestrator to an agentic architecture using Strands
-        Agents, routing across five specialized tool endpoints. The new design
-        improved modularity, tool-routing accuracy, and observability of model
-        outcomes.
+        from custom RAG to an agentic design (Strands Agents) routing across 5
+        tool endpoints, improving modularity, routing accuracy, and
+        observability.
+      </>,
+      <>
+        <span className="font-medium text-foreground">Built an MCP server</span>{" "}
+        wrapping enterprise REST endpoints for structured, auditable LLM tool-use
+        in production.
       </>,
       <>
         <span className="font-medium text-foreground">
-          Built an MCP (Model Context Protocol) server
-        </span>{" "}
-        wrapping enterprise REST endpoints, enabling structured, auditable
-        tool-use for LLM assistants in production.
-      </>,
-      <>
-        <span className="font-medium text-foreground">
-          Own ML-powered document workflows
+          Own ML document workflows
         </span>
-        : classification and role-based routing pipelines that production HR
-        and payroll operations depend on daily.
+        : classification and routing pipelines that HR and payroll operations
+        depend on daily.
       </>,
     ],
   },
@@ -115,20 +112,16 @@ const experience = [
     period: "May 2024 – August 2024",
     bullets: [
       <>
-        Developed an{" "}
+        Built an{" "}
         <span className="font-medium text-foreground">
-          ML classification model identifying tax form types
+          ML model classifying tax form types
         </span>{" "}
         over a real-time dataset of{" "}
         <span className="font-medium text-foreground">800,000+ entries</span>.
       </>,
       <>
-        Refined keyword-search algorithms and shipped stakeholder-facing data
-        visualizations, improving analysis speed and engagement.
-      </>,
-      <>
-        Integrated data-driven solutions with cross-functional teams to improve
-        strategic decision-making and operational efficiency.
+        Refined keyword-search algorithms and shipped stakeholder-facing
+        dashboards, speeding up analysis.
       </>,
     ],
   },
@@ -193,15 +186,15 @@ const experience = [
     period: "May 2022 – August 2022",
     bullets: [
       <>
-        Evaluated the{" "}
+        Sized the{" "}
         <span className="font-medium text-foreground">
-          Asia Pacific 3D printing market
+          Asia-Pacific 3D printing market
         </span>{" "}
-        for the I.I.T. Delhi Incubation Center using statistical modeling and
-        market assessments.
+        for the IIT Delhi Incubation Center via statistical modeling and market
+        assessment.
       </>,
       <>
-        Built data-driven models optimizing filament procurement through{" "}
+        Optimized filament procurement with{" "}
         <span className="font-medium text-foreground">
           regression analysis and trend forecasting
         </span>
@@ -218,16 +211,16 @@ const experience = [
       <>
         Led research on{" "}
         <span className="font-medium text-foreground">
-          dengue and tuberculosis outbreak prediction
+          dengue and TB outbreak prediction
         </span>{" "}
-        using ensemble-based forecasting, later published in Springer&apos;s{" "}
+        using ensemble forecasting, published in Springer&apos;s{" "}
         <span className="font-medium text-foreground">
           New Generation Computing
         </span>
         .
       </>,
       <>
-        Co-authored and presented papers at international venues, including the
+        Co-authored and presented at international venues, incl. the
         International Conference on AI and the Swiss OpenTox Conference.
       </>,
     ],
@@ -241,7 +234,7 @@ const publications = [
     venue: "University of Toronto Journal of Public Health",
     date: "February 2022",
     description:
-      "Developed and evaluated a multilingual Android app alongside targeted social media campaigns, achieving measurable reductions in vaccine hesitancy across three countries.",
+      "A multilingual Android app and targeted social campaigns that measurably reduced vaccine hesitancy across three countries.",
     doi: "https://doi.org/10.33137/utjph.v9999i1.38113",
     pdf: "https://utjph.com/index.php/utjph/article/view/38113/29116",
   },
@@ -251,7 +244,7 @@ const publications = [
       "Handbook of Research on Machine Learning Foundations and Applications (CRC Press, Book Chapter)",
     date: "January 2022",
     description:
-      "A comprehensive overview of time-series forecasting methods, challenges, and enabling technologies for large-scale IoT deployments.",
+      "A survey of time-series forecasting methods, challenges, and enabling technologies for large-scale IoT.",
     doi: "https://doi.org/10.1201/9781003277330-13",
     pdf: "https://drive.google.com/file/d/1KcsjoFHFaHqDlrcvc3WPUNjAn0bmwDI4/view?usp=sharing",
   },
@@ -260,7 +253,7 @@ const publications = [
     venue: "New Generation Computing (Springer)",
     date: "January 2021",
     description:
-      "Combined multiple forecasting algorithms into one ensemble to significantly improve the accuracy of outbreak predictions for diseases like dengue and tuberculosis.",
+      "An ensemble of forecasting algorithms that significantly improved outbreak-prediction accuracy for dengue and tuberculosis.",
     doi: "https://doi.org/10.1007/s00354-020-00119-7",
     pdf: "https://link.springer.com/content/pdf/10.1007/s00354-020-00119-7.pdf",
   },
@@ -296,25 +289,19 @@ export default function AboutPage() {
                 <p>
                   I&apos;m{" "}
                   <strong className="text-foreground">Jaiditya Dev</strong>, a
-                  data scientist and AI engineer. I started in research: by the
-                  time I finished high school I&apos;d co-authored peer-reviewed
-                  papers on ensemble disease forecasting (Springer,{" "}
-                  <em>New Generation Computing</em>) and time-series methods. A
-                  Lester B. Pearson Scholarship, one of about 37 full-ride
-                  awards worldwide, took me to the University of Toronto, where
-                  I studied Applied Statistics with minors in Computer Science
-                  and Mathematics.
+                  data scientist and AI engineer. Published in peer-reviewed
+                  research before finishing high school, then a full-ride{" "}
+                  <span className="text-foreground">Pearson Scholar</span> at the
+                  University of Toronto, where I studied Applied Statistics with
+                  minors in CS and Math.
                 </p>
                 <p>
-                  Today I work on production AI at ADP Canada:
-                  document-classification pipelines over 800,000+ real tax
-                  records, an MCP server that gives LLM assistants structured
-                  access to enterprise APIs, and the migration of a tax
-                  assistant from custom RAG orchestration to an agentic
-                  architecture. Whatever I&apos;m working on, the goal stays
-                  the same: statistical rigor where it matters, engineering
-                  discipline everywhere else, and a finished product at the
-                  end.
+                  Today I ship production AI at{" "}
+                  <span className="text-foreground">ADP Canada</span>:
+                  classification pipelines over 800K+ tax records, an MCP server
+                  for enterprise LLM tooling, and an agentic re-architecture of a
+                  tax assistant. Statistical rigor where it matters, engineering
+                  discipline everywhere else, a finished product at the end.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mb-16">

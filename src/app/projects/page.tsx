@@ -16,11 +16,10 @@ const featuredProjects: CaseStudyProject[] = [
     category: "Full-Stack · GenAI",
     image: "/images/foliyo2.png",
     problem:
-      "Event organizers juggle registration, role management, and attendee questions across disconnected tools.",
+      "Event organizers juggle registration, roles, and attendee Q&A across disconnected tools.",
     built:
-      "A Spring Boot + React platform with role-aware dashboards, RS256 JWT auth, MongoDB persistence, OpenAPI-documented REST APIs, and an OpenAI-powered copilot for natural-language event discovery, all containerized and deployed.",
-    impact:
-      "I owned every layer in one codebase: auth, the data model, API design, LLM integration, and deployment.",
+      "Spring Boot + React platform: role-aware dashboards, JWT auth, MongoDB, REST APIs, and an OpenAI copilot for natural-language event discovery. Containerized and deployed.",
+    impact: "Owned every layer solo: auth, data model, APIs, LLM, deployment.",
     tags: ["Spring Boot", "React", "TypeScript", "MongoDB", "OpenAI", "JWT", "Docker"],
     links: [
       { label: "Live App", url: "https://foliyo-2-0.onrender.com" },
@@ -33,11 +32,11 @@ const featuredProjects: CaseStudyProject[] = [
     category: "NLP · Production ML",
     image: "/images/tax.png",
     problem:
-      "Classifying tax forms manually across 800,000+ live records doesn't scale for production HR and payroll operations.",
+      "Manually classifying tax forms across 800K+ live records doesn't scale for production HR and payroll.",
     built:
-      "An ML classification system identifying tax form types in real time, with refined keyword-search algorithms and stakeholder-facing visualizations such as word clouds.",
+      "Real-time ML classification system with refined keyword-search and stakeholder-facing visualizations (word clouds).",
     impact:
-      "Runs against production payroll data and became the foundation for the document-classification and routing pipelines I now own full-time at ADP.",
+      "Live on production payroll data; now the foundation of the routing pipelines I own full-time at ADP.",
     tags: ["Python", "Classification", "NLP", "Data Visualization", "800K+ records"],
     links: [],
   },
@@ -46,11 +45,11 @@ const featuredProjects: CaseStudyProject[] = [
     category: "Research · Machine Learning",
     image: "/images/disease_prediction.png",
     problem:
-      "Single-model forecasts of dengue and tuberculosis outbreaks are brittle across regions and seasons.",
+      "Single-model outbreak forecasts for dengue and TB are brittle across regions and seasons.",
     built:
-      "A heterogeneous ensemble (ARIMA, NNAR, CART, CTREE) combining statistical and tree-based learners to stabilize outbreak predictions.",
+      "A heterogeneous ensemble (ARIMA, NNAR, CART, CTREE) blending statistical and tree-based learners to stabilize predictions.",
     impact:
-      "Peer-reviewed and published in Springer's New Generation Computing; the methodology supports proactive public-health planning.",
+      "Peer-reviewed in Springer's New Generation Computing; aids proactive public-health planning.",
     tags: ["R", "Ensemble Forecasting", "ARIMA", "NNAR", "CART", "CTREE"],
     links: [
       { label: "Publication", url: "https://doi.org/10.1007/s00354-020-00119-7" },
@@ -61,11 +60,11 @@ const featuredProjects: CaseStudyProject[] = [
     category: "Public Health · Mobile",
     image: "/images/health_trueinfo.png",
     problem:
-      "COVID-19 vaccine misinformation spread faster than corrections, especially across language and cultural barriers in Bolivia, India, and Canada.",
+      "COVID-19 vaccine misinformation outpaced corrections across language and cultural barriers in Bolivia, India, and Canada.",
     built:
-      "A multilingual Android app paired with targeted social media campaigns, created with community influencers for culturally relevant content.",
+      "A multilingual Android app plus targeted social campaigns, co-created with community influencers for cultural relevance.",
     impact:
-      "Achieved measurable reductions in vaccine hesitancy across three countries; published in the University of Toronto Journal of Public Health.",
+      "Measurable drops in vaccine hesitancy across 3 countries; published in the UofT Journal of Public Health.",
     tags: ["Android", "Public Health", "Social Media", "Multilingual"],
     links: [
       { label: "Publication", url: "https://doi.org/10.33137/utjph.v9999i1.38113" },
@@ -76,11 +75,11 @@ const featuredProjects: CaseStudyProject[] = [
     category: "Research · Survey",
     image: "/images/iot_forecasting.png",
     problem:
-      "Large-scale IoT deployments generate time-series data with constraints that standard forecasting surveys don't address.",
+      "Large-scale IoT generates time-series data with constraints standard forecasting surveys don't address.",
     built:
-      "A comprehensive survey of time-series forecasting methods, enabling technologies, protocols, and implementation challenges for IoT applications.",
+      "A comprehensive survey of forecasting methods, enabling technologies, protocols, and implementation challenges for IoT.",
     impact:
-      "Published as a chapter in the Handbook of Research on Machine Learning Foundations and Applications (CRC Press).",
+      "Published as a chapter in CRC Press's Handbook of Research on Machine Learning Foundations and Applications.",
     tags: ["Time Series", "IoT", "Forecasting", "ARIMA", "Survey"],
     links: [
       { label: "DOI", url: "https://doi.org/10.1201/9781003277330-13" },
@@ -130,7 +129,7 @@ export default function ProjectsPage() {
             number="01"
             label="Work"
             title="Projects & Research"
-            lede="Production ML systems, full-stack products, and peer-reviewed research. Each is framed by the problem it solves, what I built, and why it matters."
+            lede="Production ML, full-stack products, and peer-reviewed research, framed as problem, build, impact."
           />
 
           {/* Featured Projects */}

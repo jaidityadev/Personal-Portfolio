@@ -14,9 +14,9 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <FadeIn>
-              <h1 className="text-3xl md:text-4xl font-bold mb-6">Contact Me</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-6">Let&apos;s connect</h1>
               <p className="text-xl text-muted-foreground mb-12">
-                Feel free to reach out to discuss collaborations, research opportunities, or just to connect.
+                Open to data science, ML/AI engineering, and tech consulting roles. Fastest reply by email.
               </p>
             </FadeIn>
 
@@ -159,7 +159,7 @@ export default function ContactPage() {
             <FadeIn delay={0.7} className="mt-16 text-center">
               <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Whether you're interested in research collaborations or looking to bring me on board for data science, software, or machine learning roles, I'd love to connect and explore how we can work together.
+                Hiring, collaborating, or just curious about the work? I&apos;d love to hear from you.
               </p>
               <div className="flex justify-center gap-4 mb-6">
                 <Button size="lg" variant="outline" asChild>
