@@ -17,12 +17,13 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://jaiditya-dev.netlify.app"),
   title: "Jaiditya Dev | Data Scientist & AI Engineer",
   description:
-    "Data scientist and AI engineer building production ML systems, from published forecasting research to agentic AI and MCP servers at ADP. Python, PyTorch, GenAI, full-stack.",
+    "Data scientist and AI engineer who turns data into decisions that ship, from published forecasting research to agentic AI and MCP servers at ADP. Python, PyTorch, GenAI, full-stack.",
   keywords: [
     "Jaiditya Dev",
     "Data Scientist",
     "Machine Learning Engineer",
     "AI Engineer",
+    "Technology Consultant",
     "GenAI",
     "MCP",
     "Full-Stack Developer",
