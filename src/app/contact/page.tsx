@@ -121,7 +121,7 @@ export default function ContactPage() {
                     <div className="flex items-center gap-2">
                       <FileText className="h-5 w-5 text-muted-foreground" />
                       <a
-                        href="https://drive.google.com/file/d/1Mime_QXRtmFHFVR_BPnpifTOcWbbIYaZ/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1oj0_6ZugZZDWkI9EHOY9jULrL5yAhaNC/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary hover:underline"

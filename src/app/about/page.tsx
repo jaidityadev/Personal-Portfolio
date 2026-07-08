@@ -283,40 +283,70 @@ export default function AboutPage() {
                 </span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold mb-6">
-                The whole system, not just the model.
+                Data scientist &amp; AI engineer in Toronto.
               </h1>
               <div className="space-y-4 text-lg text-muted-foreground mb-8">
                 <p>
                   I&apos;m{" "}
-                  <strong className="text-foreground">Jaiditya Dev</strong>, a
-                  data scientist and AI engineer. Published in peer-reviewed
-                  research before finishing high school, then a full-ride{" "}
-                  <span className="text-foreground">Pearson Scholar</span> at the
-                  University of Toronto, where I studied Applied Statistics with
-                  minors in CS and Math.
+                  <strong className="text-foreground">Jaiditya Dev</strong>. I
+                  work on production AI at{" "}
+                  <span className="text-foreground">ADP Canada</span>:
+                  classification pipelines over 800K+ live tax records, an MCP
+                  server for enterprise LLM tooling, and the agentic
+                  re-architecture of a production tax assistant.
                 </p>
                 <p>
-                  Today I ship production AI at{" "}
-                  <span className="text-foreground">ADP Canada</span>:
-                  classification pipelines over 800K+ tax records, an MCP server
-                  for enterprise LLM tooling, and an agentic re-architecture of a
-                  tax assistant. Statistical rigor where it matters, engineering
-                  discipline everywhere else, a finished product at the end.
+                  Before that: an Applied Statistics degree at the{" "}
+                  <span className="text-foreground">University of Toronto</span>{" "}
+                  (full-ride Pearson Scholar, minors in CS and Math), four
+                  peer-reviewed publications in forecasting and public health —
+                  the first before finishing high school — and 3+ years teaching
+                  ML and statistics.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mb-16">
-                <Badge className="font-mono text-xs">Pearson Scholar</Badge>
-                <Badge className="font-mono text-xs">
-                  4× Published Researcher
-                </Badge>
                 <Badge className="font-mono text-xs">
                   Production AI @ ADP
                 </Badge>
                 <Badge className="font-mono text-xs">
                   Full-Stack ML Builder
                 </Badge>
+                <Badge className="font-mono text-xs">
+                  4× Published Researcher
+                </Badge>
+                <Badge className="font-mono text-xs">Pearson Scholar</Badge>
               </div>
             </FadeIn>
+
+            {/* Experience */}
+            <section className="mb-16">
+              <FadeIn>
+                <h2 className="text-2xl font-bold mb-6">Experience</h2>
+              </FadeIn>
+              <StaggerIn className="space-y-6" staggerDelay={0.08}>
+                {experience.map((job) => (
+                  <div key={`${job.role}-${job.org}`} className="card-premium p-6">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+                      <h3 className="text-xl font-bold">{job.role}</h3>
+                      <span className="font-mono text-xs text-muted-foreground">
+                        {job.period}
+                      </span>
+                    </div>
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                      <p className="font-medium text-primary">{job.org}</p>
+                      <span className="text-sm text-muted-foreground">
+                        {job.location}
+                      </span>
+                    </div>
+                    <ul className="list-disc list-inside text-muted-foreground space-y-2 text-sm md:text-base">
+                      {job.bullets.map((bullet, i) => (
+                        <li key={i}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </StaggerIn>
+            </section>
 
             {/* Education */}
             <section className="mb-16">
@@ -394,36 +424,6 @@ export default function AboutPage() {
                   </FadeIn>
                 ))}
               </div>
-            </section>
-
-            {/* Experience */}
-            <section className="mb-16">
-              <FadeIn>
-                <h2 className="text-2xl font-bold mb-6">Experience</h2>
-              </FadeIn>
-              <StaggerIn className="space-y-6" staggerDelay={0.08}>
-                {experience.map((job) => (
-                  <div key={`${job.role}-${job.org}`} className="card-premium p-6">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
-                      <h3 className="text-xl font-bold">{job.role}</h3>
-                      <span className="font-mono text-xs text-muted-foreground">
-                        {job.period}
-                      </span>
-                    </div>
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                      <p className="font-medium text-primary">{job.org}</p>
-                      <span className="text-sm text-muted-foreground">
-                        {job.location}
-                      </span>
-                    </div>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-2 text-sm md:text-base">
-                      {job.bullets.map((bullet, i) => (
-                        <li key={i}>{bullet}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </StaggerIn>
             </section>
 
             {/* Publications */}

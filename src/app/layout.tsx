@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://jaiditya-dev.netlify.app"),
   title: "Jaiditya Dev | Data Scientist & AI Engineer",
   description:
-    "Data scientist and AI engineer who turns data into decisions that ship, from published forecasting research to agentic AI and MCP servers at ADP. Python, PyTorch, GenAI, full-stack.",
+    "Data scientist and AI engineer at ADP Canada. Production ML classification over 800K+ records, MCP servers, and agentic AI systems. Python, PyTorch, GenAI, full-stack.",
   keywords: [
     "Jaiditya Dev",
     "Data Scientist",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jaiditya Dev | Data Scientist & AI Engineer",
     description:
-      "From published forecasting research to production agentic AI at ADP. I build ML systems that ship.",
+      "Data scientist and AI engineer at ADP Canada. Production ML, MCP servers, and agentic AI systems.",
     url: "https://jaiditya-dev.netlify.app",
     siteName: "Jaiditya Dev",
     type: "website",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Jaiditya Dev | Data Scientist & AI Engineer",
     description:
-      "From published forecasting research to production agentic AI at ADP. I build ML systems that ship.",
+      "Data scientist and AI engineer at ADP Canada. Production ML, MCP servers, and agentic AI systems.",
   },
 };
 

@@ -3,12 +3,6 @@ import FadeIn from "@/components/animations/fade-in";
 
 const metrics = [
   {
-    value: 4,
-    suffix: "",
-    label: "Peer-reviewed publications",
-    sublabel: "Springer · CRC Press · UTJPH",
-  },
-  {
     value: 800,
     suffix: "K+",
     label: "Documents classified",
@@ -21,11 +15,16 @@ const metrics = [
     sublabel: "Agentic AI in production",
   },
   {
-    value: 37,
-    prefix: "1/",
+    value: 4,
     suffix: "",
-    label: "Pearson Scholar",
-    sublabel: "Full-ride, worldwide",
+    label: "Peer-reviewed publications",
+    sublabel: "Springer · CRC Press · UTJPH",
+  },
+  {
+    value: 3,
+    suffix: "+",
+    label: "Years teaching ML & stats",
+    sublabel: "UofT · LearnAI",
   },
 ];
 

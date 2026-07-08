@@ -17,7 +17,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const RESUME_URL =
-  "https://drive.google.com/file/d/1Mime_QXRtmFHFVR_BPnpifTOcWbbIYaZ/view?usp=sharing";
+  "https://drive.google.com/file/d/1oj0_6ZugZZDWkI9EHOY9jULrL5yAhaNC/view?usp=sharing";
 
 export default function Header() {
   const pathname = usePathname();
@@ -36,7 +36,7 @@ export default function Header() {
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Work", path: "/projects" },
+    { name: "Projects", path: "/projects" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
