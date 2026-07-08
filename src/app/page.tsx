@@ -15,13 +15,13 @@ import ProjectCaseStudyCard, {
 } from "@/components/project-case-study-card";
 
 const RESUME_URL =
-  "https://drive.google.com/file/d/1Mime_QXRtmFHFVR_BPnpifTOcWbbIYaZ/view?usp=sharing";
+  "https://drive.google.com/file/d/1oj0_6ZugZZDWkI9EHOY9jULrL5yAhaNC/view?usp=sharing";
 
 const pillars = [
   {
     title: "ML & Forecasting",
     description:
-      "Statistical modeling and forecasting, backed by an Applied Statistics degree and 4 published papers.",
+      "Statistical modeling, classification, and time-series forecasting on real production data.",
     tags: ["Python", "R", "scikit-learn", "PyTorch", "ARIMA"],
   },
   {
@@ -38,27 +38,71 @@ const pillars = [
   },
 ];
 
-const highlights = [
+const experience = [
   {
-    role: "AI Engineering @ ADP Canada",
-    period: "2024 – Present",
-    detail:
-      "Production MCP server and an agentic re-architecture powering payroll & tax systems.",
+    role: "Associate Application Developer",
+    org: "ADP Canada",
+    period: "Jul 2025 – Present",
+    bullets: [
+      <>
+        Re-architected a production tax assistant from custom RAG to an{" "}
+        <span className="font-medium text-foreground">agentic design</span>{" "}
+        routing across{" "}
+        <span className="font-medium text-foreground">5 tool endpoints</span>.
+      </>,
+      <>
+        Built an{" "}
+        <span className="font-medium text-foreground">MCP server</span>{" "}
+        wrapping enterprise REST endpoints for auditable LLM tool use in
+        production.
+      </>,
+      <>
+        Own the ML classification and routing pipelines that HR and payroll
+        operations depend on daily.
+      </>,
+    ],
   },
   {
-    role: "Published Researcher",
-    period: "2020 – 2022",
-    detail: "4 peer-reviewed papers, incl. Springer and CRC Press.",
+    role: "Data Science Intern",
+    org: "ADP Canada",
+    period: "May 2024 – Aug 2024",
+    bullets: [
+      <>
+        Built an ML model classifying tax form types over a real-time dataset
+        of{" "}
+        <span className="font-medium text-foreground">800,000+ records</span>.
+      </>,
+      <>
+        Refined keyword-search algorithms and shipped stakeholder-facing
+        dashboards.
+      </>,
+    ],
   },
   {
-    role: "Teaching ML & Statistics",
-    period: "3+ years",
-    detail: "TA at UofT and the LearnAI program, regression to neural nets.",
+    role: "ML Research Intern",
+    org: "National Institute of Technology",
+    period: "Sep 2019 – Apr 2021",
+    bullets: [
+      <>
+        Published ensemble-forecasting research for dengue and TB outbreak
+        prediction in{" "}
+        <span className="font-medium text-foreground">
+          Springer&apos;s New Generation Computing
+        </span>
+        .
+      </>,
+    ],
   },
   {
-    role: "President, UTM Residence Council",
-    period: "2022 – 2024",
-    detail: "Led 25 people, $20K+ budgets, 200+ attendee events.",
+    role: "Teaching Assistant, ML & Statistics",
+    org: "University of Toronto · LearnAI",
+    period: "2022 – 2025",
+    bullets: [
+      <>
+        3+ years teaching probability, statistical inference, and machine
+        learning — regression through neural networks.
+      </>,
+    ],
   },
 ];
 
@@ -134,16 +178,16 @@ export default function HomePage() {
                 </FadeIn>
                 <FadeIn delay={0.1}>
                   <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] mb-6">
-                    Published at 17.
-                    <br />
-                    Shipping production AI at{" "}
-                    <span className="text-primary">ADP</span>.
+                    Data scientist &amp; AI engineer at{" "}
+                    <span className="text-primary">ADP Canada</span>.
                   </h1>
                 </FadeIn>
                 <FadeIn delay={0.2}>
                   <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4">
-                    Jaiditya Dev, data scientist and AI engineer. I turn messy
-                    data into systems that ship.
+                    I&apos;m Jaiditya Dev. I build the ML systems behind
+                    payroll and tax operations: classification pipelines over
+                    800K+ live records, an MCP server for enterprise LLM
+                    tooling, and agentic assistants in production.
                   </p>
                   <p className="font-mono text-sm uppercase tracking-[0.2em] text-muted-foreground mb-8">
                     <DecodeText text="DATA SCIENCE · ML ENGINEERING · GENAI" />
@@ -209,14 +253,58 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* About */}
+        {/* Experience */}
         <section className="py-24 md:py-28 bg-muted/40">
           <div className="container mx-auto px-4">
             <SectionHeading
               number="01"
-              label="About"
-              title="From research papers to production systems"
-              lede="Published researcher turned full-ride Pearson Scholar at the University of Toronto, now building production AI at ADP Canada. Rigorous with the data, disciplined with the engineering, focused on shipping."
+              label="Experience"
+              title="Experience"
+              lede="Software, ML, and research work from full-time roles, internships, and labs."
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {experience.map((job, i) => (
+                <FadeIn key={`${job.role}-${job.org}`} delay={0.1 + i * 0.08} direction="up">
+                  <div className="card-premium h-full p-6">
+                    <div className="flex items-baseline justify-between gap-4 mb-1">
+                      <h3 className="text-lg font-bold">{job.role}</h3>
+                      <span className="font-mono text-xs text-muted-foreground whitespace-nowrap">
+                        {job.period}
+                      </span>
+                    </div>
+                    <p className="font-medium text-primary text-sm mb-4">
+                      {job.org}
+                    </p>
+                    <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2">
+                      {job.bullets.map((bullet, j) => (
+                        <li key={j}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+            <FadeIn delay={0.3}>
+              <div className="mt-10">
+                <Button asChild variant="outline">
+                  <Link href="/about">
+                    Full experience & publications
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* Focus areas */}
+        <section className="py-24 md:py-28">
+          <div className="container mx-auto px-4">
+            <SectionHeading
+              number="02"
+              label="Focus"
+              title="What I work on"
+              lede="The three areas where I spend most of my time."
             />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {pillars.map((pillar, i) => (
@@ -246,45 +334,6 @@ export default function HomePage() {
                 </FadeIn>
               ))}
             </div>
-            <FadeIn delay={0.3}>
-              <div className="mt-10">
-                <Button asChild variant="outline">
-                  <Link href="/about">
-                    Full background & publications
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </FadeIn>
-          </div>
-        </section>
-
-        {/* Experience highlights */}
-        <section className="py-24 md:py-28">
-          <div className="container mx-auto px-4">
-            <SectionHeading
-              number="02"
-              label="Experience"
-              title="Where the work happened"
-              lede="Roles, research, and leadership at a glance."
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {highlights.map((item, i) => (
-                <FadeIn key={item.role} delay={0.1 + i * 0.08} direction="up">
-                  <div className="card-premium h-full p-6">
-                    <div className="flex items-baseline justify-between gap-4 mb-3">
-                      <h3 className="text-lg font-bold">{item.role}</h3>
-                      <span className="font-mono text-xs text-muted-foreground whitespace-nowrap">
-                        {item.period}
-                      </span>
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      {item.detail}
-                    </p>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -295,7 +344,7 @@ export default function HomePage() {
               number="03"
               label="Featured Work"
               title="Selected projects & research"
-              lede="Problem, build, impact. No fluff."
+              lede="Production ML at ADP, a shipped full-stack product, and peer-reviewed research."
             />
             <StaggerIn className="space-y-8" delay={0.1} staggerDelay={0.12}>
               {featuredProjects.map((project) => (
@@ -324,11 +373,11 @@ export default function HomePage() {
                   04 · Contact
                 </span>
                 <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-4">
-                  Let&apos;s build something that ships.
+                  Get in touch.
                 </h2>
                 <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-                  Open to Data Science, ML/AI Engineering, and tech consulting
-                  roles.
+                  Open to data science, ML/AI engineering, and tech consulting
+                  roles. Fastest reply by email.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button asChild size="lg">

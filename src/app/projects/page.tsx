@@ -129,7 +129,7 @@ export default function ProjectsPage() {
             number="01"
             label="Work"
             title="Projects & Research"
-            lede="Production ML, full-stack products, and peer-reviewed research, framed as problem, build, impact."
+            lede="Production ML shipped at ADP, full-stack products with live demos, and peer-reviewed research."
           />
 
           {/* Featured Projects */}
