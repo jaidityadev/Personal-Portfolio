@@ -143,7 +143,7 @@ const experience = [
     bullets: [
       <>
         3+ years teaching probability, statistical inference, and machine
-        learning — regression through neural networks.
+        learning, from regression through neural networks.
       </>,
     ],
   },
@@ -214,7 +214,7 @@ export default function HomePage() {
                       <span className="relative inline-flex size-2 rounded-full bg-primary" />
                     </span>
                     <span className="font-mono text-xs text-muted-foreground">
-                      Next: Data &amp; AI at Deloitte Canada — September 2026
+                      Next: Data &amp; AI at Deloitte Canada · September 2026
                     </span>
                   </div>
                 </FadeIn>
