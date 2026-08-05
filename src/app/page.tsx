@@ -40,9 +40,25 @@ const pillars = [
 
 const experience = [
   {
+    role: "Business Analyst, Data & AI",
+    org: "Deloitte Canada",
+    period: "Starting Sep 2026",
+    bullets: [
+      <>
+        Joining the{" "}
+        <span className="font-medium text-foreground">Data & AI practice</span>{" "}
+        in Toronto, working on AI-enabled delivery for client engagements.
+      </>,
+      <>
+        Focus: agentic and AI-integrated solutions, cloud engineering, and
+        technical solutioning alongside client teams.
+      </>,
+    ],
+  },
+  {
     role: "Associate Application Developer",
     org: "ADP Canada",
-    period: "Jul 2025 – Present",
+    period: "Jul 2025 – Sep 2026",
     bullets: [
       <>
         Re-architected a production tax assistant from custom RAG to an{" "}
@@ -57,7 +73,7 @@ const experience = [
         production.
       </>,
       <>
-        Own the ML classification and routing pipelines that HR and payroll
+        Owned the ML classification and routing pipelines that HR and payroll
         operations depend on daily.
       </>,
     ],
@@ -130,7 +146,7 @@ const featuredProjects: CaseStudyProject[] = [
     problem: "Manually classifying tax forms across 800K+ live records doesn't scale.",
     built:
       "Real-time ML classification system with refined keyword-search and stakeholder-facing dashboards.",
-    impact: "Live on production payroll data; now the foundation of pipelines I own full-time.",
+    impact: "Live on production payroll data; became the foundation of the pipelines I owned full-time.",
     tags: ["Python", "Classification", "NLP", "Data Viz", "800K+ records"],
     links: [],
   },
@@ -171,23 +187,23 @@ export default function HomePage() {
                       <span className="relative inline-flex size-2 rounded-full bg-primary" />
                     </span>
                     <span className="font-mono text-xs text-muted-foreground">
-                      Currently: building agentic AI for tax systems at ADP
-                      Canada
+                      Next: Data &amp; AI at Deloitte Canada — September 2026
                     </span>
                   </div>
                 </FadeIn>
                 <FadeIn delay={0.1}>
                   <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] mb-6">
-                    Data scientist &amp; AI engineer at{" "}
-                    <span className="text-primary">ADP Canada</span>.
+                    Data scientist &amp; AI engineer, joining{" "}
+                    <span className="text-primary">Deloitte Canada</span>.
                   </h1>
                 </FadeIn>
                 <FadeIn delay={0.2}>
                   <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4">
-                    I&apos;m Jaiditya Dev. I build the ML systems behind
-                    payroll and tax operations: classification pipelines over
-                    800K+ live records, an MCP server for enterprise LLM
-                    tooling, and agentic assistants in production.
+                    I&apos;m Jaiditya Dev. At ADP Canada I built the ML systems
+                    behind payroll and tax operations: classification pipelines
+                    over 800K+ live records, an MCP server for enterprise LLM
+                    tooling, and agentic assistants in production. In September
+                    I bring that work to Deloitte&apos;s Data &amp; AI practice.
                   </p>
                   <p className="font-mono text-sm uppercase tracking-[0.2em] text-muted-foreground mb-8">
                     <DecodeText text="DATA SCIENCE · ML ENGINEERING · GENAI" />
@@ -376,8 +392,9 @@ export default function HomePage() {
                   Get in touch.
                 </h2>
                 <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-                  Open to data science, ML/AI engineering, and tech consulting
-                  roles. Fastest reply by email.
+                  Starting at Deloitte in September. Always happy to talk
+                  production ML, agentic systems, or forecasting research.
+                  Fastest reply by email.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button asChild size="lg">
