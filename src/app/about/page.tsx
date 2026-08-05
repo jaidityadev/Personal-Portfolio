@@ -65,7 +65,7 @@ const experience = [
       <>
         Joining the{" "}
         <span className="font-medium text-foreground">Data & AI practice</span>{" "}
-        to work on AI-enabled delivery across client engagements — agentic and
+        to work on AI-enabled delivery across client engagements: agentic and
         AI-integrated solutions, cloud engineering, and technical solutioning.
       </>,
     ],
@@ -333,9 +333,9 @@ export default function AboutPage() {
                   Before that: an Applied Statistics degree at the{" "}
                   <span className="text-foreground">University of Toronto</span>{" "}
                   (full-ride Pearson Scholar, minors in CS and Math), four
-                  peer-reviewed publications in forecasting and public health —
-                  the first before finishing high school — and 3+ years teaching
-                  ML and statistics.
+                  peer-reviewed publications in forecasting and public health
+                  (the first before finishing high school), and 3+ years
+                  teaching ML and statistics.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mb-16">
