@@ -194,25 +194,43 @@ const experience = [
     ],
   },
   {
-    role: "Strategy Analyst (Summer Intern)",
-    org: "Ernst & Young LLC",
+    role: "Strategy Analyst Intern",
+    org: "Ernst & Young LLP",
     location: "New Delhi, India",
     period: "May 2022 – August 2022",
     bullets: [
       <>
-        Sized the{" "}
+        Influenced{" "}
+        <span className="font-medium text-foreground">senior stakeholder</span>{" "}
+        decisions, measured by adopted recommendations, by facilitating{" "}
         <span className="font-medium text-foreground">
-          Asia-Pacific 3D printing market
+          requirements-gathering workshops
         </span>{" "}
-        for the IIT Delhi Incubation Center via statistical modeling and market
-        assessment.
+        and delivering{" "}
+        <span className="font-medium text-foreground">executive-ready</span>{" "}
+        narratives on complex technical topics.
       </>,
       <>
-        Optimized filament procurement with{" "}
+        Accelerated business-case development by building{" "}
+        <span className="font-medium text-foreground">quantitative models</span>{" "}
+        in <span className="font-medium text-foreground">Excel</span> and KPI
+        storylines linking{" "}
         <span className="font-medium text-foreground">
-          regression analysis and trend forecasting
-        </span>
-        .
+          technology investment
+        </span>{" "}
+        to measurable business outcomes.
+      </>,
+      <>
+        Identified{" "}
+        <span className="font-medium text-foreground">
+          digital transformation
+        </span>{" "}
+        and <span className="font-medium text-foreground">automation</span>{" "}
+        opportunities by mapping current-state processes and shaping{" "}
+        <span className="font-medium text-foreground">
+          future-state modernization roadmaps
+        </span>{" "}
+        for enterprise clients.
       </>,
     ],
   },
@@ -304,7 +322,7 @@ export default function AboutPage() {
                   I&apos;m{" "}
                   <strong className="text-foreground">Jaiditya Dev</strong>. At{" "}
                   <span className="text-foreground">ADP Canada</span> I built
-                  production AI: classification pipelines over 800K+ live tax
+                  production AI: classification pipelines over 3M+ live tax
                   records, an MCP server for enterprise LLM tooling, and the
                   agentic re-architecture of a production tax assistant. In
                   September 2026 I join{" "}

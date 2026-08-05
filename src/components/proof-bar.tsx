@@ -3,8 +3,8 @@ import FadeIn from "@/components/animations/fade-in";
 
 const metrics = [
   {
-    value: 800,
-    suffix: "K+",
+    value: 3,
+    suffix: "M+",
     label: "Documents classified",
     sublabel: "Production ML at ADP",
   },
