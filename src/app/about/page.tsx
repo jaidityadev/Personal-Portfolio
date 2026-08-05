@@ -57,10 +57,24 @@ const skillTiers = [
 
 const experience = [
   {
+    role: "Business Analyst, Data & AI",
+    org: "Deloitte Canada",
+    location: "Toronto, ON",
+    period: "Starting September 2026",
+    bullets: [
+      <>
+        Joining the{" "}
+        <span className="font-medium text-foreground">Data & AI practice</span>{" "}
+        to work on AI-enabled delivery across client engagements — agentic and
+        AI-integrated solutions, cloud engineering, and technical solutioning.
+      </>,
+    ],
+  },
+  {
     role: "Associate Application Developer",
     org: "ADP Canada",
     location: "Toronto, ON",
-    period: "July 2025 – Present",
+    period: "July 2025 – September 2026",
     bullets: [
       <>
         <span className="font-medium text-foreground">
@@ -77,7 +91,7 @@ const experience = [
       </>,
       <>
         <span className="font-medium text-foreground">
-          Own ML document workflows
+          Owned ML document workflows
         </span>
         : classification and routing pipelines that HR and payroll operations
         depend on daily.
@@ -288,12 +302,14 @@ export default function AboutPage() {
               <div className="space-y-4 text-lg text-muted-foreground mb-8">
                 <p>
                   I&apos;m{" "}
-                  <strong className="text-foreground">Jaiditya Dev</strong>. I
-                  work on production AI at{" "}
-                  <span className="text-foreground">ADP Canada</span>:
-                  classification pipelines over 800K+ live tax records, an MCP
-                  server for enterprise LLM tooling, and the agentic
-                  re-architecture of a production tax assistant.
+                  <strong className="text-foreground">Jaiditya Dev</strong>. At{" "}
+                  <span className="text-foreground">ADP Canada</span> I built
+                  production AI: classification pipelines over 800K+ live tax
+                  records, an MCP server for enterprise LLM tooling, and the
+                  agentic re-architecture of a production tax assistant. In
+                  September 2026 I join{" "}
+                  <span className="text-foreground">Deloitte Canada</span> as a
+                  Business Analyst in the Data &amp; AI practice.
                 </p>
                 <p>
                   Before that: an Applied Statistics degree at the{" "}
@@ -306,7 +322,7 @@ export default function AboutPage() {
               </div>
               <div className="flex flex-wrap gap-2 mb-16">
                 <Badge className="font-mono text-xs">
-                  Production AI @ ADP
+                  Data &amp; AI @ Deloitte
                 </Badge>
                 <Badge className="font-mono text-xs">
                   Full-Stack ML Builder

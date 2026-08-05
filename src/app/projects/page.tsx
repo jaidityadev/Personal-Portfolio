@@ -36,7 +36,7 @@ const featuredProjects: CaseStudyProject[] = [
     built:
       "Real-time ML classification system with refined keyword-search and stakeholder-facing visualizations (word clouds).",
     impact:
-      "Live on production payroll data; now the foundation of the routing pipelines I own full-time at ADP.",
+      "Live on production payroll data; became the foundation of the routing pipelines I owned full-time at ADP.",
     tags: ["Python", "Classification", "NLP", "Data Visualization", "800K+ records"],
     links: [],
   },

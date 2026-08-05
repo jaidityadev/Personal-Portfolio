@@ -16,7 +16,7 @@ export default function ContactPage() {
             <FadeIn>
               <h1 className="text-3xl md:text-4xl font-bold mb-6">Let&apos;s connect</h1>
               <p className="text-xl text-muted-foreground mb-12">
-                Open to data science, ML/AI engineering, and tech consulting roles. Fastest reply by email.
+                Joining Deloitte Canada&apos;s Data &amp; AI practice in September 2026. Always happy to talk production ML, agentic systems, or forecasting research. Fastest reply by email.
               </p>
             </FadeIn>
 
