@@ -32,12 +32,12 @@ const featuredProjects: CaseStudyProject[] = [
     category: "NLP · Production ML",
     image: "/images/tax.png",
     problem:
-      "Manually classifying tax forms across 800K+ live records doesn't scale for production HR and payroll.",
+      "Manually classifying tax forms across 3M+ live records doesn't scale for production HR and payroll.",
     built:
       "Real-time ML classification system with refined keyword-search and stakeholder-facing visualizations (word clouds).",
     impact:
       "Live on production payroll data; became the foundation of the routing pipelines I owned full-time at ADP.",
-    tags: ["Python", "Classification", "NLP", "Data Visualization", "800K+ records"],
+    tags: ["Python", "Classification", "NLP", "Data Visualization", "3M+ records"],
     links: [],
   },
   {

@@ -95,6 +95,33 @@ const experience = [
     ],
   },
   {
+    role: "Strategy Analyst Intern",
+    org: "Ernst & Young LLP",
+    period: "May 2022 – Aug 2022",
+    bullets: [
+      <>
+        Influenced senior stakeholder decisions by facilitating{" "}
+        <span className="font-medium text-foreground">
+          requirements-gathering workshops
+        </span>{" "}
+        and delivering executive-ready narratives on complex technical topics.
+      </>,
+      <>
+        Built{" "}
+        <span className="font-medium text-foreground">quantitative models</span>{" "}
+        and KPI storylines linking technology investment to measurable business
+        outcomes.
+      </>,
+      <>
+        Mapped current-state processes into{" "}
+        <span className="font-medium text-foreground">
+          future-state modernization roadmaps
+        </span>{" "}
+        for enterprise clients.
+      </>,
+    ],
+  },
+  {
     role: "ML Research Intern",
     org: "National Institute of Technology",
     period: "Sep 2019 – Apr 2021",
@@ -143,11 +170,11 @@ const featuredProjects: CaseStudyProject[] = [
     title: "Tax Document Intelligence at ADP",
     category: "NLP · Production ML",
     image: "/images/tax.png",
-    problem: "Manually classifying tax forms across 800K+ live records doesn't scale.",
+    problem: "Manually classifying tax forms across 3M+ live records doesn't scale.",
     built:
       "Real-time ML classification system with refined keyword-search and stakeholder-facing dashboards.",
     impact: "Live on production payroll data; became the foundation of the pipelines I owned full-time.",
-    tags: ["Python", "Classification", "NLP", "Data Viz", "800K+ records"],
+    tags: ["Python", "Classification", "NLP", "Data Viz", "3M+ records"],
     links: [],
   },
   {
@@ -201,7 +228,7 @@ export default function HomePage() {
                   <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4">
                     I&apos;m Jaiditya Dev. At ADP Canada I built the ML systems
                     behind payroll and tax operations: classification pipelines
-                    over 800K+ live records, an MCP server for enterprise LLM
+                    over 3M+ live records, an MCP server for enterprise LLM
                     tooling, and agentic assistants in production. In September
                     I bring that work to Deloitte&apos;s Data &amp; AI practice.
                   </p>
