@@ -1,27 +1,32 @@
 "use client";
 
 import type React from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { spring } from "@/lib/motion";
 
 interface HoverScaleProps {
   children: React.ReactNode;
   className?: string;
   scale?: number;
-  duration?: number;
 }
 
 export default function HoverScale({
   children,
   className,
   scale = 1.02,
-  duration = 0.2,
 }: HoverScaleProps) {
+  const reduced = useReducedMotion();
+
+  if (reduced) return <div className={cn(className)}>{children}</div>;
+
   return (
     <motion.div
       className={cn(className)}
       whileHover={{ scale }}
-      transition={{ duration, ease: "easeInOut" }}
+      // Press feedback lands on pointer-down, not on release.
+      whileTap={{ scale: 0.98 }}
+      transition={spring.snappy}
     >
       {children}
     </motion.div>

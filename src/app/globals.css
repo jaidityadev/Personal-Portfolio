@@ -24,6 +24,13 @@
     --input: 240 5.9% 90%;
     --ring: 167 72% 30%;
     --radius: 0.625rem;
+
+    /* Material tokens — how much light a translucent surface lets through,
+       and how the edge catches it. Heavier surfaces read as thicker glass. */
+    --material-opacity: 0.72;
+    --material-blur: 24px;
+    --material-edge: 240 10% 3.9%;
+    --material-edge-opacity: 0.06;
   }
 
   .dark {
@@ -46,6 +53,11 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 165 75% 47%;
+
+    --material-opacity: 0.6;
+    --material-blur: 28px;
+    --material-edge: 0 0% 100%;
+    --material-edge-opacity: 0.07;
   }
 }
 
@@ -55,9 +67,22 @@
   }
   html {
     scroll-behavior: smooth;
+    /* Anchored sections land below the floating header, not under it. */
+    scroll-padding-top: 5.5rem;
   }
   body {
     @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Ease the light/dark switch — a full-viewport brightness jump is jarring. */
+    transition:
+      background-color 250ms ease,
+      color 250ms ease;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body {
+      transition: none;
+    }
   }
   ::selection {
     background: hsl(var(--primary) / 0.25);
@@ -66,7 +91,19 @@
   h2,
   h3 {
     font-family: var(--font-display), var(--font-sans), sans-serif;
-    letter-spacing: -0.02em;
+    /* Tracking and leading come from the optical type scale, not a blanket
+       value — see fontSize in tailwind.config.ts. */
+    font-optical-sizing: auto;
+    text-wrap: balance;
+  }
+  /* Kill the input-path latency that makes touch feel dead: no 300ms tap
+     delay, no lagging grey flash over our own press feedback. */
+  a,
+  button,
+  [role="button"],
+  summary {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
   }
   @media (prefers-reduced-motion: reduce) {
     html {
@@ -97,13 +134,76 @@
     );
   }
 
-  /* Premium card treatment: hairline border + soft gradient + accent hover */
+  /* Translucent chrome: a floating functional layer with content passing
+     underneath, rather than an opaque strip that eats a fixed band of screen. */
+  .material-chrome {
+    background: hsl(var(--background) / var(--material-opacity));
+    -webkit-backdrop-filter: blur(var(--material-blur)) saturate(180%);
+    backdrop-filter: blur(var(--material-blur)) saturate(180%);
+    box-shadow: inset 0 1px 0 0
+      hsl(var(--material-edge) / var(--material-edge-opacity));
+  }
+
+  /* Heavier material for structural surfaces (sheets, panels). Weight encodes
+     hierarchy: structure sits heavier than the chrome floating above content. */
+  .material-panel {
+    background: hsl(var(--background) / 0.85);
+    -webkit-backdrop-filter: blur(28px) saturate(180%);
+    backdrop-filter: blur(28px) saturate(180%);
+  }
+
+  /* Scroll edge effect: content dissolves into the floating chrome instead of
+     colliding with a 1px rule. Only rendered where chrome overlaps content. */
+  .scroll-edge {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 28px;
+    pointer-events: none;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+    mask-image: linear-gradient(to bottom, black, transparent);
+  }
+
+  /* Vibrancy: text over a translucent surface needs more contrast and a touch
+     more tracking than text on a solid one, or it dissolves into the blur. */
+  .text-vibrant {
+    letter-spacing: 0.005em;
+    text-shadow: 0 0 1px hsl(var(--background) / 0.5);
+  }
+
+  /* Premium card treatment: hairline border, soft gradient, layered shadow.
+     Larger surfaces carry a deeper shadow than small chips. */
   .card-premium {
-    @apply relative overflow-hidden rounded-xl border bg-gradient-to-b from-foreground/[0.03] to-transparent transition-colors duration-300;
+    @apply relative overflow-hidden rounded-xl border bg-gradient-to-b from-foreground/[0.03] to-transparent;
+    box-shadow:
+      0 1px 2px hsl(var(--foreground) / 0.04),
+      0 10px 30px -22px hsl(var(--foreground) / 0.25);
+    transition:
+      border-color 0.3s ease,
+      box-shadow 0.3s ease,
+      transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+  .dark .card-premium {
+    box-shadow:
+      inset 0 1px 0 0 hsl(0 0% 100% / 0.04),
+      0 12px 34px -24px hsl(0 0% 0% / 0.9);
   }
   .card-premium:hover {
     border-color: hsl(var(--primary) / 0.45);
-    box-shadow: 0 0 24px hsl(var(--primary) / 0.08);
+    transform: translateY(-2px);
+    box-shadow:
+      0 2px 4px hsl(var(--foreground) / 0.05),
+      0 18px 44px -26px hsl(var(--foreground) / 0.3),
+      0 0 28px hsl(var(--primary) / 0.09);
+  }
+  .dark .card-premium:hover {
+    box-shadow:
+      inset 0 1px 0 0 hsl(0 0% 100% / 0.06),
+      0 20px 48px -26px hsl(0 0% 0% / 0.95),
+      0 0 28px hsl(var(--primary) / 0.12);
   }
   /* Cursor-following spotlight (vars set by CursorSpotlight component) */
   .card-premium::before {
@@ -119,13 +219,70 @@
     opacity: var(--spot, 0);
     transition: opacity 0.35s ease;
   }
-  @media (prefers-reduced-motion: reduce) {
-    .card-premium::before {
-      display: none;
-    }
-  }
 
   .text-gradient {
     @apply bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent;
+  }
+}
+
+/* Reduced motion: keep the feedback, drop the travel and the overshoot. */
+@media (prefers-reduced-motion: reduce) {
+  .card-premium {
+    transition: border-color 0.2s ease;
+  }
+  .card-premium:hover {
+    transform: none;
+  }
+  .card-premium::before {
+    display: none;
+  }
+  /* Enter/exit animations keep their cross-fade but lose the travel. */
+  [data-state] {
+    --tw-enter-translate-x: 0 !important;
+    --tw-enter-translate-y: 0 !important;
+    --tw-exit-translate-x: 0 !important;
+    --tw-exit-translate-y: 0 !important;
+    --tw-enter-scale: 1 !important;
+    --tw-exit-scale: 1 !important;
+  }
+}
+
+/* Reduced transparency: make the glass frosty and solid rather than removing
+   the layer, so hierarchy survives. */
+@media (prefers-reduced-transparency: reduce) {
+  .material-chrome {
+    background: hsl(var(--background));
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border-bottom: 1px solid hsl(var(--border));
+  }
+  .material-panel {
+    background: hsl(var(--background));
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .scroll-edge {
+    display: none;
+  }
+  .text-vibrant {
+    text-shadow: none;
+  }
+}
+
+/* Increased contrast: near-solid surfaces with a defined border. */
+@media (prefers-contrast: more) {
+  .material-chrome {
+    background: hsl(var(--background));
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border-bottom: 1px solid hsl(var(--foreground) / 0.4);
+  }
+  .material-panel {
+    background: hsl(var(--background));
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .card-premium {
+    border-color: hsl(var(--foreground) / 0.35);
   }
 }

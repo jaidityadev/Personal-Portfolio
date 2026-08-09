@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { crossFade, spring } from "@/lib/motion";
 
 interface StaggerInProps {
   children: React.ReactNode;
@@ -10,7 +11,6 @@ interface StaggerInProps {
   delay?: number;
   staggerDelay?: number;
   direction?: "up" | "down" | "left" | "right";
-  as?: React.ElementType;
   once?: boolean;
 }
 
@@ -20,9 +20,10 @@ export default function StaggerIn({
   delay = 0,
   staggerDelay = 0.1,
   direction = "up",
-  as: Component = "div",
   once = true,
 }: StaggerInProps) {
+  const reduced = useReducedMotion();
+
   const directionMap = {
     up: { y: 20 },
     down: { y: -20 },
@@ -30,20 +31,28 @@ export default function StaggerIn({
     right: { x: -20 },
   };
 
+  const offset = reduced ? {} : directionMap[direction];
+
   const container = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: staggerDelay,
+        // Tighten the cascade under reduced motion so the sequence doesn't linger.
+        staggerChildren: reduced ? staggerDelay / 2 : staggerDelay,
         delayChildren: delay,
       },
     },
   };
 
   const item = {
-    hidden: { opacity: 0, ...directionMap[direction] },
-    show: { opacity: 1, x: 0, y: 0 },
+    hidden: { opacity: 0, ...offset },
+    show: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: reduced ? crossFade : spring.default,
+    },
   };
 
   return (

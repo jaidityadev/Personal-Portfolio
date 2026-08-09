@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 const RESUME_URL =
   "https://drive.google.com/file/d/1Mime_QXRtmFHFVR_BPnpifTOcWbbIYaZ/view?usp=sharing";
@@ -30,8 +31,21 @@ export default function Header() {
     restDelta: 0.001,
   });
 
+  const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     setIsClient(true);
+  }, []);
+
+  // The chrome only materializes once content actually passes underneath it;
+  // at the top of the page there is nothing to separate, so nothing is drawn.
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 8);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const navItems = [
@@ -46,13 +60,20 @@ export default function Header() {
   };
 
   return (
-    <header className="relative py-3 border-b border-border/60 bg-background/80 backdrop-blur-md sticky top-0 z-30">
+    <header
+      className={cn(
+        "sticky top-0 z-30 py-3 transition-[background-color,box-shadow,backdrop-filter] duration-300",
+        scrolled ? "material-chrome" : "bg-transparent"
+      )}
+    >
       <motion.div
         style={{ scaleX: progress }}
         className="absolute bottom-0 left-0 right-0 h-[2px] bg-primary origin-left"
         aria-hidden
       />
-      <div className="container flex items-center justify-between">
+      {/* Content dissolves into the chrome instead of hitting a hard rule. */}
+      {scrolled && <div className="scroll-edge" aria-hidden />}
+      <div className="container flex items-center justify-between text-vibrant">
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src="/images/logo.png"
@@ -168,11 +189,13 @@ export default function Header() {
                   <Link
                     key={item.path}
                     href={item.path}
-                    className={`text-lg ${
+                    className={cn(
+                      // Comfortable 44px touch target with room to slip.
+                      "flex min-h-11 items-center text-lg transition-transform duration-150 ease-out active:scale-[0.98] motion-reduce:active:scale-100",
                       pathname === item.path
                         ? "font-medium text-foreground"
                         : "text-foreground/60"
-                    }`}
+                    )}
                   >
                     {item.name}
                   </Link>
@@ -181,7 +204,7 @@ export default function Header() {
                   href={RESUME_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lg text-foreground/60 flex items-center gap-2"
+                  className="flex min-h-11 items-center gap-2 text-lg text-foreground/60 transition-transform duration-150 ease-out active:scale-[0.98] motion-reduce:active:scale-100"
                 >
                   <FileText className="h-4 w-4" />
                   Resume

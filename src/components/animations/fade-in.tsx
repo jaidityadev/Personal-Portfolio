@@ -1,13 +1,15 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { crossFade, spring } from "@/lib/motion";
 
 interface FadeInProps {
   children: React.ReactNode;
   className?: string;
   direction?: "up" | "down" | "left" | "right";
   delay?: number;
+  /** Spring response in seconds (not a fixed duration — the spring settles on its own). */
   duration?: number;
   once?: boolean;
 }
@@ -17,9 +19,11 @@ export default function FadeIn({
   className,
   direction = "up",
   delay = 0,
-  duration = 0.5,
+  duration,
   once = true,
 }: FadeInProps) {
+  const reduced = useReducedMotion();
+
   const directionMap = {
     up: { y: 20 },
     down: { y: -20 },
@@ -27,12 +31,18 @@ export default function FadeIn({
     right: { x: -20 },
   };
 
+  // Reduced motion keeps the fade and drops the travel.
+  const offset = reduced ? {} : directionMap[direction];
+  const transition = reduced
+    ? { ...crossFade, delay }
+    : { ...spring.default, ...(duration ? { duration } : {}), delay };
+
   return (
     <motion.div
       className={cn(className)}
-      initial={{ opacity: 0, ...directionMap[direction] }}
+      initial={{ opacity: 0, ...offset }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      transition={{ duration, delay, ease: "easeOut" }}
+      transition={transition}
       viewport={{ once }}
     >
       {children}
