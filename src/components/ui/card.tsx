@@ -9,7 +9,8 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "rounded-xl border bg-card text-card-foreground shadow",
+      // Same raised material as the rest of the site's surfaces.
+      "surface-card text-card-foreground transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-e2 motion-reduce:hover:translate-y-0",
       className
     )}
     {...props}

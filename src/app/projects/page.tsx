@@ -3,16 +3,15 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import FadeIn from "@/components/animations/fade-in";
-import StaggerIn from "@/components/animations/stagger-in";
 import PageTransition from "@/components/animations/page-transition";
 import SectionHeading from "@/components/section-heading";
-import ProjectCaseStudyCard, {
-  type CaseStudyProject,
-} from "@/components/project-case-study-card";
+import CaseStudy, { type CaseStudyProject } from "@/components/case-study";
 
 const featuredProjects: CaseStudyProject[] = [
   {
     title: "Foliyo 2.0: AI-Powered Event Management Platform",
+    outcome:
+      "A complete event management platform, owned solo across every layer: authentication, data model, APIs, LLM integration, and deployment.",
     category: "Full-Stack · GenAI",
     image: "/images/foliyo2.png",
     problem:
@@ -29,6 +28,8 @@ const featuredProjects: CaseStudyProject[] = [
   },
   {
     title: "Tax Document Intelligence at ADP",
+    outcome:
+      "Real-time classification across 3M+ live payroll records, which became the foundation of the routing pipelines I owned full time.",
     category: "NLP · Production ML",
     image: "/images/tax.png",
     problem:
@@ -42,6 +43,8 @@ const featuredProjects: CaseStudyProject[] = [
   },
   {
     title: "Disease Outbreak Forecasting (Springer, New Generation Computing)",
+    outcome:
+      "Peer-reviewed in Springer's New Generation Computing, supporting proactive public-health planning.",
     category: "Research · Machine Learning",
     image: "/images/disease_prediction.png",
     problem:
@@ -57,6 +60,8 @@ const featuredProjects: CaseStudyProject[] = [
   },
   {
     title: "Health TrueInfo: Fighting Vaccine Misinformation in 3 Countries",
+    outcome:
+      "Measurable drops in vaccine hesitancy across three countries, published in the UofT Journal of Public Health.",
     category: "Public Health · Mobile",
     image: "/images/health_trueinfo.png",
     problem:
@@ -72,6 +77,8 @@ const featuredProjects: CaseStudyProject[] = [
   },
   {
     title: "Time Series Forecasting for IoT (CRC Press Book Chapter)",
+    outcome:
+      "Published as a chapter in CRC Press's Handbook of Research on Machine Learning Foundations and Applications.",
     category: "Research · Survey",
     image: "/images/iot_forecasting.png",
     problem:
@@ -124,7 +131,7 @@ export default function ProjectsPage() {
   return (
     <PageTransition>
       <div className="py-16 md:py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <SectionHeading
             number="01"
             label="Work"
@@ -134,11 +141,13 @@ export default function ProjectsPage() {
 
           {/* Featured Projects */}
           <section className="mb-20">
-            <StaggerIn className="space-y-8" staggerDelay={0.12}>
-              {featuredProjects.map((project) => (
-                <ProjectCaseStudyCard key={project.title} project={project} />
+            <div className="space-y-16 md:space-y-20">
+              {featuredProjects.map((project, i) => (
+                <FadeIn key={project.title} delay={0.06}>
+                  <CaseStudy project={project} index={i} />
+                </FadeIn>
               ))}
-            </StaggerIn>
+            </div>
           </section>
 
           {/* Other Projects */}
