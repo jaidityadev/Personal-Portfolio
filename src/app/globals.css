@@ -4,48 +4,95 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 167 72% 30%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 167 72% 30%;
-    --radius: 0.625rem;
+    /*
+     * Warm paper rather than screen white. Light is the default now: a
+     * dark-first canvas is the strongest "developer portfolio" signal there
+     * is, and the audience here is a consulting one.
+     */
+    --background: 40 26% 97.5%;
+    --foreground: 30 12% 11%;
+    --card: 40 30% 99%;
+    --card-foreground: 30 12% 11%;
+    --popover: 40 30% 99%;
+    --popover-foreground: 30 12% 11%;
+    /* Deep forest green: the same hue family as the old emerald, taken down
+       to a weight that reads institutional instead of neon. */
+    --primary: 162 58% 22%;
+    --primary-foreground: 40 30% 99%;
+    --secondary: 38 18% 93.5%;
+    --secondary-foreground: 30 12% 15%;
+    --muted: 38 18% 93.5%;
+    --muted-foreground: 32 8% 40%;
+    --accent: 38 18% 93.5%;
+    --accent-foreground: 30 12% 15%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 40 30% 99%;
+    --border: 36 14% 87%;
+    --input: 36 14% 87%;
+    --ring: 162 58% 22%;
+    /* Editorial work wants squarer corners than app UI. */
+    --radius: 0.375rem;
+
+    --surface: 40 30% 99%;
+    --surface-sunken: 38 20% 95%;
+
+    /* Translucent material: rgb triplet + the alpha for chrome layers. */
+    --material-rgb: 250 248 244;
+    --material-alpha: 0.78;
+    --material-alpha-heavy: 0.9;
+    --material-blur: 20px;
+    --material-saturate: 160%;
+
+    /* The bright top edge where light catches a real material. */
+    --edge-highlight: 255 255 255 / 0.8;
+
+    /* Elevation. Bigger surfaces read as thicker, so shadows scale with them. */
+    --shadow-color: 30 25% 20%;
+    --shadow-1: 0 1px 2px hsl(var(--shadow-color) / 0.05),
+      0 1px 1px hsl(var(--shadow-color) / 0.04);
+    --shadow-2: 0 2px 4px hsl(var(--shadow-color) / 0.05),
+      0 6px 14px -4px hsl(var(--shadow-color) / 0.08);
+    --shadow-3: 0 4px 8px hsl(var(--shadow-color) / 0.05),
+      0 18px 36px -12px hsl(var(--shadow-color) / 0.14);
   }
 
+  /* Dark is now the secondary theme: warm-neutral ink, not blue-black. */
   .dark {
-    --background: 240 10% 3.5%;
-    --foreground: 0 0% 98%;
-    --card: 240 8% 5.5%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 165 75% 47%;
-    --primary-foreground: 240 10% 4%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 165 75% 47%;
+    --background: 30 8% 7%;
+    --foreground: 40 18% 95%;
+    --card: 30 7% 10.5%;
+    --card-foreground: 40 18% 95%;
+    --popover: 30 8% 9%;
+    --popover-foreground: 40 18% 95%;
+    --primary: 160 52% 62%;
+    --primary-foreground: 30 12% 8%;
+    --secondary: 30 6% 17%;
+    --secondary-foreground: 40 18% 95%;
+    --muted: 30 6% 17%;
+    --muted-foreground: 38 8% 63%;
+    --accent: 30 6% 17%;
+    --accent-foreground: 40 18% 95%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 40 18% 95%;
+    --border: 30 6% 18%;
+    --input: 30 6% 18%;
+    --ring: 160 52% 62%;
+
+    --surface: 30 7% 10.5%;
+    --surface-sunken: 30 8% 8.5%;
+
+    --material-rgb: 20 19 17;
+    --material-alpha: 0.7;
+    --material-alpha-heavy: 0.88;
+
+    --edge-highlight: 255 255 255 / 0.08;
+
+    --shadow-color: 0 0% 0%;
+    --shadow-1: 0 1px 2px hsl(var(--shadow-color) / 0.4);
+    --shadow-2: 0 2px 6px hsl(var(--shadow-color) / 0.4),
+      0 8px 20px -6px hsl(var(--shadow-color) / 0.5);
+    --shadow-3: 0 4px 10px hsl(var(--shadow-color) / 0.45),
+      0 24px 48px -16px hsl(var(--shadow-color) / 0.7);
   }
 }
 
@@ -53,21 +100,77 @@
   * {
     @apply border-border;
   }
+
   html {
     scroll-behavior: smooth;
+    /* Never let a sticky header land on top of the thing you jumped to. */
+    scroll-padding-top: 6rem;
+    -webkit-text-size-adjust: 100%;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-optical-sizing: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
-  ::selection {
-    background: hsl(var(--primary) / 0.25);
-  }
+
+  /*
+   * Tracking is size-specific — a single letter-spacing value is wrong
+   * somewhere. Large text wants negative tracking, small text a little
+   * positive. The per-size values live in tailwind.config.ts fontSize, so
+   * every text-* utility carries the right tracking and leading with it.
+   */
   h1,
   h2,
-  h3 {
-    font-family: var(--font-display), var(--font-sans), sans-serif;
-    letter-spacing: -0.02em;
+  h3,
+  h4 {
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    text-wrap: balance;
   }
+
+  /*
+   * The serif carries emphasis through contrast and italics rather than
+   * through weight, so headings sit at 400 and lean on size and leading.
+   */
+  h1 em,
+  h2 em,
+  h3 em {
+    font-style: italic;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.22);
+  }
+
+  /* One focus treatment everywhere, and it never disappears under a material. */
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+    border-radius: calc(var(--radius) - 4px);
+  }
+
+  /*
+   * Dark/light is a large brightness jump, so it gets eased rather than cut.
+   * The class is only present for the length of the swap, so nothing else on
+   * the page pays for a global transition.
+   */
+  html.theme-anim,
+  html.theme-anim *,
+  html.theme-anim *::before,
+  html.theme-anim *::after {
+    transition: background-color 280ms ease, border-color 280ms ease,
+      color 280ms ease, fill 280ms ease, stroke 280ms ease,
+      box-shadow 280ms ease !important;
+    transition-delay: 0s !important;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
@@ -75,57 +178,296 @@
   }
 }
 
-@layer utilities {
-  /* Subtle dot-grid texture for the hero */
-  .bg-dots {
-    background-image: radial-gradient(
-      hsl(var(--foreground) / 0.08) 1px,
-      transparent 1px
-    );
-    background-size: 28px 28px;
+@layer components {
+  /*
+   * Translucent chrome. Content scrolls underneath it rather than being
+   * pushed out of a fixed strip, and the bright top edge is the light
+   * catching the material.
+   */
+  /*
+   * The -webkit- prefix must come FIRST: the CSS pipeline treats the two as
+   * one property and keeps whichever is declared last. Prefixed-last means
+   * Chrome gets a property it does not honour and the blur silently vanishes.
+   */
+  .material-chrome {
+    background: rgb(var(--material-rgb) / var(--material-alpha));
+    -webkit-backdrop-filter: blur(var(--material-blur))
+      saturate(var(--material-saturate));
+    backdrop-filter: blur(var(--material-blur)) saturate(var(--material-saturate));
   }
-  .bg-dots-fade {
-    -webkit-mask-image: radial-gradient(
-      ellipse 80% 70% at 50% 30%,
-      black 30%,
-      transparent 100%
+
+  /* Heavier weight for large surfaces: sheets, dialogs, panels. */
+  .material-panel {
+    background: rgb(var(--material-rgb) / var(--material-alpha-heavy));
+    -webkit-backdrop-filter: blur(32px) saturate(var(--material-saturate));
+    backdrop-filter: blur(32px) saturate(var(--material-saturate));
+    box-shadow: var(--shadow-3);
+  }
+
+  /* Vibrancy: text over a translucent surface needs weight, not gray. */
+  .vibrant {
+    color: hsl(var(--foreground) / 0.92);
+    font-weight: 500;
+    letter-spacing: 0.005em;
+  }
+
+  /*
+   * A soft gradient where content meets floating chrome, instead of a 1px
+   * rule. The divider only exists where something is actually overlapping.
+   */
+  .scroll-edge::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 24px;
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--background) / 0.5),
+      transparent
     );
-    mask-image: radial-gradient(
-      ellipse 80% 70% at 50% 30%,
-      black 30%,
-      transparent 100%
+    opacity: var(--edge-opacity, 0);
+    transition: opacity 200ms ease-out;
+  }
+
+  /* Raised card material: hairline border, top edge highlight, soft depth. */
+  .surface-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid hsl(var(--border));
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--surface)),
+      hsl(var(--surface) / 0.7)
+    );
+    box-shadow: var(--shadow-1);
+  }
+
+  .surface-card::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    pointer-events: none;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgb(var(--edge-highlight)),
+      transparent
     );
   }
 
-  /* Premium card treatment: hairline border + soft gradient + accent hover */
+  /* Kept as the site-wide card class; now built on the material above. */
   .card-premium {
-    @apply relative overflow-hidden rounded-xl border bg-gradient-to-b from-foreground/[0.03] to-transparent transition-colors duration-300;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid hsl(var(--border));
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--surface)),
+      hsl(var(--surface) / 0.65)
+    );
+    box-shadow: var(--shadow-1);
+    transition: border-color 300ms ease, box-shadow 300ms ease,
+      transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
   }
+
+  .card-premium::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    pointer-events: none;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgb(var(--edge-highlight)),
+      transparent
+    );
+  }
+
+  /*
+   * A card rises slightly under the pointer. Hover is not a gesture the user
+   * can grab and redirect, so a short CSS transition is the right tool here —
+   * and keeping JS off the input path is what makes it feel immediate.
+   */
   .card-premium:hover {
-    border-color: hsl(var(--primary) / 0.45);
-    box-shadow: 0 0 24px hsl(var(--primary) / 0.08);
+    transform: translateY(-2px);
+    border-color: hsl(var(--primary) / 0.4);
+    box-shadow: var(--shadow-2), 0 0 0 1px hsl(var(--primary) / 0.06);
   }
-  /* Cursor-following spotlight (vars set by CursorSpotlight component) */
+
+  @media (hover: none), (prefers-reduced-motion: reduce) {
+    .card-premium:hover {
+      transform: none;
+    }
+  }
+
+  /* Bulleted copy hangs its wrapped lines instead of running under the dot. */
+  .list-hanging {
+    list-style: disc;
+    padding-left: 1.15rem;
+  }
+  .list-hanging::marker,
+  .list-hanging > li::marker {
+    color: hsl(var(--primary) / 0.55);
+  }
+
+  /* Cursor-following spotlight (vars set by CursorSpotlight). */
   .card-premium::before {
     content: "";
     position: absolute;
     inset: 0;
     pointer-events: none;
+    z-index: 0;
     background: radial-gradient(
-      420px circle at var(--mx, 50%) var(--my, 50%),
-      hsl(var(--primary) / 0.07),
-      transparent 65%
+      460px circle at var(--mx, 50%) var(--my, 50%),
+      hsl(var(--primary) / 0.08),
+      transparent 62%
     );
     opacity: var(--spot, 0);
     transition: opacity 0.35s ease;
   }
-  @media (prefers-reduced-motion: reduce) {
-    .card-premium::before {
-      display: none;
+
+  .card-premium > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@layer utilities {
+  /*
+   * Editorial section label: a rule, an index, and a name on one baseline.
+   * Replaces the decorative dot-grid and glow washes, which read as tech
+   * demo rather than considered work.
+   */
+  .label-rule {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* The trailing rule needs room to be a rule. Below sm the label alone
+     already fills the measure, so the rule is dropped rather than squeezed
+     down to a stub. */
+  .label-rule::after {
+    display: none;
+    content: "";
+    flex: 1;
+    min-width: 2rem;
+    height: 1px;
+    background: hsl(var(--border));
+  }
+
+  @media (min-width: 640px) {
+    .label-rule::after {
+      display: block;
     }
+  }
+
+  /* Hairline that separates rows in a list without boxing them. */
+  .row-rule {
+    border-top: 1px solid hsl(var(--border));
+  }
+
+  .bg-sunken {
+    background-color: hsl(var(--surface-sunken));
+  }
+
+  .elevate-1 {
+    box-shadow: var(--shadow-1);
+  }
+  .elevate-2 {
+    box-shadow: var(--shadow-2);
+  }
+  .elevate-3 {
+    box-shadow: var(--shadow-3);
+  }
+
+  /* Press feedback lives on pointer-down, and it is instant. */
+  .pressable {
+    transition: transform 100ms ease-out;
+    will-change: transform;
+  }
+  .pressable:active {
+    transform: scale(0.97);
   }
 
   .text-gradient {
     @apply bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent;
+  }
+
+  /* Hairline that fades out at both ends, for section rules. */
+  .rule-fade {
+    background: linear-gradient(
+      to right,
+      hsl(var(--border)),
+      hsl(var(--border) / 0.1)
+    );
+  }
+}
+
+/*
+ * Accessibility preferences. Reduced motion is not "no feedback" — it is a
+ * gentler, non-vestibular equivalent, so opacity and colour changes stay.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+
+  .card-premium::before {
+    display: none;
+  }
+
+  .pressable:active {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .material-chrome,
+  .material-panel {
+    background: hsl(var(--background));
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .card-premium,
+  .surface-card {
+    background: hsl(var(--surface));
+  }
+}
+
+@media (prefers-contrast: more) {
+  .material-chrome,
+  .material-panel {
+    background: hsl(var(--background));
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border-color: hsl(var(--foreground) / 0.45);
+  }
+
+  .card-premium,
+  .surface-card {
+    background: hsl(var(--background));
+    border-color: hsl(var(--foreground) / 0.4);
+  }
+
+  .card-premium::before {
+    display: none;
   }
 }

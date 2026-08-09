@@ -1,52 +1,47 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, FileText, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import FadeIn from "@/components/animations/fade-in";
-import StaggerIn from "@/components/animations/stagger-in";
 import PageTransition from "@/components/animations/page-transition";
 import ProofBar from "@/components/proof-bar";
 import SectionHeading from "@/components/section-heading";
-import ForecastChart from "@/components/forecast-chart";
-import DecodeText from "@/components/decode-text";
-import ProjectCaseStudyCard, {
-  type CaseStudyProject,
-} from "@/components/project-case-study-card";
+import ExperienceTimeline, { type Role } from "@/components/experience-timeline";
+import CaseStudy, { type CaseStudyProject } from "@/components/case-study";
 
 const RESUME_URL =
   "https://drive.google.com/file/d/1oj0_6ZugZZDWkI9EHOY9jULrL5yAhaNC/view?usp=sharing";
 
-const pillars = [
+const capabilities = [
   {
-    title: "ML & Forecasting",
+    title: "Machine learning in production",
     description:
-      "Statistical modeling, classification, and time-series forecasting on real production data.",
+      "Classification, forecasting, and statistical modeling on live enterprise data, from first model through the pipelines that operations teams depend on daily.",
     tags: ["Python", "R", "scikit-learn", "PyTorch", "ARIMA"],
   },
   {
-    title: "GenAI & Agentic Systems",
+    title: "GenAI and agentic systems",
     description:
-      "Production RAG pipelines and MCP servers giving LLMs structured access to enterprise tools.",
+      "Retrieval pipelines, MCP servers, and agent designs that give language models structured, auditable access to enterprise tools.",
     tags: ["MCP", "Strands Agents", "RAG", "OpenAI API"],
   },
   {
-    title: "Full-Stack Delivery",
+    title: "Delivery, end to end",
     description:
-      "From model to shipped product: APIs, dashboards, auth, and deployment.",
+      "Taking work past the model: APIs, dashboards, authentication, and deployment, so what gets built is something a team can actually run.",
     tags: ["React", "TypeScript", "Spring Boot", "Docker"],
   },
 ];
 
-const experience = [
+const experience: Role[] = [
   {
     role: "Business Analyst, Data & AI",
     org: "Deloitte Canada",
     period: "Starting Sep 2026",
+    location: "Toronto, ON",
     bullets: [
       <>
         Joining the{" "}
-        <span className="font-medium text-foreground">Data & AI practice</span>{" "}
+        <span className="font-medium text-foreground">Data &amp; AI practice</span>{" "}
         in Toronto, working on AI-enabled delivery for client engagements.
       </>,
       <>
@@ -59,6 +54,7 @@ const experience = [
     role: "Associate Application Developer",
     org: "ADP Canada",
     period: "Jul 2025 – Sep 2026",
+    location: "Toronto, ON",
     bullets: [
       <>
         Re-architected a production tax assistant from custom RAG to an{" "}
@@ -67,8 +63,7 @@ const experience = [
         <span className="font-medium text-foreground">5 tool endpoints</span>.
       </>,
       <>
-        Built an{" "}
-        <span className="font-medium text-foreground">MCP server</span>{" "}
+        Built an <span className="font-medium text-foreground">MCP server</span>{" "}
         wrapping enterprise REST endpoints for auditable LLM tool use in
         production.
       </>,
@@ -82,10 +77,10 @@ const experience = [
     role: "Data Science Intern",
     org: "ADP Canada",
     period: "May 2024 – Aug 2024",
+    location: "Toronto, ON",
     bullets: [
       <>
-        Built an ML model classifying tax form types over a real-time dataset
-        of{" "}
+        Built an ML model classifying tax form types over a real-time dataset of{" "}
         <span className="font-medium text-foreground">800,000+ records</span>.
       </>,
       <>
@@ -151,43 +146,52 @@ const experience = [
 
 const featuredProjects: CaseStudyProject[] = [
   {
-    title: "Foliyo 2.0: AI-Powered Event Management Platform",
-    category: "Full-Stack · GenAI",
+    title: "Foliyo 2.0",
+    category: "Full-stack · GenAI",
     image: "/images/foliyo2.png",
+    outcome:
+      "A complete event management platform, owned solo across every layer: authentication, data model, APIs, LLM integration, and deployment.",
     problem:
       "Event organizers juggle registration, roles, and attendee Q&A across disconnected tools.",
     built:
-      "Spring Boot + React platform: role-aware dashboards, JWT auth, MongoDB, REST APIs, and an OpenAI copilot for natural-language event discovery. Containerized and deployed.",
-    impact: "Owned every layer solo: auth, data model, APIs, LLM, deployment.",
+      "Spring Boot and React platform with role-aware dashboards, JWT auth, MongoDB, REST APIs, and an OpenAI copilot for natural-language event discovery. Containerized and deployed.",
+    impact:
+      "Shows the full delivery path from data model to shipped product, not just the model in the middle.",
     tags: ["Spring Boot", "React", "TypeScript", "MongoDB", "OpenAI", "Docker"],
     links: [
-      { label: "Live App", url: "https://foliyo-2-0.onrender.com" },
+      { label: "Live app", url: "https://foliyo-2-0.onrender.com" },
       { label: "Repository", url: "https://github.com/jaidityadev/foliyo_2.0" },
     ],
     priority: true,
   },
   {
-    title: "Tax Document Intelligence at ADP",
+    title: "Tax document intelligence at ADP",
     category: "NLP · Production ML",
     image: "/images/tax.png",
-    problem: "Manually classifying tax forms across 3M+ live records doesn't scale.",
+    outcome:
+      "Real-time classification across 3M+ live payroll records, which became the foundation of the pipelines I went on to own full time.",
+    problem:
+      "Manually classifying tax forms across 3M+ live records does not scale.",
     built:
       "Real-time ML classification system with refined keyword-search and stakeholder-facing dashboards.",
-    impact: "Live on production payroll data; became the foundation of the pipelines I owned full-time.",
-    tags: ["Python", "Classification", "NLP", "Data Viz", "3M+ records"],
+    impact:
+      "Running on production payroll data that HR and payroll operations teams rely on daily.",
+    tags: ["Python", "Classification", "NLP", "Data viz", "3M+ records"],
     links: [],
   },
   {
-    title: "Disease Outbreak Forecasting (Springer)",
-    category: "Research · Machine Learning",
+    title: "Disease outbreak forecasting",
+    category: "Research · Machine learning",
     image: "/images/disease_prediction.png",
+    outcome:
+      "Peer-reviewed in Springer's New Generation Computing, supporting proactive public-health planning.",
     problem:
       "Single-model outbreak forecasts for dengue and TB are brittle across regions and seasons.",
     built:
       "A heterogeneous ensemble (ARIMA, NNAR, CART, CTREE) blending statistical and tree-based learners to stabilize predictions.",
     impact:
-      "Peer-reviewed in Springer's New Generation Computing; aids proactive public-health planning.",
-    tags: ["R", "Ensemble Forecasting", "ARIMA", "NNAR", "CART"],
+      "Evidence the modeling work holds up to external academic review, not just internal deadlines.",
+    tags: ["R", "Ensemble forecasting", "ARIMA", "NNAR", "CART"],
     links: [
       { label: "Publication", url: "https://doi.org/10.1007/s00354-020-00119-7" },
     ],
@@ -197,249 +201,205 @@ const featuredProjects: CaseStudyProject[] = [
 export default function HomePage() {
   return (
     <PageTransition>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex min-h-screen flex-col">
         {/* Hero */}
-        <section className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-dots bg-dots-fade pointer-events-none" />
-          {/* cinematic depth: soft accent washes behind the headline */}
-          <div className="absolute -top-32 -left-32 h-[480px] w-[600px] rounded-full bg-primary/[0.08] blur-3xl pointer-events-none" />
-          <div className="absolute top-40 right-0 h-[320px] w-[400px] rounded-full bg-primary/[0.05] blur-3xl pointer-events-none" />
-          <div className="container mx-auto px-4 relative py-20 md:py-28">
-            <div className="grid lg:grid-cols-[1.4fr_1fr] gap-12 items-center mb-16">
-              <div>
-                <FadeIn>
-                  <div className="inline-flex items-center gap-2 rounded-full border bg-background/60 px-3 py-1 mb-6">
-                    <span className="relative flex size-2">
-                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60" />
-                      <span className="relative inline-flex size-2 rounded-full bg-primary" />
-                    </span>
-                    <span className="font-mono text-xs text-muted-foreground">
-                      Next: Data &amp; AI at Deloitte Canada · September 2026
-                    </span>
-                  </div>
-                </FadeIn>
-                <FadeIn delay={0.1}>
-                  <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] mb-6">
-                    Data scientist &amp; AI engineer, joining{" "}
-                    <span className="text-primary">Deloitte Canada</span>.
-                  </h1>
-                </FadeIn>
-                <FadeIn delay={0.2}>
-                  <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4">
-                    I&apos;m Jaiditya Dev. At ADP Canada I built the ML systems
-                    behind payroll and tax operations: classification pipelines
-                    over 3M+ live records, an MCP server for enterprise LLM
-                    tooling, and agentic assistants in production. In September
-                    I bring that work to Deloitte&apos;s Data &amp; AI practice.
-                  </p>
-                  <p className="font-mono text-sm uppercase tracking-[0.2em] text-muted-foreground mb-8">
-                    <DecodeText text="DATA SCIENCE · ML ENGINEERING · GENAI" />
-                  </p>
-                </FadeIn>
-                <FadeIn delay={0.25}>
-                  <div className="flex flex-wrap items-center gap-4">
-                    <Button asChild size="lg">
-                      <Link href="/projects">
-                        See my work
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                    <Button asChild variant="outline" size="lg">
-                      <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
-                        <FileText className="mr-2 h-4 w-4" />
-                        View resume
-                      </a>
-                    </Button>
-                    <div className="flex items-center gap-3 sm:ml-2">
+        <section className="border-b border-border">
+          <div className="container mx-auto py-20 md:py-32">
+            <FadeIn>
+              <p className="label-rule max-w-md">
+                <span className="text-primary">Next</span>
+                <span>Deloitte Canada · September 2026</span>
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={0.06}>
+              <h1 className="mt-10 max-w-5xl text-4xl leading-[1.08] sm:text-5xl md:text-7xl md:leading-[1.06]">
+                Data scientist and AI engineer,
+                <br className="hidden md:block" /> joining{" "}
+                <em className="text-primary">Deloitte Canada</em>.
+              </h1>
+            </FadeIn>
+
+            <FadeIn delay={0.12}>
+              <div className="mt-12 max-w-2xl">
+                <p className="text-lg leading-relaxed text-muted-foreground md:text-xl">
+                  I&apos;m Jaiditya Dev. At ADP Canada I built the ML systems
+                  behind payroll and tax operations: classification pipelines
+                  over 3M+ live records, an MCP server for enterprise LLM
+                  tooling, and agentic assistants in production. In September I
+                  bring that work to Deloitte&apos;s Data &amp; AI practice.
+                </p>
+
+                <div className="mt-10 flex flex-wrap items-center gap-3">
+                  <Button asChild size="lg">
+                    <Link href="/projects">
+                      Selected work
+                      <ArrowRight className="ml-1 h-4 w-4" />
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg">
+                    <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
+                      <FileText className="mr-1 h-4 w-4" />
+                      Resume
+                    </a>
+                  </Button>
+                  <div className="flex items-center gap-1">
+                    <Button variant="ghost" size="icon" asChild>
                       <a
                         href="https://github.com/jaidityadev"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub"
-                        className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        <Github className="h-5 w-5" />
+                        <Github className="h-4 w-4" />
                       </a>
+                    </Button>
+                    <Button variant="ghost" size="icon" asChild>
                       <a
                         href="https://www.linkedin.com/in/jaidityadev/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
-                        className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        <Linkedin className="h-5 w-5" />
+                        <Linkedin className="h-4 w-4" />
                       </a>
-                    </div>
+                    </Button>
                   </div>
-                </FadeIn>
-              </div>
-              <FadeIn delay={0.2} direction="left" className="hidden lg:block">
-                <div className="mx-auto w-72 space-y-4">
-                  <div className="relative w-72 h-72">
-                    <div className="absolute -inset-3 rounded-3xl bg-primary/10 blur-2xl" />
-                    <div className="relative w-full h-full rounded-2xl overflow-hidden border border-primary/30">
-                      <Image
-                        src="/images/profile.jpg"
-                        alt="Jaiditya Dev"
-                        fill
-                        sizes="288px"
-                        priority
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-                  <ForecastChart />
                 </div>
-              </FadeIn>
-            </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* Evidence */}
+        <section className="border-b border-border bg-sunken">
+          <div className="container mx-auto py-14 md:py-16">
             <ProofBar />
           </div>
         </section>
 
         {/* Experience */}
-        <section className="py-24 md:py-28 bg-muted/40">
-          <div className="container mx-auto px-4">
+        <section className="py-24 md:py-32">
+          <div className="container mx-auto">
             <SectionHeading
               number="01"
               label="Experience"
-              title="Experience"
-              lede="Software, ML, and research work from full-time roles, internships, and labs."
+              title="Software, ML, and research work across industry and academia."
+              lede="Full-time roles, internships, and labs, from strategy consulting at EY to production AI at ADP."
             />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {experience.map((job, i) => (
-                <FadeIn key={`${job.role}-${job.org}`} delay={0.1 + i * 0.08} direction="up">
-                  <div className="card-premium h-full p-6">
-                    <div className="flex items-baseline justify-between gap-4 mb-1">
-                      <h3 className="text-lg font-bold">{job.role}</h3>
-                      <span className="font-mono text-xs text-muted-foreground whitespace-nowrap">
-                        {job.period}
-                      </span>
-                    </div>
-                    <p className="font-medium text-primary text-sm mb-4">
-                      {job.org}
+            <ExperienceTimeline roles={experience} />
+            <FadeIn delay={0.15}>
+              <div className="mt-12">
+                <Button asChild variant="outline">
+                  <Link href="/about">
+                    Full experience and publications
+                    <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* Selected work */}
+        <section className="border-t border-border bg-sunken py-24 md:py-32">
+          <div className="container mx-auto">
+            <SectionHeading
+              number="02"
+              label="Selected work"
+              title="Three pieces of work, and what each one had to solve."
+              lede="Production ML at ADP, a shipped full-stack product, and peer-reviewed forecasting research."
+            />
+            <div className="space-y-16 md:space-y-20">
+              {featuredProjects.map((project, i) => (
+                <FadeIn key={project.title} delay={0.06}>
+                  <CaseStudy project={project} index={i} />
+                </FadeIn>
+              ))}
+            </div>
+            <FadeIn delay={0.15}>
+              <div className="mt-16">
+                <Button asChild variant="outline" size="lg">
+                  <Link href="/projects">
+                    All projects and publications
+                    <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* Capabilities */}
+        <section className="py-24 md:py-32">
+          <div className="container mx-auto">
+            <SectionHeading
+              number="03"
+              label="Capabilities"
+              title="What I work on."
+              lede="The three areas where I spend most of my time."
+            />
+            <div className="grid gap-px bg-border md:grid-cols-3">
+              {capabilities.map((c, i) => (
+                <FadeIn key={c.title} delay={Math.min(i * 0.08, 0.2)} className="h-full">
+                  {/* Columns are uneven lengths, so the tag rows are pushed to
+                      a shared baseline instead of floating mid-column. */}
+                  <div className="flex h-full flex-col bg-background p-7 md:p-8">
+                    <span className="font-mono text-xs text-primary">
+                      0{i + 1}
+                    </span>
+                    <h3 className="mt-4 text-2xl">{c.title}</h3>
+                    <p className="mt-4 text-[0.9375rem] leading-relaxed text-muted-foreground">
+                      {c.description}
                     </p>
-                    <ul className="list-disc list-inside text-sm text-muted-foreground space-y-2">
-                      {job.bullets.map((bullet, j) => (
-                        <li key={j}>{bullet}</li>
+                    <ul className="mt-auto flex flex-wrap gap-x-4 gap-y-1.5 pt-8">
+                      {c.tags.map((tag) => (
+                        <li
+                          key={tag}
+                          className="font-mono text-[0.6875rem] uppercase tracking-wider text-muted-foreground"
+                        >
+                          {tag}
+                        </li>
                       ))}
                     </ul>
                   </div>
                 </FadeIn>
               ))}
             </div>
-            <FadeIn delay={0.3}>
-              <div className="mt-10">
-                <Button asChild variant="outline">
-                  <Link href="/about">
-                    Full experience & publications
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </FadeIn>
           </div>
         </section>
 
-        {/* Focus areas */}
-        <section className="py-24 md:py-28">
-          <div className="container mx-auto px-4">
-            <SectionHeading
-              number="02"
-              label="Focus"
-              title="What I work on"
-              lede="The three areas where I spend most of my time."
-            />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {pillars.map((pillar, i) => (
-                <FadeIn key={pillar.title} delay={0.1 + i * 0.1} direction="up">
-                  <div className="card-premium h-full p-6">
-                    <span className="font-mono text-xs text-primary">
-                      0{i + 1}
-                    </span>
-                    <h3 className="text-lg font-bold mt-2 mb-3">
-                      {pillar.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mb-5">
-                      {pillar.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {pillar.tags.map((tag) => (
-                        <Badge
-                          key={tag}
-                          variant="secondary"
-                          className="font-mono text-xs"
-                        >
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Featured work */}
-        <section className="py-24 md:py-28 bg-muted/40">
-          <div className="container mx-auto px-4">
-            <SectionHeading
-              number="03"
-              label="Featured Work"
-              title="Selected projects & research"
-              lede="Production ML at ADP, a shipped full-stack product, and peer-reviewed research."
-            />
-            <StaggerIn className="space-y-8" delay={0.1} staggerDelay={0.12}>
-              {featuredProjects.map((project) => (
-                <ProjectCaseStudyCard key={project.title} project={project} />
-              ))}
-            </StaggerIn>
-            <FadeIn delay={0.2}>
-              <div className="flex justify-center mt-12">
-                <Button asChild variant="outline" size="lg">
-                  <Link href="/projects">
-                    All projects & publications
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </FadeIn>
-          </div>
-        </section>
-
-        {/* Contact CTA */}
-        <section className="py-24 md:py-28">
-          <div className="container mx-auto px-4">
+        {/* Contact */}
+        <section className="border-t border-border bg-sunken py-24 md:py-32">
+          <div className="container mx-auto">
             <FadeIn>
-              <div className="card-premium p-10 md:p-16 text-center">
-                <span className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-                  04 · Contact
-                </span>
-                <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-4">
-                  Get in touch.
-                </h2>
-                <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-                  Starting at Deloitte in September. Always happy to talk
-                  production ML, agentic systems, or forecasting research.
-                  Fastest reply by email.
-                </p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <Button asChild size="lg">
-                    <a href="mailto:jaidityadev1402@gmail.com">
-                      jaidityadev1402@gmail.com
-                    </a>
-                  </Button>
-                  <Button asChild variant="outline" size="lg">
-                    <a
-                      href="https://www.linkedin.com/in/jaidityadev/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Linkedin className="mr-2 h-4 w-4" />
-                      LinkedIn
-                    </a>
-                  </Button>
-                </div>
+              <p className="label-rule max-w-md">
+                <span className="text-primary">04</span>
+                <span>Contact</span>
+              </p>
+              <h2 className="mt-8 max-w-3xl text-4xl md:text-5xl">
+                Always happy to talk production ML, agentic systems, or
+                forecasting research.
+              </h2>
+              <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+                Starting at Deloitte in September. Fastest reply by email.
+              </p>
+              <div className="mt-10 flex flex-wrap gap-3">
+                <Button asChild size="lg">
+                  <a href="mailto:jaidityadev1402@gmail.com">
+                    jaidityadev1402@gmail.com
+                  </a>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <a
+                    href="https://www.linkedin.com/in/jaidityadev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Linkedin className="mr-1 h-4 w-4" />
+                    LinkedIn
+                  </a>
+                </Button>
               </div>
             </FadeIn>
           </div>

@@ -304,7 +304,7 @@ export default function AboutPage() {
   return (
     <PageTransition>
       <div className="py-16 md:py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             {/* Intro */}
             <FadeIn>
@@ -338,17 +338,21 @@ export default function AboutPage() {
                   teaching ML and statistics.
                 </p>
               </div>
+              {/* The headline fact leads; the rest support it rather than
+                  competing with it for the same attention. */}
               <div className="flex flex-wrap gap-2 mb-16">
                 <Badge className="font-mono text-xs">
                   Data &amp; AI @ Deloitte
                 </Badge>
-                <Badge className="font-mono text-xs">
+                <Badge variant="secondary" className="font-mono text-xs">
                   Full-Stack ML Builder
                 </Badge>
-                <Badge className="font-mono text-xs">
+                <Badge variant="secondary" className="font-mono text-xs">
                   4× Published Researcher
                 </Badge>
-                <Badge className="font-mono text-xs">Pearson Scholar</Badge>
+                <Badge variant="secondary" className="font-mono text-xs">
+                  Pearson Scholar
+                </Badge>
               </div>
             </FadeIn>
 
@@ -372,7 +376,7 @@ export default function AboutPage() {
                         {job.location}
                       </span>
                     </div>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-2 text-sm md:text-base">
+                    <ul className="list-hanging text-muted-foreground space-y-2 text-sm md:text-base">
                       {job.bullets.map((bullet, i) => (
                         <li key={i}>{bullet}</li>
                       ))}

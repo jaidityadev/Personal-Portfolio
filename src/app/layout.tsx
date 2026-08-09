@@ -1,13 +1,24 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Newsreader } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const spaceGrotesk = Space_Grotesk({
+
+/*
+ * An editorial serif carries the headlines. It reads as considered and
+ * institutional rather than as a developer template, and its optical sizing
+ * means the display sizes are drawn differently from the small ones rather
+ * than just scaled up.
+ */
+const newsreader = Newsreader({
   subsets: ["latin"],
   variable: "--font-display",
+  style: ["normal", "italic"],
+  display: "swap",
 });
+
+/* Mono is for data only now: figures, dates, citations. Never decoration. */
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
@@ -58,8 +69,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/*
+          Reveal animations render their starting state inline, which means a
+          visitor without JS would get a blank page. Nobody should lose the
+          content because the enhancement didn't load.
+        */}
+        <noscript>
+          <style>{`[style*="opacity:0"]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
+      </head>
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${inter.className}`}
+        className={`${inter.variable} ${newsreader.variable} ${jetbrainsMono.variable} ${inter.className}`}
       >
         <ClientBody>{children}</ClientBody>
       </body>
