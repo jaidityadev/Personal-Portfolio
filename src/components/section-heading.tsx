@@ -17,17 +17,14 @@ export default function SectionHeading({
   className,
 }: SectionHeadingProps) {
   return (
-    <FadeIn className={cn("mb-12", className)}>
-      <div className="flex items-baseline gap-3 mb-4">
-        <span className="font-mono text-sm text-primary">{number}</span>
-        <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          {label}
-        </span>
-        <span className="hidden sm:block h-px flex-1 bg-border" />
-      </div>
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
+    <FadeIn className={cn("mb-12 md:mb-16", className)}>
+      <p className="label-rule">
+        <span className="text-primary">{number}</span>
+        <span>{label}</span>
+      </p>
+      <h2 className="mt-6 max-w-3xl text-3xl sm:text-4xl md:text-5xl">{title}</h2>
       {lede && (
-        <p className="text-muted-foreground max-w-3xl text-base md:text-lg">
+        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
           {lede}
         </p>
       )}

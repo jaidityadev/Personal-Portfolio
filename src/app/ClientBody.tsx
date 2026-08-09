@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import { ThemeProvider } from "next-themes";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -11,26 +10,13 @@ export default function ClientBody({
 }: {
   children: React.ReactNode;
 }) {
-  const logged = useRef(false);
-
-  useEffect(() => {
-    if (logged.current) return;
-    logged.current = true;
-    // For the technical reviewers who open DevTools — hi!
-    console.log(
-      "%cJaiditya Dev%c\n\nLike what you see? This site is hand-built with Next.js, Tailwind, and Framer Motion.\nRepo: https://github.com/jaidityadev\nHiring? → jaidityadev1402@gmail.com",
-      "font-size: 20px; font-weight: bold; color: #2dd4a8; font-family: monospace;",
-      "font-size: 12px; color: #888; font-family: monospace;"
-    );
-  }, []);
-
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
-      disableTransitionOnChange
-    >
+    /*
+     * Light is the default. Transitions are deliberately left enabled through
+     * a theme change: the swap is a large brightness jump, and the eased
+     * `.theme-anim` window in globals.css is gentler than cutting between.
+     */
+    <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
       <CursorSpotlight />
       <div className="flex min-h-screen flex-col">
         <Header />
