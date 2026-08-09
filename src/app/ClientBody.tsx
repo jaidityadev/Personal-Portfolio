@@ -25,12 +25,9 @@ export default function ClientBody({
   }, []);
 
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
-      disableTransitionOnChange
-    >
+    // Transitions stay enabled so light/dark eases instead of snapping — an
+    // abrupt full-screen brightness jump is jarring (see globals.css).
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <CursorSpotlight />
       <div className="flex min-h-screen flex-col">
         <Header />

@@ -129,7 +129,7 @@ export default function HomePage() {
                 <FadeIn>
                   <div className="inline-flex items-center gap-2 rounded-full border bg-background/60 px-3 py-1 mb-6">
                     <span className="relative flex size-2">
-                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60" />
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60 motion-reduce:animate-none" />
                       <span className="relative inline-flex size-2 rounded-full bg-primary" />
                     </span>
                     <span className="font-mono text-xs text-muted-foreground">
@@ -139,7 +139,7 @@ export default function HomePage() {
                   </div>
                 </FadeIn>
                 <FadeIn delay={0.1}>
-                  <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] mb-6">
+                  <h1 className="text-4xl md:text-6xl font-bold mb-6">
                     Published at 17.
                     <br />
                     Shipping production AI at{" "}
