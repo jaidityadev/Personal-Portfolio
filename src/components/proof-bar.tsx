@@ -28,29 +28,26 @@ const metrics = [
   },
 ];
 
+/**
+ * Figures set on hairlines rather than in boxes. Cards would make four
+ * separate objects; rules make one table of evidence.
+ */
 export default function ProofBar() {
   return (
-    <FadeIn delay={0.3}>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-px rounded-xl border bg-border overflow-hidden">
+    <FadeIn delay={0.2}>
+      <dl className="grid grid-cols-2 gap-x-8 gap-y-8 lg:grid-cols-4">
         {metrics.map((m) => (
-          <div
-            key={m.label}
-            className="bg-background p-5 md:p-6 flex flex-col gap-1"
-          >
-            <span className="text-2xl md:text-3xl font-bold text-primary">
-              <MetricCounter
-                value={m.value}
-                prefix={m.prefix ?? ""}
-                suffix={m.suffix}
-              />
-            </span>
-            <span className="text-sm font-medium">{m.label}</span>
-            <span className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+          <div key={m.label} className="border-t border-foreground/15 pt-4">
+            <dd className="font-mono text-3xl text-primary md:text-4xl">
+              <MetricCounter value={m.value} suffix={m.suffix} />
+            </dd>
+            <dt className="mt-2 text-sm font-medium">{m.label}</dt>
+            <p className="mt-1 font-mono text-[0.6875rem] uppercase tracking-wider text-muted-foreground">
               {m.sublabel}
-            </span>
+            </p>
           </div>
         ))}
-      </div>
+      </dl>
     </FadeIn>
   );
 }
