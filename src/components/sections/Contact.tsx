@@ -57,6 +57,9 @@ export function Contact() {
       ? [{ label: "ORCID", icon: BookOpen, href: links.orcid, display: displayUrl(links.orcid) }]
       : []),
   ];
+  const availableRows = rows.filter((row): row is ContactRow & { href: string } =>
+    Boolean(row.href),
+  );
 
   return (
     <section
@@ -81,7 +84,7 @@ export function Contact() {
         </Reveal>
 
         <ul className="mt-16 border-t border-border">
-          {rows.map((row, i) => {
+          {availableRows.map((row, i) => {
             const Icon = row.icon;
             const inner = (
               <>
@@ -92,7 +95,7 @@ export function Contact() {
                   </span>
                 </span>
                 <span className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <span className="hidden sm:inline">{row.display ?? "Coming soon"}</span>
+                  <span className="hidden sm:inline">{row.display}</span>
                   {row.href ? (
                     row.download ? (
                       <Download
@@ -114,22 +117,13 @@ export function Contact() {
             return (
               <li key={row.label} className="border-b border-border">
                 <Reveal delay={i * 60}>
-                  {row.href ? (
-                    <ExternalLink
-                      href={row.href}
-                      {...(row.download ? { download: "" } : {})}
-                      className="group flex items-center justify-between gap-6 py-6 transition-[padding] duration-500 ease-out-soft hover:pl-2"
-                    >
-                      {inner}
-                    </ExternalLink>
-                  ) : (
-                    <div
-                      className="flex items-center justify-between gap-6 py-6 opacity-60"
-                      aria-label={`${row.label}, coming soon`}
-                    >
-                      {inner}
-                    </div>
-                  )}
+                  <ExternalLink
+                    href={row.href}
+                    {...(row.download ? { download: "" } : {})}
+                    className="group flex items-center justify-between gap-6 py-6 transition-[padding] duration-500 ease-out-soft hover:pl-2"
+                  >
+                    {inner}
+                  </ExternalLink>
                 </Reveal>
               </li>
             );

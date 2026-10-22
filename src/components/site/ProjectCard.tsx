@@ -15,7 +15,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project, index, featured = false }: ProjectCardProps) {
   const num = String(index + 1).padStart(2, "0");
-  const github = project.links?.github;
+  const { github, live } = project.links ?? {};
 
   return (
     <article
@@ -70,15 +70,26 @@ export function ProjectCard({ project, index, featured = false }: ProjectCardPro
               aria-hidden
             />
           </span>
-          {github ? (
-            <ExternalLink
-              href={github}
-              className="relative z-10 inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
-              aria-label={`${project.title} on GitHub`}
-            >
-              <Github className="size-4" strokeWidth={1.6} aria-hidden /> GitHub
-            </ExternalLink>
-          ) : null}
+          <div className="relative z-10 flex flex-wrap items-center gap-4">
+            {github ? (
+              <ExternalLink
+                href={github}
+                className="relative z-10 inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                aria-label={`${project.title} on GitHub`}
+              >
+                <Github className="size-4" strokeWidth={1.6} aria-hidden /> GitHub
+              </ExternalLink>
+            ) : null}
+            {live ? (
+              <ExternalLink
+                href={live}
+                className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                aria-label={`Visit ${project.title}`}
+              >
+                Visit site <ArrowUpRight className="size-4" strokeWidth={1.6} aria-hidden />
+              </ExternalLink>
+            ) : null}
+          </div>
         </div>
       </div>
     </article>
