@@ -8,8 +8,7 @@
  *
  *  Conventions
  *  • `null` or an empty string means "not provided yet". The UI
- *    hides the field or shows a quiet "coming soon" state —
- *    it never renders a fake link.
+ *    hides the field or link. It never renders a fake link.
  *  • Empty arrays hide their block entirely (e.g. publications).
  *  • Keep professional work high-level. Never add confidential
  *    client details, datasets, source code or internal architecture.
@@ -458,7 +457,7 @@ export const projects: Project[] = [
       "Front-end development with JavaScript, HTML and CSS",
       "Shaping the editorial direction of the initiative",
     ],
-    links: { github: null, live: null },
+    links: { github: null, live: "https://jaidityadev.github.io/SAH200/" },
   },
 ];
 

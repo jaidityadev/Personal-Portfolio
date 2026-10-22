@@ -61,6 +61,7 @@ function ProjectPage() {
   const next = projects[(idx + 1) % projects.length]!;
   const num = String(idx + 1).padStart(2, "0");
   const { github, live, paper } = project.links ?? {};
+  const hasLinks = Boolean(github || live || paper);
 
   return (
     <article className="page-enter pt-28 md:pt-36">
@@ -90,7 +91,9 @@ function ProjectPage() {
           </div>
         </header>
 
-        <dl className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-3">
+        <dl
+          className={`mt-14 grid gap-px overflow-hidden rounded-2xl border border-border bg-border ${hasLinks ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}
+        >
           <div className="bg-card p-5">
             <dt className="eyebrow">Context</dt>
             <dd className="mt-2 text-[0.975rem] text-foreground">{project.context}</dd>
@@ -101,40 +104,37 @@ function ProjectPage() {
               {project.year ?? project.category}
             </dd>
           </div>
-          <div className="bg-card p-5">
-            <dt className="eyebrow">Links</dt>
-            <dd className="mt-2 flex flex-wrap gap-4 text-[0.975rem] text-foreground">
-              {github ? (
-                <ExternalLink
-                  href={github}
-                  className="link-underline inline-flex items-center gap-1.5"
-                >
-                  <Github className="size-4" strokeWidth={1.6} aria-hidden /> GitHub
-                </ExternalLink>
-              ) : null}
-              {live ? (
-                <ExternalLink
-                  href={live}
-                  className="link-underline inline-flex items-center gap-1.5"
-                >
-                  Visit <ArrowUpRight className="size-4" strokeWidth={1.6} aria-hidden />
-                </ExternalLink>
-              ) : null}
-              {paper ? (
-                <ExternalLink
-                  href={paper}
-                  className="link-underline inline-flex items-center gap-1.5"
-                >
-                  Read paper <ArrowUpRight className="size-4" strokeWidth={1.6} aria-hidden />
-                </ExternalLink>
-              ) : null}
-              {!github && !live && !paper ? (
-                <span className="text-muted-foreground">
-                  {project.confidential ? "Private: professional work" : "Coming soon"}
-                </span>
-              ) : null}
-            </dd>
-          </div>
+          {hasLinks ? (
+            <div className="bg-card p-5">
+              <dt className="eyebrow">Links</dt>
+              <dd className="mt-2 flex flex-wrap gap-4 text-[0.975rem] text-foreground">
+                {github ? (
+                  <ExternalLink
+                    href={github}
+                    className="link-underline inline-flex items-center gap-1.5"
+                  >
+                    <Github className="size-4" strokeWidth={1.6} aria-hidden /> GitHub
+                  </ExternalLink>
+                ) : null}
+                {live ? (
+                  <ExternalLink
+                    href={live}
+                    className="link-underline inline-flex items-center gap-1.5"
+                  >
+                    Visit <ArrowUpRight className="size-4" strokeWidth={1.6} aria-hidden />
+                  </ExternalLink>
+                ) : null}
+                {paper ? (
+                  <ExternalLink
+                    href={paper}
+                    className="link-underline inline-flex items-center gap-1.5"
+                  >
+                    Read paper <ArrowUpRight className="size-4" strokeWidth={1.6} aria-hidden />
+                  </ExternalLink>
+                ) : null}
+              </dd>
+            </div>
+          ) : null}
         </dl>
 
         <ProjectVisual
