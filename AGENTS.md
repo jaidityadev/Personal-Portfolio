@@ -1,5 +1,6 @@
 ## Project rules
 
+- Work directly on `main`. Do not create branches or pull requests unless the owner explicitly requests them.
 - No em dashes in visitor-facing copy, and no AI attribution (co-author trailers, "Generated with" lines) in commits or PRs.
 - All visitor-facing copy, links, experience, projects, research and skills live in `src/content/portfolio.ts`; components only render it. Why: the owner edits content without touching layout.
 - Missing info is `null`/empty in content and the UI hides it or shows a muted "coming soon" state — never a fake link. Why: no dead links or invented facts.
