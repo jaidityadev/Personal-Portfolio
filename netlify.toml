@@ -1,13 +1,8 @@
-[images]
-  remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*"]
-
+# TanStack Start, packaged by Nitro's Netlify preset (see vite.config.ts):
+# static assets go to dist/, the SSR function to .netlify/functions-internal.
 [build]
-  command = "npm run build"
-  publish = ".next"
+  command = "bun run build"
+  publish = "dist"
 
 [build.environment]
-  NEXT_PUBLIC_SITE_URL = "https://jaiditya-dev-portfolio.netlify.app"
-  NODE_VERSION = "18"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+  NODE_VERSION = "22"
