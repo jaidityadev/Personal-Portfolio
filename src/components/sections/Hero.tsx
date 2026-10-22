@@ -12,7 +12,11 @@ export function Hero() {
   const readoutRef = useRef<HTMLSpanElement>(null);
 
   return (
-    <section id="top" aria-labelledby="hero-title" className="relative flex min-h-[100svh] flex-col pt-28 md:pt-32">
+    <section
+      id="top"
+      aria-labelledby="hero-title"
+      className="relative flex min-h-[100svh] flex-col pt-28 md:pt-32"
+    >
       <div className="container-page grid flex-1 items-center gap-14 pb-24 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-7">
           <p className="eyebrow hero-in" style={d(0)}>
@@ -36,7 +40,10 @@ export function Hero() {
             )}
           </h1>
 
-          <p className="prose-body hero-in mt-8 max-w-xl text-lg text-muted-foreground" style={d(200)}>
+          <p
+            className="prose-body hero-in mt-8 max-w-xl text-lg text-muted-foreground"
+            style={d(200)}
+          >
             {hero.intro}
           </p>
 
@@ -49,7 +56,10 @@ export function Hero() {
             </Link>
           </div>
 
-          <p className="hero-in mt-10 inline-flex items-center gap-3 text-sm text-muted-foreground" style={d(400)}>
+          <p
+            className="hero-in mt-10 inline-flex items-center gap-3 text-sm text-muted-foreground"
+            style={d(400)}
+          >
             <span aria-hidden className="live-dot size-2 rounded-full bg-primary" />
             {hero.status}
             <TorontoClock />
@@ -99,11 +109,13 @@ function WordReveal() {
       {words.map(({ w, em }, i) => (
         <Fragment key={i}>
           <span className="word-mask">
-            <span className="word-rise" style={{ "--word-delay": `${80 + i * 85}ms` } as CSSProperties}>
+            <span
+              className="word-rise"
+              style={{ "--word-delay": `${80 + i * 85}ms` } as CSSProperties}
+            >
               {em ? <em className="text-primary">{w}</em> : w}
             </span>
-          </span>
-          {" "}
+          </span>{" "}
         </Fragment>
       ))}
     </>

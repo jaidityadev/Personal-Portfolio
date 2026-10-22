@@ -5,7 +5,11 @@ import { experienceStats, visibleExperience } from "@/content/portfolio";
 
 export function ExperienceSection() {
   return (
-    <section id="experience" aria-labelledby="experience-title" className="ruler section-y scroll-mt-16 border-t border-hairline">
+    <section
+      id="experience"
+      aria-labelledby="experience-title"
+      className="ruler section-y scroll-mt-16 border-t border-hairline"
+    >
       <div className="container-page">
         <SectionHeading
           id="experience-title"
@@ -18,7 +22,9 @@ export function ExperienceSection() {
           {experienceStats.map((s, i) => (
             <Reveal key={s.label} delay={i * 70} className="bg-card">
               <div className="flex h-full flex-col p-6 md:p-8">
-                <dd className="display text-[clamp(2.75rem,5vw,4.25rem)] leading-none text-foreground">{s.value}</dd>
+                <dd className="display text-[clamp(2.75rem,5vw,4.25rem)] leading-none text-foreground">
+                  {s.value}
+                </dd>
                 <dt className="mt-4 text-sm leading-snug text-foreground/85">{s.label}</dt>
                 <p className="eyebrow mt-auto pt-4">{s.note}</p>
               </div>

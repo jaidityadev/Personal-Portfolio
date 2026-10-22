@@ -24,7 +24,15 @@ const personLd = {
   worksFor: { "@type": "Organization", name: profile.currentlyAt },
   alumniOf: { "@type": "CollegeOrUniversity", name: "University of Toronto" },
   address: { "@type": "PostalAddress", addressLocality: "Toronto", addressCountry: "CA" },
-  knowsAbout: ["Machine Learning", "Agentic AI", "Model Context Protocol", "Time-Series Forecasting", "Statistics", "Natural Language Processing", "Causal Inference"],
+  knowsAbout: [
+    "Machine Learning",
+    "Agentic AI",
+    "Model Context Protocol",
+    "Time-Series Forecasting",
+    "Statistics",
+    "Natural Language Processing",
+    "Causal Inference",
+  ],
   ...(profile.siteUrl ? { url: profile.siteUrl } : {}),
   sameAs: [links.linkedin, links.github, links.orcid].filter(Boolean),
 };

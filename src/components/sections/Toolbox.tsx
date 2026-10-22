@@ -5,7 +5,11 @@ import { toolbox } from "@/content/portfolio";
 
 export function Toolbox() {
   return (
-    <section id="toolbox" aria-labelledby="toolbox-title" className="ruler section-y scroll-mt-16 border-t border-hairline">
+    <section
+      id="toolbox"
+      aria-labelledby="toolbox-title"
+      className="ruler section-y scroll-mt-16 border-t border-hairline"
+    >
       <div className="container-page">
         <SectionHeading
           id="toolbox-title"

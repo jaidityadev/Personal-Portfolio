@@ -15,7 +15,12 @@ export const Route = createFileRoute("/projects/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: `Project unavailable | ${profile.name}` }, { name: "robots", content: "noindex" }] };
+      return {
+        meta: [
+          { title: `Project unavailable | ${profile.name}` },
+          { name: "robots", content: "noindex" },
+        ],
+      };
     }
     const { project } = loaderData;
     const title = `${project.title} | ${profile.name}`;
@@ -76,8 +81,12 @@ function ProjectPage() {
               <span className="mx-2 text-border">/</span>
               {project.category}
             </p>
-            <h1 className="display mt-6 text-[clamp(2.75rem,6.5vw,5.5rem)] text-foreground">{project.title}</h1>
-            <p className="prose-body mt-8 max-w-2xl text-lg text-muted-foreground">{project.summary}</p>
+            <h1 className="display mt-6 text-[clamp(2.75rem,6.5vw,5.5rem)] text-foreground">
+              {project.title}
+            </h1>
+            <p className="prose-body mt-8 max-w-2xl text-lg text-muted-foreground">
+              {project.summary}
+            </p>
           </div>
         </header>
 
@@ -88,23 +97,34 @@ function ProjectPage() {
           </div>
           <div className="bg-card p-5">
             <dt className="eyebrow">{project.year ? "Year" : "Discipline"}</dt>
-            <dd className="mt-2 text-[0.975rem] text-foreground">{project.year ?? project.category}</dd>
+            <dd className="mt-2 text-[0.975rem] text-foreground">
+              {project.year ?? project.category}
+            </dd>
           </div>
           <div className="bg-card p-5">
             <dt className="eyebrow">Links</dt>
             <dd className="mt-2 flex flex-wrap gap-4 text-[0.975rem] text-foreground">
               {github ? (
-                <ExternalLink href={github} className="link-underline inline-flex items-center gap-1.5">
+                <ExternalLink
+                  href={github}
+                  className="link-underline inline-flex items-center gap-1.5"
+                >
                   <Github className="size-4" strokeWidth={1.6} aria-hidden /> GitHub
                 </ExternalLink>
               ) : null}
               {live ? (
-                <ExternalLink href={live} className="link-underline inline-flex items-center gap-1.5">
+                <ExternalLink
+                  href={live}
+                  className="link-underline inline-flex items-center gap-1.5"
+                >
                   Visit <ArrowUpRight className="size-4" strokeWidth={1.6} aria-hidden />
                 </ExternalLink>
               ) : null}
               {paper ? (
-                <ExternalLink href={paper} className="link-underline inline-flex items-center gap-1.5">
+                <ExternalLink
+                  href={paper}
+                  className="link-underline inline-flex items-center gap-1.5"
+                >
                   Read paper <ArrowUpRight className="size-4" strokeWidth={1.6} aria-hidden />
                 </ExternalLink>
               ) : null}
@@ -133,11 +153,16 @@ function ProjectPage() {
           <div className="space-y-16 md:col-span-8 md:col-start-5">
             <Reveal>
               <section aria-labelledby="overview">
-                <h2 id="overview" className="eyebrow"><span className="text-primary">A</span> / The problem &amp; approach</h2>
+                <h2 id="overview" className="eyebrow">
+                  <span className="text-primary">A</span> / The problem &amp; approach
+                </h2>
                 <div className="mt-5 space-y-5">
                   {project.overview.map((p, i) =>
                     i === 0 ? (
-                      <p key={i} className="display text-[clamp(1.5rem,2.4vw,2rem)] leading-[1.3] text-foreground">
+                      <p
+                        key={i}
+                        className="display text-[clamp(1.5rem,2.4vw,2rem)] leading-[1.3] text-foreground"
+                      >
                         {p}
                       </p>
                     ) : (
@@ -152,11 +177,18 @@ function ProjectPage() {
 
             <Reveal>
               <section aria-labelledby="focus">
-                <h2 id="focus" className="eyebrow"><span className="text-primary">B</span> / What the work involved</h2>
+                <h2 id="focus" className="eyebrow">
+                  <span className="text-primary">B</span> / What the work involved
+                </h2>
                 <ul className="mt-5 border-t border-hairline">
                   {project.focus.map((f, i) => (
-                    <li key={f} className="flex gap-6 border-b border-hairline py-4 text-[1.02rem] text-foreground/90">
-                      <span className="eyebrow w-6 shrink-0 pt-1 text-primary">{String(i + 1).padStart(2, "0")}</span>
+                    <li
+                      key={f}
+                      className="flex gap-6 border-b border-hairline py-4 text-[1.02rem] text-foreground/90"
+                    >
+                      <span className="eyebrow w-6 shrink-0 pt-1 text-primary">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
                       {f}
                     </li>
                   ))}
@@ -167,7 +199,9 @@ function ProjectPage() {
             {project.outcomes?.length ? (
               <Reveal>
                 <section aria-labelledby="outcomes">
-                  <h2 id="outcomes" className="eyebrow"><span className="text-primary">C</span> / Impact</h2>
+                  <h2 id="outcomes" className="eyebrow">
+                    <span className="text-primary">C</span> / Impact
+                  </h2>
                   <ul className="mt-5 grid gap-4 sm:grid-cols-2">
                     {project.outcomes.map((o) => (
                       <li key={o} className="rounded-2xl border border-border bg-card p-6">
@@ -182,10 +216,15 @@ function ProjectPage() {
             {project.tradeoffs?.length ? (
               <Reveal>
                 <section aria-labelledby="tradeoffs">
-                  <h2 id="tradeoffs" className="eyebrow"><span className="text-primary">D</span> / Trade-offs &amp; lessons</h2>
+                  <h2 id="tradeoffs" className="eyebrow">
+                    <span className="text-primary">D</span> / Trade-offs &amp; lessons
+                  </h2>
                   <ul className="mt-5 space-y-4">
                     {project.tradeoffs.map((t) => (
-                      <li key={t} className="flex gap-4 text-[1.02rem] leading-relaxed text-foreground/90">
+                      <li
+                        key={t}
+                        className="flex gap-4 text-[1.02rem] leading-relaxed text-foreground/90"
+                      >
                         <span aria-hidden className="mt-[0.8rem] h-px w-4 shrink-0 bg-primary" />
                         {t}
                       </li>
@@ -198,9 +237,13 @@ function ProjectPage() {
             {project.confidential ? (
               <Reveal>
                 <p className="flex gap-3 rounded-2xl border border-border bg-surface p-5 text-sm leading-relaxed text-muted-foreground">
-                  <ShieldCheck className="mt-0.5 size-4 shrink-0 text-primary" strokeWidth={1.6} aria-hidden />
-                  This was professional work. It's described at a high level only. No confidential data, source code
-                  or internal architecture is shared here.
+                  <ShieldCheck
+                    className="mt-0.5 size-4 shrink-0 text-primary"
+                    strokeWidth={1.6}
+                    aria-hidden
+                  />
+                  This was professional work. It's described at a high level only. No confidential
+                  data, source code or internal architecture is shared here.
                 </p>
               </Reveal>
             ) : null}

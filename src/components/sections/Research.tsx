@@ -6,7 +6,11 @@ import { research } from "@/content/portfolio";
 
 export function Research() {
   return (
-    <section id="research" aria-labelledby="research-title" className="ruler section-y scroll-mt-16 border-t border-hairline">
+    <section
+      id="research"
+      aria-labelledby="research-title"
+      className="ruler section-y scroll-mt-16 border-t border-hairline"
+    >
       <div className="container-page">
         <SectionHeading
           id="research-title"
@@ -30,8 +34,12 @@ export function Research() {
                 <li key={topic}>
                   <Reveal delay={i * 50}>
                     <div className="flex items-baseline gap-6 border-b border-hairline py-5">
-                      <span className="eyebrow w-6 shrink-0 text-primary">{String(i + 1).padStart(2, "0")}</span>
-                      <span className="display text-[clamp(1.5rem,2.4vw,2rem)] text-foreground">{topic}</span>
+                      <span className="eyebrow w-6 shrink-0 text-primary">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span className="display text-[clamp(1.5rem,2.4vw,2rem)] text-foreground">
+                        {topic}
+                      </span>
                     </div>
                   </Reveal>
                 </li>
@@ -47,7 +55,9 @@ export function Research() {
               <h3 className="display mt-4 text-[clamp(1.75rem,2.8vw,2.4rem)] text-foreground">
                 {research.collaboration.title}
               </h3>
-              <p className="prose-body mt-4 max-w-2xl text-muted-foreground">{research.collaboration.body}</p>
+              <p className="prose-body mt-4 max-w-2xl text-muted-foreground">
+                {research.collaboration.body}
+              </p>
               <TagList items={research.collaboration.areas} className="mt-6" />
             </article>
           </Reveal>

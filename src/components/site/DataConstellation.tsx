@@ -38,7 +38,11 @@ const clamp = (v: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, v
  * drift, connect to neighbours, and lean away from the pointer.
  * Pauses offscreen; renders a single static frame under reduced motion.
  */
-export function DataConstellation({ readoutRef }: { readoutRef?: RefObject<HTMLSpanElement | null> }) {
+export function DataConstellation({
+  readoutRef,
+}: {
+  readoutRef?: RefObject<HTMLSpanElement | null>;
+}) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -78,8 +82,12 @@ export function DataConstellation({ readoutRef }: { readoutRef?: RefObject<HTMLS
       pts = Array.from({ length: count }, (_, i) => {
         const noise = i % 7 === 6;
         const c = centers[i % 3]!;
-        const hx = noise ? rand() * width : clamp(c.x * width + gauss(rand) * spread, 10, width - 10);
-        const hy = noise ? rand() * height : clamp(c.y * height + gauss(rand) * spread, 10, height - 10);
+        const hx = noise
+          ? rand() * width
+          : clamp(c.x * width + gauss(rand) * spread, 10, width - 10);
+        const hy = noise
+          ? rand() * height
+          : clamp(c.y * height + gauss(rand) * spread, 10, height - 10);
         return {
           hx,
           hy,

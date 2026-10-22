@@ -8,11 +8,7 @@ export function ExternalLink({
 }: AnchorHTMLAttributes<HTMLAnchorElement> & { href: string; children: ReactNode }) {
   const offsite = /^https?:\/\//.test(href);
   return (
-    <a
-      href={href}
-      {...(offsite ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-      {...rest}
-    >
+    <a href={href} {...(offsite ? { target: "_blank", rel: "noopener noreferrer" } : {})} {...rest}>
       {children}
       {offsite ? <span className="sr-only"> (opens in a new tab)</span> : null}
     </a>

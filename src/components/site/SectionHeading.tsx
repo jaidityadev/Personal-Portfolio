@@ -12,7 +12,14 @@ interface SectionHeadingProps {
   id?: string;
 }
 
-export function SectionHeading({ index, label, title, description, className, id }: SectionHeadingProps) {
+export function SectionHeading({
+  index,
+  label,
+  title,
+  description,
+  className,
+  id,
+}: SectionHeadingProps) {
   return (
     <Reveal className={cn("grid gap-6 md:grid-cols-12 md:gap-10", className)}>
       <div className="flex items-center gap-3 md:col-span-3 md:items-start md:pt-3">

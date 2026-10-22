@@ -22,7 +22,9 @@ export function TorontoClock() {
   if (!now) return null;
   return (
     <span className="font-mono text-xs tabular-nums text-muted-foreground">
-      <span aria-hidden className="mr-3 text-border">·</span>
+      <span aria-hidden className="mr-3 text-border">
+        ·
+      </span>
       <span className="sr-only">Local time in Toronto: </span>
       {now}
     </span>

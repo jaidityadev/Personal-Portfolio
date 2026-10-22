@@ -112,8 +112,7 @@ export const links = {
   github: "https://github.com/jaidityadev" as string | null,
   /** Google Drive copy of the résumé. Re-upload to the same file to keep this link. */
   resume: "https://drive.google.com/file/d/1oj0_6ZugZZDWkI9EHOY9jULrL5yAhaNC/view?usp=sharing" as
-    | string
-    | null,
+    string | null,
   orcid: "https://orcid.org/0009-0005-2095-4383" as string | null,
 };
 
@@ -146,7 +145,11 @@ export const about = {
   ],
   highlights: [
     { label: "Education", value: "University of Toronto", detail: "H.B.Sc. Applied Statistics" },
-    { label: "Pearson Scholar", value: "1 of 37 across UofT", detail: "$350K+ full four-year award" },
+    {
+      label: "Pearson Scholar",
+      value: "1 of 37 across UofT",
+      detail: "$350K+ full four-year award",
+    },
     { label: "Research", value: "4 publications", detail: "First published in high school" },
   ],
 };

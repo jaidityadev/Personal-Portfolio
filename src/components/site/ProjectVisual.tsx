@@ -61,7 +61,14 @@ function AgentRouting() {
         className="viz-flow stroke-primary-foreground/70"
       />
 
-      <circle cx={agent.x} cy={agent.y} r="22" fill="none" strokeDasharray="2 4" className="stroke-primary/50" />
+      <circle
+        cx={agent.x}
+        cy={agent.y}
+        r="22"
+        fill="none"
+        strokeDasharray="2 4"
+        className="stroke-primary/50"
+      />
       <circle cx={agent.x} cy={agent.y} r="13" className="fill-primary" />
       <text x={agent.x - 30} y={agent.y + 3} textAnchor="end" className={MONO} fontSize="9">
         agent
@@ -70,7 +77,13 @@ function AgentRouting() {
       {tools.map((tool, i) => {
         const on = i === active;
         return (
-          <g key={`t${i}`} className={cn(on && "motion-safe:transition-transform motion-safe:duration-700 motion-safe:group-hover:-translate-y-0.5")}>
+          <g
+            key={`t${i}`}
+            className={cn(
+              on &&
+                "motion-safe:transition-transform motion-safe:duration-700 motion-safe:group-hover:-translate-y-0.5",
+            )}
+          >
             <line
               x1={tool.x}
               x2={tool.x}
@@ -102,7 +115,13 @@ function AgentRouting() {
       })}
 
       {/* MCP gateway band */}
-      <rect x="24" y={bandTop} width="352" height={bandBottom - bandTop} className="fill-primary/8" />
+      <rect
+        x="24"
+        y={bandTop}
+        width="352"
+        height={bandBottom - bandTop}
+        className="fill-primary/8"
+      />
       <line x1="24" x2="376" y1={bandTop} y2={bandTop} className="stroke-primary/50" />
       <line x1="24" x2="376" y1={bandBottom} y2={bandBottom} className="stroke-primary/50" />
       <text x="28" y={bandTop + 10} className="fill-primary font-mono" fontSize="8">
@@ -139,14 +158,35 @@ function AgentRouting() {
               width="52"
               height="30"
               rx="3"
-              className={on ? "fill-primary/10 stroke-primary" : "fill-foreground/5 stroke-foreground/25"}
+              className={
+                on ? "fill-primary/10 stroke-primary" : "fill-foreground/5 stroke-foreground/25"
+              }
             />
-            <line x1={tool.x - 18} x2={tool.x + 12} y1={blockY + 11} y2={blockY + 11} className="stroke-foreground/25" />
-            <line x1={tool.x - 18} x2={tool.x + 4} y1={blockY + 19} y2={blockY + 19} className="stroke-foreground/25" />
+            <line
+              x1={tool.x - 18}
+              x2={tool.x + 12}
+              y1={blockY + 11}
+              y2={blockY + 11}
+              className="stroke-foreground/25"
+            />
+            <line
+              x1={tool.x - 18}
+              x2={tool.x + 4}
+              y1={blockY + 19}
+              y2={blockY + 19}
+              className="stroke-foreground/25"
+            />
           </g>
         );
       })}
-      <line x1={t.x} x2={t.x} y1={t.y + 9} y2={blockY} strokeWidth="1.5" className="viz-flow stroke-card" />
+      <line
+        x1={t.x}
+        x2={t.x}
+        y1={t.y + 9}
+        y2={blockY}
+        strokeWidth="1.5"
+        className="viz-flow stroke-card"
+      />
       <text x="376" y="244" textAnchor="end" className={MONO} fontSize="9">
         enterprise systems
       </text>
@@ -180,11 +220,33 @@ function DocumentSorting() {
         <path key={f.key} d={f.d} fill="none" className="stroke-foreground/15" />
       ))}
       {incoming.map((d, i) => (
-        <g key={i} className="motion-safe:transition-transform motion-safe:duration-700 motion-safe:group-hover:translate-x-1">
+        <g
+          key={i}
+          className="motion-safe:transition-transform motion-safe:duration-700 motion-safe:group-hover:translate-x-1"
+        >
           <g transform={`rotate(${d.rot} ${d.x + 9} ${d.y + 12})`}>
-            <rect x={d.x} y={d.y} width="18" height="24" rx="2.5" className="fill-card stroke-foreground/30" />
-            <line x1={d.x + 4} x2={d.x + 14} y1={d.y + 8} y2={d.y + 8} className="stroke-foreground/20" />
-            <line x1={d.x + 4} x2={d.x + 11} y1={d.y + 13} y2={d.y + 13} className="stroke-foreground/20" />
+            <rect
+              x={d.x}
+              y={d.y}
+              width="18"
+              height="24"
+              rx="2.5"
+              className="fill-card stroke-foreground/30"
+            />
+            <line
+              x1={d.x + 4}
+              x2={d.x + 14}
+              y1={d.y + 8}
+              y2={d.y + 8}
+              className="stroke-foreground/20"
+            />
+            <line
+              x1={d.x + 4}
+              x2={d.x + 11}
+              y1={d.y + 13}
+              y2={d.y + 13}
+              className="stroke-foreground/20"
+            />
             <circle cx={d.x + 16} cy={d.y + 2} r="2.6" className={lanes[d.lane]!.dot} />
           </g>
         </g>
@@ -214,7 +276,13 @@ function DocumentSorting() {
                 rx="2"
                 className="fill-card stroke-foreground/30"
               />
-              <line x1={230 + k * 21} x2={238 + k * 21} y1={l.y - 3} y2={l.y - 3} className="stroke-foreground/20" />
+              <line
+                x1={230 + k * 21}
+                x2={238 + k * 21}
+                y1={l.y - 3}
+                y2={l.y - 3}
+                className="stroke-foreground/20"
+              />
               <circle cx={240 + k * 21} cy={l.y - 9} r="2.4" className={l.dot} />
             </g>
           ))}
@@ -244,7 +312,11 @@ function EventGrid() {
   const attendee = rows.flatMap((y, r) =>
     Array.from({ length: cols }, (_, c) => ({ r, c, x: colX(c), y, tw: r1(18 + rand() * 18) })),
   );
-  const organizer = Array.from({ length: cols }, (_, c) => ({ c, x: colX(c), fill: r1(8 + rand() * 26) }));
+  const organizer = Array.from({ length: cols }, (_, c) => ({
+    c,
+    x: colX(c),
+    fill: r1(8 + rand() * 26),
+  }));
   const cx = (c: number) => colX(c) + w / 2;
   const qx = 100;
   return (
@@ -256,20 +328,45 @@ function EventGrid() {
         strokeWidth="1.2"
         className="stroke-primary"
       />
-      <path d={`M${cx(1)},52 V64 M${cx(4)},52 V64`} fill="none" strokeWidth="1.2" className="stroke-primary" />
+      <path
+        d={`M${cx(1)},52 V64 M${cx(4)},52 V64`}
+        fill="none"
+        strokeWidth="1.2"
+        className="stroke-primary"
+      />
       <path
         d={`M${colX(2) - 4},52 V97 H${cx(2)} V100`}
         fill="none"
         strokeWidth="1.2"
         className="stroke-primary"
       />
-      <path d={`M${qx},40 V52 H${cx(4)}`} fill="none" strokeWidth="1.2" className="viz-flow stroke-card" />
+      <path
+        d={`M${qx},40 V52 H${cx(4)}`}
+        fill="none"
+        strokeWidth="1.2"
+        className="viz-flow stroke-card"
+      />
       {[...matchedCols].map((c) => (
-        <line key={c} x1={cx(c)} x2={cx(c)} y1="130" y2={orgY} strokeDasharray="1.5 3" className="stroke-primary/50" />
+        <line
+          key={c}
+          x1={cx(c)}
+          x2={cx(c)}
+          y1="130"
+          y2={orgY}
+          strokeDasharray="1.5 3"
+          className="stroke-primary/50"
+        />
       ))}
 
       {/* query */}
-      <rect x="56" y="14" width="316" height="26" rx="13" className="fill-card stroke-foreground/25" />
+      <rect
+        x="56"
+        y="14"
+        width="316"
+        height="26"
+        rx="13"
+        className="fill-card stroke-foreground/25"
+      />
       <text x="70" y="31" className="fill-primary font-mono" fontSize="10">
         ›
       </text>
@@ -278,10 +375,24 @@ function EventGrid() {
       </text>
       <rect x="248" y="21" width="1.4" height="12" className="fill-primary" />
 
-      <text x="40" y="97" transform="rotate(-90 40 97)" textAnchor="middle" className={MONO} fontSize="8">
+      <text
+        x="40"
+        y="97"
+        transform="rotate(-90 40 97)"
+        textAnchor="middle"
+        className={MONO}
+        fontSize="8"
+      >
         attendee
       </text>
-      <text x="40" y="198" transform="rotate(-90 40 198)" textAnchor="middle" className={MONO} fontSize="8">
+      <text
+        x="40"
+        y="198"
+        transform="rotate(-90 40 198)"
+        textAnchor="middle"
+        className={MONO}
+        fontSize="8"
+      >
         organizer
       </text>
 
@@ -290,7 +401,10 @@ function EventGrid() {
         return (
           <g
             key={`${t.r}-${t.c}`}
-            className={cn(on && "motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:-translate-y-0.5")}
+            className={cn(
+              on &&
+                "motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:-translate-y-0.5",
+            )}
           >
             <rect
               x={t.x}
@@ -300,15 +414,41 @@ function EventGrid() {
               rx="4"
               className={on ? "fill-card stroke-primary" : "fill-card stroke-foreground/20"}
             />
-            {on ? <rect x={t.x} y={t.y} width={w} height={th} rx="4" className="fill-primary/10" /> : null}
-            <line x1={t.x + 6} x2={t.x + 6 + t.tw} y1={t.y + 10} y2={t.y + 10} className={on ? "stroke-primary" : "stroke-foreground/25"} />
-            <line x1={t.x + 6} x2={t.x + 20} y1={t.y + 18} y2={t.y + 18} className="stroke-foreground/15" />
-            <circle cx={t.x + w - 7} cy={t.y + th - 7} r="2" className={on ? "fill-primary" : "fill-foreground/20"} />
+            {on ? (
+              <rect x={t.x} y={t.y} width={w} height={th} rx="4" className="fill-primary/10" />
+            ) : null}
+            <line
+              x1={t.x + 6}
+              x2={t.x + 6 + t.tw}
+              y1={t.y + 10}
+              y2={t.y + 10}
+              className={on ? "stroke-primary" : "stroke-foreground/25"}
+            />
+            <line
+              x1={t.x + 6}
+              x2={t.x + 20}
+              y1={t.y + 18}
+              y2={t.y + 18}
+              className="stroke-foreground/15"
+            />
+            <circle
+              cx={t.x + w - 7}
+              cy={t.y + th - 7}
+              r="2"
+              className={on ? "fill-primary" : "fill-foreground/20"}
+            />
           </g>
         );
       })}
 
-      <line x1="56" x2="372" y1="153" y2="153" strokeDasharray="2 4" className="stroke-foreground/20" />
+      <line
+        x1="56"
+        x2="372"
+        y1="153"
+        y2="153"
+        strokeDasharray="2 4"
+        className="stroke-foreground/20"
+      />
       <text x="372" y="147" textAnchor="end" className="fill-primary font-mono" fontSize="8">
         3 matches
       </text>
@@ -323,12 +463,40 @@ function EventGrid() {
               width={w}
               height={orgH}
               rx="4"
-              className={on ? "fill-card stroke-primary/70" : "fill-foreground/5 stroke-foreground/20"}
+              className={
+                on ? "fill-card stroke-primary/70" : "fill-foreground/5 stroke-foreground/20"
+              }
             />
-            <line x1={o.x + 6} x2={o.x + 30} y1={orgY + 11} y2={orgY + 11} className="stroke-foreground/25" />
-            <line x1={o.x + 6} x2={o.x + 18} y1={orgY + 18} y2={orgY + 18} className="stroke-foreground/15" />
-            <rect x={o.x + 6} y={orgY + 30} width="34" height="4" rx="2" className="fill-foreground/10" />
-            <rect x={o.x + 6} y={orgY + 30} width={o.fill} height="4" rx="2" className={on ? "fill-primary" : "fill-foreground/35"} />
+            <line
+              x1={o.x + 6}
+              x2={o.x + 30}
+              y1={orgY + 11}
+              y2={orgY + 11}
+              className="stroke-foreground/25"
+            />
+            <line
+              x1={o.x + 6}
+              x2={o.x + 18}
+              y1={orgY + 18}
+              y2={orgY + 18}
+              className="stroke-foreground/15"
+            />
+            <rect
+              x={o.x + 6}
+              y={orgY + 30}
+              width="34"
+              height="4"
+              rx="2"
+              className="fill-foreground/10"
+            />
+            <rect
+              x={o.x + 6}
+              y={orgY + 30}
+              width={o.fill}
+              height="4"
+              rx="2"
+              className={on ? "fill-primary" : "fill-foreground/35"}
+            />
           </g>
         );
       })}
@@ -355,7 +523,8 @@ function EnsembleForecast() {
       .filter((x) => x <= today)
       .map((x) => {
         const decay = 1 - (0.85 * (x - x0)) / (today - x0);
-        const y = truth(x) + sign * amp * Math.sin(x / (14 + k * 4) + phase) * decay + (rand() - 0.5) * 3;
+        const y =
+          truth(x) + sign * amp * Math.sin(x / (14 + k * 4) + phase) * decay + (rand() - 0.5) * 3;
         return `${x},${r1(y)}`;
       })
       .join(" ");
@@ -367,7 +536,9 @@ function EnsembleForecast() {
     ...future.map((x) => `${x},${r1(truth(x) - spread(x))}`),
     ...[...future].reverse().map((x) => `${x},${r1(truth(x) + spread(x))}`),
   ].join(" ");
-  const observed = xs.filter((x, i) => x < today && i % 2 === 0).map((x) => ({ x, y: r1(truth(x) + (rand() - 0.5) * 10) }));
+  const observed = xs
+    .filter((x, i) => x < today && i % 2 === 0)
+    .map((x) => ({ x, y: r1(truth(x) + (rand() - 0.5) * 10) }));
   const legend = ["arima", "nnar", "cart", "ctree"];
   const dashes = [undefined, "4 3", "1.5 2.5", "6 2 1.5 2"];
   return (
@@ -385,9 +556,22 @@ function EnsembleForecast() {
           className="stroke-foreground/35"
         />
       ))}
-      <polyline points={ens} fill="none" strokeWidth="2.2" strokeLinejoin="round" className="stroke-primary" />
+      <polyline
+        points={ens}
+        fill="none"
+        strokeWidth="2.2"
+        strokeLinejoin="round"
+        className="stroke-primary"
+      />
 
-      <line x1={today} x2={today} y1="40" y2="226" strokeDasharray="3 4" className="stroke-foreground/45" />
+      <line
+        x1={today}
+        x2={today}
+        y1="40"
+        y2="226"
+        strokeDasharray="3 4"
+        className="stroke-foreground/45"
+      />
       <text x={today + 5} y="48" className="fill-foreground font-mono" fontSize="9">
         today
       </text>
@@ -398,13 +582,27 @@ function EnsembleForecast() {
 
       {legend.map((l, k) => (
         <g key={l}>
-          <line x1={x0 + k * 52} x2={x0 + k * 52 + 12} y1="22" y2="22" strokeDasharray={dashes[k]} className="stroke-foreground/50" />
+          <line
+            x1={x0 + k * 52}
+            x2={x0 + k * 52 + 12}
+            y1="22"
+            y2="22"
+            strokeDasharray={dashes[k]}
+            className="stroke-foreground/50"
+          />
           <text x={x0 + k * 52 + 16} y="25" className={MONO} fontSize="8">
             {l}
           </text>
         </g>
       ))}
-      <line x1={x0 + 214} x2={x0 + 226} y1="22" y2="22" strokeWidth="2.2" className="stroke-primary" />
+      <line
+        x1={x0 + 214}
+        x2={x0 + 226}
+        y1="22"
+        y2="22"
+        strokeWidth="2.2"
+        className="stroke-primary"
+      />
       <text x={x0 + 230} y="25" className="fill-primary font-mono" fontSize="8">
         ensemble
       </text>
@@ -427,10 +625,23 @@ function MultilingualOutreach() {
   return (
     <>
       {/* phone */}
-      <rect x="40" y="40" width="80" height="178" rx="13" className="fill-card stroke-foreground/40" />
+      <rect
+        x="40"
+        y="40"
+        width="80"
+        height="178"
+        rx="13"
+        className="fill-card stroke-foreground/40"
+      />
       <rect x="68" y="47" width="24" height="4" rx="2" className="fill-foreground/20" />
       <rect x="66" y="74" width="46" height="18" rx="9" className="fill-primary" />
-      <text x="89" y="86" textAnchor="middle" className="fill-primary-foreground font-mono" fontSize="8">
+      <text
+        x="89"
+        y="86"
+        textAnchor="middle"
+        className="fill-primary-foreground font-mono"
+        fontSize="8"
+      >
         vaccine
       </text>
       <rect x="48" y="100" width="46" height="18" rx="9" className="fill-foreground/10" />
@@ -483,7 +694,13 @@ function MultilingualOutreach() {
           <text x={n.x + 9} y={n.y + 3} className="fill-foreground font-mono" fontSize="8">
             {n.id}
           </text>
-          <text x={n.wx} y={n.wy} textAnchor="middle" className="fill-muted-foreground" fontSize="9">
+          <text
+            x={n.wx}
+            y={n.wy}
+            textAnchor="middle"
+            className="fill-muted-foreground"
+            fontSize="9"
+          >
             {n.word}
           </text>
         </g>
@@ -501,7 +718,13 @@ function MultilingualOutreach() {
         className="stroke-foreground/70"
       />
       {trend.map((y, i) => (
-        <circle key={i} cx={292 + i * 13} cy={y} r="1.8" className={i === trend.length - 1 ? "fill-primary" : "fill-foreground/60"} />
+        <circle
+          key={i}
+          cx={292 + i * 13}
+          cy={y}
+          r="1.8"
+          className={i === trend.length - 1 ? "fill-primary" : "fill-foreground/60"}
+        />
       ))}
     </>
   );
@@ -537,11 +760,19 @@ function AnomalyBand() {
         className="stroke-foreground/55"
       />
       {pts.map(([x, y], i) => {
-        if (anomalies[i] === undefined) return <circle key={i} cx={x} cy={y} r="2" className="fill-foreground/70" />;
+        if (anomalies[i] === undefined)
+          return <circle key={i} cx={x} cy={y} r="2" className="fill-foreground/70" />;
         const edge = r1(expected[i]! + (anomalies[i]! < 0 ? -width : width));
         return (
           <g key={i}>
-            <line x1={x} x2={x} y1={edge} y2={y} strokeDasharray="2 2" className="stroke-primary/70" />
+            <line
+              x1={x}
+              x2={x}
+              y1={edge}
+              y2={y}
+              strokeDasharray="2 2"
+              className="stroke-primary/70"
+            />
             <circle
               cx={x}
               cy={y}
@@ -555,12 +786,25 @@ function AnomalyBand() {
           </g>
         );
       })}
-      <text x={pts[19]![0]} y={pts[19]![1] + 24} textAnchor="middle" className="fill-primary font-mono" fontSize="9">
+      <text
+        x={pts[19]![0]}
+        y={pts[19]![1] + 24}
+        textAnchor="middle"
+        className="fill-primary font-mono"
+        fontSize="9"
+      >
         flagged
       </text>
       <line x1={x0} x2={x1} y1="226" y2="226" className="stroke-foreground/30" />
       {pts.map(([x], i) => (
-        <line key={i} x1={x} x2={x} y1="226" y2={i % 4 === 0 ? 233 : 229} className="stroke-foreground/30" />
+        <line
+          key={i}
+          x1={x}
+          x2={x}
+          y1="226"
+          y2={i % 4 === 0 ? 233 : 229}
+          className="stroke-foreground/30"
+        />
       ))}
       <text x={x1} y="244" textAnchor="end" className={MONO} fontSize="9">
         quarters →
@@ -610,16 +854,35 @@ function LogisticFactors() {
         </g>
       ))}
       <circle cx={node.x} cy={node.y} r="9" className="fill-card stroke-primary" />
-      <text x={node.x} y={node.y + 3.5} textAnchor="middle" className="fill-primary font-mono" fontSize="9">
+      <text
+        x={node.x}
+        y={node.y + 3.5}
+        textAnchor="middle"
+        className="fill-primary font-mono"
+        fontSize="9"
+      >
         Σ
       </text>
       <line x1={node.x + 9} x2={px0 - 4} y1={node.y} y2={node.y} className="stroke-primary/60" />
 
       <line x1={px0} x2={px1} y1="218" y2="218" className="stroke-foreground/30" />
       <line x1={px0} x2={px0} y1="36" y2="218" className="stroke-foreground/30" />
-      <line x1={px0} x2={px1} y1="130" y2="130" strokeDasharray="2 4" className="stroke-foreground/15" />
+      <line
+        x1={px0}
+        x2={px1}
+        y1="130"
+        y2="130"
+        strokeDasharray="2 4"
+        className="stroke-foreground/15"
+      />
       {dots.map((d, i) => (
-        <circle key={i} cx={d.x} cy={d.y} r="2.8" className={d.hit ? "fill-primary/70" : "fill-card stroke-foreground/45"} />
+        <circle
+          key={i}
+          cx={d.x}
+          cy={d.y}
+          r="2.8"
+          className={d.hit ? "fill-primary/70" : "fill-card stroke-foreground/45"}
+        />
       ))}
       <path
         d={curve}
@@ -654,11 +917,23 @@ function StoryMosaic() {
     { x: 316, w: 54, hs: [60, 76] },
   ];
   const highlighted = new Set(["1-0", "3-1", "5-0"]);
-  const tones = ["fill-foreground/8", "fill-foreground/14", "fill-foreground/20", "fill-foreground/11"];
+  const tones = [
+    "fill-foreground/8",
+    "fill-foreground/14",
+    "fill-foreground/20",
+    "fill-foreground/11",
+  ];
   const tiles = columns.flatMap((col, ci) => {
     let y = top;
     return col.hs.map((h, ti) => {
-      const tile = { key: `${ci}-${ti}`, x: col.x, y, w: col.w, h, tone: tones[Math.floor(rand() * tones.length)]! };
+      const tile = {
+        key: `${ci}-${ti}`,
+        x: col.x,
+        y,
+        w: col.w,
+        h,
+        tone: tones[Math.floor(rand() * tones.length)]!,
+      };
       y += h + gap;
       return tile;
     });
@@ -692,7 +967,10 @@ function StoryMosaic() {
         return (
           <g
             key={t.key}
-            className={cn(on && "motion-safe:transition-transform motion-safe:duration-700 motion-safe:group-hover:-translate-y-0.5")}
+            className={cn(
+              on &&
+                "motion-safe:transition-transform motion-safe:duration-700 motion-safe:group-hover:-translate-y-0.5",
+            )}
           >
             {on ? (
               <path
@@ -702,7 +980,12 @@ function StoryMosaic() {
               />
             ) : null}
             <path d={shape} className={on ? "fill-primary" : t.tone} />
-            <circle cx={t.x + r} cy={hcy} r={hr} className={on ? "fill-primary-foreground/30" : "fill-foreground/10"} />
+            <circle
+              cx={t.x + r}
+              cy={hcy}
+              r={hr}
+              className={on ? "fill-primary-foreground/30" : "fill-foreground/10"}
+            />
             <path
               d={`M${r1(t.x + t.w * 0.2)},${t.y + t.h} C${r1(t.x + t.w * 0.2)},${sh} ${r1(t.x + t.w * 0.8)},${sh} ${r1(t.x + t.w * 0.8)},${t.y + t.h} Z`}
               className={on ? "fill-primary-foreground/30" : "fill-foreground/10"}
@@ -755,7 +1038,14 @@ function Distribution() {
         />
       ))}
       <path d={curve} fill="none" strokeWidth="2" className="stroke-primary" />
-      <line x1="200" x2="200" y1="52" y2="220" strokeDasharray="3 4" className="stroke-primary/70" />
+      <line
+        x1="200"
+        x2="200"
+        y1="52"
+        y2="220"
+        strokeDasharray="3 4"
+        className="stroke-primary/70"
+      />
       <text x="206" y="58" className="fill-primary font-serif italic" fontSize="16">
         x̄
       </text>
@@ -776,7 +1066,13 @@ export const PROJECT_VISUALS: Record<ProjectVisualKind, () => React.JSX.Element>
   distribution: Distribution,
 };
 
-export function ProjectVisual({ kind, className }: { kind: ProjectVisualKind; className?: string }) {
+export function ProjectVisual({
+  kind,
+  className,
+}: {
+  kind: ProjectVisualKind;
+  className?: string;
+}) {
   const Visual = PROJECT_VISUALS[kind];
   return (
     <div className={cn("dot-grid relative overflow-hidden bg-surface", className)}>

@@ -10,7 +10,11 @@ export function SiteFooter() {
         <p>{footer.copyright}</p>
         <div className="flex items-center gap-6">
           <span className="eyebrow">{profile.location}</span>
-          <Link to="/" hash="top" className="link-underline inline-flex items-center gap-1.5 hover:text-foreground">
+          <Link
+            to="/"
+            hash="top"
+            className="link-underline inline-flex items-center gap-1.5 hover:text-foreground"
+          >
             Back to top <ArrowUp className="size-3.5" strokeWidth={1.6} aria-hidden />
           </Link>
         </div>

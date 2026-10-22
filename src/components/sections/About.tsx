@@ -21,19 +21,29 @@ export function About() {
                     className="size-full object-cover"
                   />
                 ) : (
-                  <div className="dot-grid flex size-full items-center justify-center gap-3" role="img" aria-label="Monogram for Jaiditya Dev">
-                    <span className="display text-[8rem] italic leading-none text-foreground/80">J</span>
+                  <div
+                    className="dot-grid flex size-full items-center justify-center gap-3"
+                    role="img"
+                    aria-label="Monogram for Jaiditya Dev"
+                  >
+                    <span className="display text-[8rem] italic leading-none text-foreground/80">
+                      J
+                    </span>
                     <span className="display text-[8rem] leading-none text-primary">D</span>
                   </div>
                 )}
               </div>
-              <figcaption className="eyebrow mt-3">{profile.name} · {profile.location}</figcaption>
+              <figcaption className="eyebrow mt-3">
+                {profile.name} · {profile.location}
+              </figcaption>
             </figure>
           </Reveal>
 
           <div className="md:col-span-7 lg:col-span-7 lg:col-start-6">
             <Reveal>
-              <p className="display text-[clamp(1.6rem,2.6vw,2.2rem)] leading-[1.2] text-foreground">{about.lead}</p>
+              <p className="display text-[clamp(1.6rem,2.6vw,2.2rem)] leading-[1.2] text-foreground">
+                {about.lead}
+              </p>
             </Reveal>
             <div className="mt-10 space-y-5">
               {about.paragraphs.map((p, i) => (

@@ -6,7 +6,11 @@ import { projects } from "@/content/portfolio";
 export function Work() {
   const [first, ...rest] = projects;
   return (
-    <section id="work" aria-labelledby="work-title" className="ruler section-y scroll-mt-16 border-t border-hairline">
+    <section
+      id="work"
+      aria-labelledby="work-title"
+      className="ruler section-y scroll-mt-16 border-t border-hairline"
+    >
       <div className="container-page">
         <SectionHeading
           id="work-title"

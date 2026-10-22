@@ -16,13 +16,36 @@ const NAV: NavItem[] = [
   { id: "contact", label: "Contact" },
 ];
 
-function NavLink({ item, className, onClick, children, current }: { item: NavItem; className: string; onClick?: () => void; children: React.ReactNode; current?: boolean }) {
+function NavLink({
+  item,
+  className,
+  onClick,
+  children,
+  current,
+}: {
+  item: NavItem;
+  className: string;
+  onClick?: () => void;
+  children: React.ReactNode;
+  current?: boolean;
+}) {
   return item.to ? (
-    <Link to={item.to} className={className} onClick={onClick} activeProps={{ "aria-current": "page" }}>
+    <Link
+      to={item.to}
+      className={className}
+      onClick={onClick}
+      activeProps={{ "aria-current": "page" }}
+    >
       {children}
     </Link>
   ) : (
-    <Link to="/" hash={item.id} className={className} onClick={onClick} aria-current={current ? "location" : undefined}>
+    <Link
+      to="/"
+      hash={item.id}
+      className={className}
+      onClick={onClick}
+      aria-current={current ? "location" : undefined}
+    >
       {children}
     </Link>
   );
@@ -47,9 +70,9 @@ export function SiteHeader() {
       setActive(null);
       return;
     }
-    const els = NAV.filter((n) => !n.to).map((n) => document.getElementById(n.id)).filter(
-      (el): el is HTMLElement => el !== null,
-    );
+    const els = NAV.filter((n) => !n.to)
+      .map((n) => document.getElementById(n.id))
+      .filter((el): el is HTMLElement => el !== null);
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) if (e.isIntersecting) setActive(e.target.id);
@@ -105,7 +128,9 @@ export function SiteHeader() {
                   current={active === item.id}
                   className={cn(
                     "link-underline text-sm transition-colors",
-                    active === item.id || pathname === item.to ? "text-foreground" : "text-muted-foreground hover:text-foreground",
+                    active === item.id || pathname === item.to
+                      ? "text-foreground"
+                      : "text-muted-foreground hover:text-foreground",
                   )}
                 >
                   {item.label}
@@ -133,13 +158,21 @@ export function SiteHeader() {
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen((v) => !v)}
           >
-            {open ? <X className="size-4" strokeWidth={1.6} /> : <Menu className="size-4" strokeWidth={1.6} />}
+            {open ? (
+              <X className="size-4" strokeWidth={1.6} />
+            ) : (
+              <Menu className="size-4" strokeWidth={1.6} />
+            )}
           </button>
         </div>
       </div>
 
       {open ? (
-        <nav id="mobile-nav" aria-label="Mobile" className="page-enter h-[calc(100svh-4rem)] overflow-y-auto border-t border-hairline bg-background md:hidden">
+        <nav
+          id="mobile-nav"
+          aria-label="Mobile"
+          className="page-enter h-[calc(100svh-4rem)] overflow-y-auto border-t border-hairline bg-background md:hidden"
+        >
           <ul className="container-page flex flex-col py-4">
             {NAV.map((item, i) => (
               <li key={item.id}>

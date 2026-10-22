@@ -10,7 +10,11 @@ export function CustomCursor() {
     if (!window.matchMedia("(pointer: fine)").matches) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    let x = -100, y = -100, cx = -100, cy = -100, raf = 0;
+    let x = -100,
+      y = -100,
+      cx = -100,
+      cy = -100,
+      raf = 0;
     const loop = () => {
       cx += (x - cx) * 0.22;
       cy += (y - cy) * 0.22;
@@ -23,7 +27,9 @@ export function CustomCursor() {
       y = e.clientY;
       el.dataset["visible"] = "true";
       const t = e.target as Element | null;
-      el.dataset["hover"] = t?.closest("a, button, [role='button'], article.group, input") ? "true" : "false";
+      el.dataset["hover"] = t?.closest("a, button, [role='button'], article.group, input")
+        ? "true"
+        : "false";
     };
     const onLeave = () => (el.dataset["visible"] = "false");
     window.addEventListener("pointermove", onMove, { passive: true });

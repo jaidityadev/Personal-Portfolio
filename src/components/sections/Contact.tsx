@@ -1,4 +1,13 @@
-import { ArrowUpRight, BookOpen, Download, FileText, Github, Linkedin, Mail, type LucideIcon } from "lucide-react";
+import {
+  ArrowUpRight,
+  BookOpen,
+  Download,
+  FileText,
+  Github,
+  Linkedin,
+  Mail,
+  type LucideIcon,
+} from "lucide-react";
 
 import { ExternalLink } from "@/components/site/ExternalLink";
 import { Reveal } from "@/components/site/Reveal";
@@ -23,8 +32,18 @@ function displayUrl(url: string | null) {
 
 export function Contact() {
   const rows: ContactRow[] = [
-    { label: "Email", icon: Mail, href: links.email ? `mailto:${links.email}` : null, display: links.email },
-    { label: "LinkedIn", icon: Linkedin, href: links.linkedin, display: displayUrl(links.linkedin) },
+    {
+      label: "Email",
+      icon: Mail,
+      href: links.email ? `mailto:${links.email}` : null,
+      display: links.email,
+    },
+    {
+      label: "LinkedIn",
+      icon: Linkedin,
+      href: links.linkedin,
+      display: displayUrl(links.linkedin),
+    },
     { label: "GitHub", icon: Github, href: links.github, display: displayUrl(links.github) },
     // A résumé hosted off-site (e.g. Google Drive) opens in a new tab; only a same-site PDF downloads.
     {
@@ -40,7 +59,11 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" aria-labelledby="contact-title" className="ruler section-y scroll-mt-16 border-t border-hairline">
+    <section
+      id="contact"
+      aria-labelledby="contact-title"
+      className="ruler section-y scroll-mt-16 border-t border-hairline"
+    >
       <div className="container-page">
         <Reveal>
           <p className="eyebrow">
@@ -64,15 +87,25 @@ export function Contact() {
               <>
                 <span className="flex items-center gap-4">
                   <Icon className="size-5 text-muted-foreground" strokeWidth={1.5} aria-hidden />
-                  <span className="display text-[clamp(1.75rem,3.2vw,2.6rem)] text-foreground">{row.label}</span>
+                  <span className="display text-[clamp(1.75rem,3.2vw,2.6rem)] text-foreground">
+                    {row.label}
+                  </span>
                 </span>
                 <span className="flex items-center gap-3 text-sm text-muted-foreground">
                   <span className="hidden sm:inline">{row.display ?? "Coming soon"}</span>
                   {row.href ? (
                     row.download ? (
-                      <Download className="size-5 text-foreground transition-transform duration-500 group-hover:translate-y-0.5 group-hover:text-primary" strokeWidth={1.5} aria-hidden />
+                      <Download
+                        className="size-5 text-foreground transition-transform duration-500 group-hover:translate-y-0.5 group-hover:text-primary"
+                        strokeWidth={1.5}
+                        aria-hidden
+                      />
                     ) : (
-                      <ArrowUpRight className="size-5 text-foreground transition-transform duration-500 ease-out-soft group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" strokeWidth={1.5} aria-hidden />
+                      <ArrowUpRight
+                        className="size-5 text-foreground transition-transform duration-500 ease-out-soft group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary"
+                        strokeWidth={1.5}
+                        aria-hidden
+                      />
                     )
                   ) : null}
                 </span>

@@ -71,7 +71,9 @@ export function CommandMenu() {
             <CommandItem
               key={p.slug}
               value={`${p.title} ${p.category}`}
-              onSelect={() => go(() => navigate({ to: "/projects/$slug", params: { slug: p.slug } }))}
+              onSelect={() =>
+                go(() => navigate({ to: "/projects/$slug", params: { slug: p.slug } }))
+              }
             >
               {p.title}
             </CommandItem>
@@ -93,7 +95,10 @@ export function CommandMenu() {
             Toggle dark mode
           </CommandItem>
           {external.map((l) => (
-            <CommandItem key={l.label} onSelect={() => go(() => window.open(l.href, "_blank", "noopener"))}>
+            <CommandItem
+              key={l.label}
+              onSelect={() => go(() => window.open(l.href, "_blank", "noopener"))}
+            >
               Open {l.label}
             </CommandItem>
           ))}
