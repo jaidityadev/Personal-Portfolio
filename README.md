@@ -46,3 +46,9 @@ public/                    portrait, favicons, robots.txt
 ## Deployment
 
 Pushing to `main` deploys to Netlify. `netlify.toml` runs `bun run build` and publishes `dist/`, and the server-rendering function is picked up from `.netlify/functions-internal`.
+
+## Organization logos
+
+Experience logos are served locally from `public/logos/` and configured beside each role in `src/content/portfolio.ts`. Their light tiles preserve the original brand colors in both themes. Repeated roles share the same asset; an omitted `logo` hides the tile.
+
+Logo sources: [Deloitte](https://www.deloitte.com/content/dam/assets-shared/logos/png/a-d/deloitte-print.png), [ADP](https://www.adp.com/-/media/adp2025/ui/logo-adp.svg), [EY](https://www.ey.com/en_ca), [University of Toronto](https://www.utoronto.ca/themes/custom/bootstrap_uoft/logo.svg), [LearnAI](https://www.projectx2020.com/), and [NIT Jalandhar](https://nitj.ac.in/public/assets/images/nitj-logo.png). The Deloitte and UofT vectors use their black and navy color variants for the light tiles. All marks belong to their respective organizations.

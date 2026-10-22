@@ -34,14 +34,31 @@ export function Timeline({ items }: { items: Experience[] }) {
               />
               <Reveal>
                 {item.period ? <p className="eyebrow mb-3 md:hidden">{item.period}</p> : null}
-                <h3 className="display text-[clamp(1.85rem,3vw,2.5rem)] text-foreground">
-                  {item.organization}
-                </h3>
-                {item.role ? (
-                  <p className="mt-1.5 text-[0.95rem] font-medium text-foreground/80">
-                    {item.role}
-                  </p>
-                ) : null}
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-5">
+                  {item.logo ? (
+                    <div className="flex h-16 w-28 shrink-0 items-center justify-center rounded-xl border border-black/10 bg-white shadow-sm dark:border-white/10 dark:bg-[#f5f3ee]">
+                      <img
+                        src={item.logo.src}
+                        alt=""
+                        width={item.logo.width}
+                        height={item.logo.height}
+                        loading="lazy"
+                        decoding="async"
+                        className="max-h-12 max-w-[94px] object-contain"
+                      />
+                    </div>
+                  ) : null}
+                  <div className="min-w-0">
+                    <h3 className="display text-[clamp(1.85rem,3vw,2.5rem)] text-foreground">
+                      {item.organization}
+                    </h3>
+                    {item.role ? (
+                      <p className="mt-1.5 text-[0.95rem] font-medium text-foreground/80">
+                        {item.role}
+                      </p>
+                    ) : null}
+                  </div>
+                </div>
                 {item.summary ? (
                   <p className="prose-body mt-4 max-w-2xl text-muted-foreground">{item.summary}</p>
                 ) : null}

@@ -57,6 +57,8 @@ export interface Project {
 
 export interface Experience {
   organization: string;
+  /** Locally hosted organization mark. Leave null until verified. */
+  logo?: { src: string; width: number; height: number } | null;
   /** Leave empty until you want a title displayed. */
   role: string;
   period: string;
@@ -167,6 +169,7 @@ export const experienceStats = [
 export const experience: Experience[] = [
   {
     organization: "Deloitte Canada",
+    logo: { src: "/logos/deloitte.svg", width: 90, height: 17 },
     role: "Business Analyst, Data & AI",
     period: "Sep 2026 – Present",
     location: "Toronto, ON",
@@ -176,6 +179,7 @@ export const experience: Experience[] = [
   },
   {
     organization: "ADP Canada",
+    logo: { src: "/logos/adp.svg", width: 66, height: 30 },
     role: "Associate Application Developer",
     period: "Jul 2025 – Sep 2026",
     location: "Toronto, ON",
@@ -189,6 +193,7 @@ export const experience: Experience[] = [
   },
   {
     organization: "University of Toronto Mississauga",
+    logo: { src: "/logos/university-of-toronto.svg", width: 94, height: 35 },
     role: "Teaching Assistant, STA107",
     period: "Jan 2025 – Apr 2025",
     location: "Mississauga, ON",
@@ -201,6 +206,7 @@ export const experience: Experience[] = [
   },
   {
     organization: "ADP Canada",
+    logo: { src: "/logos/adp.svg", width: 66, height: 30 },
     role: "Data Science Intern",
     period: "May 2024 – Aug 2024",
     location: "Toronto, ON",
@@ -213,6 +219,7 @@ export const experience: Experience[] = [
   },
   {
     organization: "University of Toronto Mississauga",
+    logo: { src: "/logos/university-of-toronto.svg", width: 94, height: 35 },
     role: "Research Assistant",
     period: "May 2023 – Aug 2023",
     location: "Mississauga, ON",
@@ -222,6 +229,7 @@ export const experience: Experience[] = [
   },
   {
     organization: "UofT AI · LearnAI",
+    logo: { src: "/logos/learnai.png", width: 88, height: 43 },
     role: "Program Teaching Assistant",
     period: "Oct 2022 – Apr 2023",
     location: "Toronto, ON",
@@ -231,6 +239,7 @@ export const experience: Experience[] = [
   },
   {
     organization: "EY",
+    logo: { src: "/logos/ey.svg", width: 43, height: 47 },
     role: "Strategy Analyst Intern",
     period: "May 2022 – Aug 2022",
     location: "New Delhi, India",
@@ -243,10 +252,11 @@ export const experience: Experience[] = [
     tags: ["Strategy", "Business Cases", "Excel Modeling"],
   },
   {
-    organization: "National Institute of Technology",
+    organization: "National Institute of Technology Jalandhar",
+    logo: { src: "/logos/nit-jalandhar.png", width: 48, height: 48 },
     role: "Machine Learning Research Intern",
     period: "Sep 2019 – Apr 2021",
-    location: "New Delhi, India",
+    location: "Jalandhar, India",
     summary: "Forecasting research that turned into my first publications.",
     highlights: [
       "Led research on dengue and TB outbreak prediction using ensemble forecasting, published in Springer's New Generation Computing.",
