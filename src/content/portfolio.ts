@@ -553,7 +553,7 @@ export const beyond = {
   notes: [
     {
       title: "Published before university",
-      body: "My first peer-reviewed papers came out of research at the National Institute of Technology in New Delhi, on forecasting dengue and TB outbreaks, before I'd finished high school.",
+      body: "My first peer-reviewed papers came out of research at the National Institute of Technology Jalandhar, on forecasting dengue and TB outbreaks, before I'd finished high school.",
     },
     {
       title: "Teaching",

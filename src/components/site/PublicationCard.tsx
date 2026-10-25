@@ -21,9 +21,12 @@ export function PublicationCard({ pub }: { pub: Publication }) {
         <p className="prose-body mt-4 text-muted-foreground">{pub.abstract}</p>
       ) : null}
       {pub.link ? (
-        <span className="mt-5 inline-flex items-center gap-1 text-sm text-foreground" aria-hidden>
-          Read paper <ArrowUpRight className="size-4" strokeWidth={1.6} />
-        </span>
+        <ExternalLink
+          href={pub.link}
+          className="mt-5 inline-flex items-center gap-1 text-sm text-foreground link-underline"
+        >
+          Read paper <ArrowUpRight className="size-4" strokeWidth={1.6} aria-hidden="true" />
+        </ExternalLink>
       ) : null}
     </article>
   );
