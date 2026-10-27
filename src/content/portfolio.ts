@@ -97,7 +97,7 @@ export interface Photo {
 export const profile = {
   name: "Jaiditya Dev",
   shortName: "Jai",
-  role: "Data Scientist & AI Engineer",
+  role: "Business Analyst, Data & AI",
   location: "Toronto, Canada",
   currentlyAt: "Deloitte Canada",
   /** Full deployed URL (e.g. "https://jaidityadev.com"), used for SEO. */
@@ -122,12 +122,12 @@ export const links = {
 export const hero = {
   eyebrow: ["Jaiditya Dev", "Toronto, Canada"],
   headline: {
-    before: "Data scientist and AI engineer at",
+    before: "Data & AI at",
     emphasis: "Deloitte",
     after: "Canada.",
   },
   intro:
-    "I'm Jai. I work in Deloitte Canada's Data & AI practice. Before that, at ADP Canada, I built the ML systems behind payroll and tax operations: classification pipelines over 3M+ live records, an MCP server for enterprise LLM tooling, and an agentic tax assistant in production.",
+    "I'm Jai. I work in Deloitte Canada's Data & AI practice on agentic and AI-integrated solutions for clients. Before that, at ADP Canada, I built ML systems for payroll and tax operations: classification pipelines over 3M+ live records, an MCP server for enterprise LLM tooling, and an agentic tax assistant in production.",
   status: "Toronto · Data & AI at Deloitte Canada",
   /** "words" = word-by-word rise on load, "fade" = single soft fade. */
   headlineAnimation: "words" as "words" | "fade",
@@ -141,7 +141,7 @@ export const about = {
     "I studied Applied Statistics at the University of Toronto, with minors in Computer Science and Mathematics, as a Lester B. Pearson International Scholar. The Pearson is the university's most prestigious award for international students: I was one of 37 scholars chosen across all three UofT campuses, and one of 9 at Mississauga.",
     "It's a full four-year scholarship worth more than $350,000. It covers tuition, books, residence, meals and a living stipend, so for four years I could put everything into the degree, research and teaching.",
     "At ADP Canada I started as a data science intern classifying tax forms, and stayed on as an Associate Application Developer: I owned the ML document classification and routing pipelines that HR and payroll operations depend on daily, built an MCP server around enterprise REST endpoints, and re-architected a production tax assistant from custom RAG to an agentic design.",
-    "Research came first, though. I have four peer-reviewed publications in forecasting and public health (Springer, CRC Press, the UofT Journal of Public Health and AMSJ), the first of them before I finished high school. I've also spent 3+ years teaching probability, statistics and machine learning.",
+    "Research came first, though. I have four peer-reviewed publications in forecasting and public health (Springer, CRC Press, the UofT Journal of Public Health and AMSJ), and I've taught probability, statistics and machine learning at UofT and LearnAI.",
     "Since September 2026 I've been a Business Analyst in Deloitte Canada's Data & AI practice in Toronto, working on agentic and AI-integrated solutions for client engagements.",
   ],
   highlights: [
@@ -151,7 +151,7 @@ export const about = {
       value: "1 of 37 across UofT",
       detail: "$350K+ full four-year award",
     },
-    { label: "Research", value: "4 publications", detail: "First published in high school" },
+    { label: "Research", value: "4 publications", detail: "Forecasting and public health" },
   ],
 };
 
@@ -162,7 +162,7 @@ export const experienceStats = [
   { value: "3M+", label: "Live payroll records classified", note: "Production ML · ADP" },
   { value: "5", label: "Tool endpoints in an agentic tax assistant", note: "Strands Agents · ADP" },
   { value: "4", label: "Peer-reviewed publications", note: "Springer · CRC Press · UTJPH" },
-  { value: "3+", label: "Years teaching ML and statistics", note: "UofT · LearnAI" },
+  { value: "2", label: "Teaching roles in ML and statistics", note: "UofT · LearnAI" },
 ];
 
 export const experience: Experience[] = [
@@ -186,7 +186,7 @@ export const experience: Experience[] = [
     highlights: [
       "Re-architected a production tax assistant from custom RAG to an agentic design (Strands Agents) routing across 5 tool endpoints, improving modularity, routing accuracy and observability.",
       "Built an MCP server wrapping enterprise REST endpoints for structured, auditable LLM tool use in production.",
-      "Owned the ML document classification and routing pipelines that HR and payroll operations depend on daily.",
+      "Owned the ML document classification and routing pipelines, running across 3M+ live payroll records, that HR and payroll operations depend on daily.",
     ],
     tags: ["Python", "MCP", "Strands Agents", "RAG", "NLP"],
   },
@@ -244,7 +244,7 @@ export const experience: Experience[] = [
     location: "New Delhi, India",
     summary: "Technology strategy work for enterprise clients.",
     highlights: [
-      "Facilitated requirements-gathering workshops and wrote executive-ready narratives on complex technical topics that senior stakeholders acted on.",
+      "Supported requirements-gathering workshops and drafted plain-language summaries of complex technical topics for client stakeholders.",
       "Built quantitative models in Excel and KPI storylines linking technology investment to measurable business outcomes.",
       "Mapped current-state processes and shaped future-state modernization roadmaps, identifying digital transformation and automation opportunities.",
     ],

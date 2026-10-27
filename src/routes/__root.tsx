@@ -67,11 +67,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Jaiditya Dev | Data Scientist & AI Engineer" },
+      { title: "Jaiditya Dev | Data & AI at Deloitte Canada" },
       {
         name: "description",
         content:
-          "Jaiditya (Jai) Dev is a data scientist and AI engineer in Deloitte Canada's Data & AI practice in Toronto, with production ML, MCP and agentic AI work from ADP Canada and four peer-reviewed publications.",
+          "Jaiditya (Jai) Dev works in Deloitte Canada's Data & AI practice in Toronto, with production ML, MCP and agentic AI work from ADP Canada and four peer-reviewed publications.",
       },
       { name: "author", content: "Jaiditya Dev" },
       { name: "theme-color", content: "#f8f6f1", media: "(prefers-color-scheme: light)" },

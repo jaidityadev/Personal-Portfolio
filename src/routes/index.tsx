@@ -10,9 +10,9 @@ import { Toolbox } from "@/components/sections/Toolbox";
 import { Work } from "@/components/sections/Work";
 import { hero, links, profile } from "@/content/portfolio";
 
-const title = "Jaiditya Dev | Data Scientist & AI Engineer in Toronto";
+const title = "Jaiditya Dev | Data & AI at Deloitte Canada, Toronto";
 const description =
-  "Jaiditya (Jai) Dev is a data scientist and AI engineer at Deloitte Canada. Production ML over 3M+ records, MCP servers and agentic AI at ADP, and four peer-reviewed publications in forecasting and public health.";
+  "Jaiditya (Jai) Dev works in Deloitte Canada's Data & AI practice in Toronto. Production ML over 3M+ records, MCP servers and agentic AI at ADP, and four peer-reviewed publications in forecasting and public health.";
 
 const personLd = {
   "@context": "https://schema.org",

@@ -24,4 +24,5 @@ export function ThemeToggle() {
   );
 }
 
-export const themeInitScript = `(function(){try{var d=document.documentElement;d.classList.add('js');var t=localStorage.getItem('theme');var dark=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(dark)d.classList.add('dark');}catch(e){}})();`;
+/** Also strips the comment (and whitespace) Netlify's edge injects into <head>; React fails hydration (#418) on them. */
+export const themeInitScript = `(function(){try{for(var n=document.head.firstChild;n;){var x=n.nextSibling;if(n.nodeType===8||n.nodeType===3)n.remove();n=x;}}catch(e){}try{var d=document.documentElement;d.classList.add('js');var t=localStorage.getItem('theme');var dark=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(dark)d.classList.add('dark');}catch(e){}})();`;

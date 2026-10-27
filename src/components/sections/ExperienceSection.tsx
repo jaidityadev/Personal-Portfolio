@@ -16,7 +16,7 @@ export function ExperienceSection() {
           index="02"
           label="Experience"
           title="Where I've made an impact."
-          description="Production AI at ADP, strategy consulting at EY, and research and teaching at the University of Toronto."
+          description="Data & AI consulting at Deloitte, production AI at ADP, strategy consulting at EY, and research and teaching at the University of Toronto."
         />
         <dl className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border md:mt-20 lg:grid-cols-4">
           {experienceStats.map((s, i) => (
