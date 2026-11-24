@@ -78,6 +78,19 @@ export interface Publication {
   link?: string | null;
 }
 
+export interface Certification {
+  name: string;
+  issuer: string;
+  /** Exam code, shown beside the issuer. */
+  code?: string;
+  /** Month the credential was earned, e.g. "Nov 2026". */
+  earned: string;
+  /** Public verification page (Credly or the issuer). `null` hides the link. */
+  url: string | null;
+  /** Badge image in /public/badges. `null` shows a neutral placeholder tile. */
+  badge: string | null;
+}
+
 export interface WritingEntry {
   title: string;
   date?: string;
@@ -543,6 +556,28 @@ export const toolbox: { group: string; items: string[] }[] = [
   {
     group: "Data & Infrastructure",
     items: ["MongoDB", "Relational Databases", "Databricks", "Docker", "AWS"],
+  },
+];
+
+/* ───────────── Certifications ───────────── */
+
+/** Shown under the toolbox. Empty array hides the block. */
+export const certifications: Certification[] = [
+  {
+    name: "AWS Certified AI Practitioner",
+    issuer: "Amazon Web Services",
+    code: "AIF-C01",
+    earned: "Nov 2026",
+    url: null,
+    badge: null,
+  },
+  {
+    name: "Microsoft Certified: Fabric Analytics Engineer Associate",
+    issuer: "Microsoft",
+    code: "DP-600",
+    earned: "Nov 2026",
+    url: "https://learn.microsoft.com/en-us/users/jaidityadev-9388/credentials/certification/fabric-analytics-engineer-associate",
+    badge: null,
   },
 ];
 
