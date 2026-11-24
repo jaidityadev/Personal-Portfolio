@@ -79,16 +79,20 @@ export interface Publication {
 }
 
 export interface Certification {
-  name: string;
+  /** Stable key, lowercase and hyphenated. */
+  id: string;
+  title: string;
   issuer: string;
-  /** Exam code, shown beside the issuer. */
-  code?: string;
-  /** Month the credential was earned, e.g. "Nov 2026". */
+  /** Exam code, shown beside the issuer. `null` hides it. */
+  exam: string | null;
   earned: string;
-  /** Public verification page (Credly or the issuer). `null` hides the link. */
-  url: string | null;
-  /** Badge image in /public/badges. `null` shows a neutral placeholder tile. */
+  expires: string | null;
+  /** Badge image in /public/badges. `null` shows a neutral award icon. */
   badge: string | null;
+  /** Certificate PDF in /public/certificates. `null` hides the link. */
+  document: string | null;
+  /** Public verification page (Credly or the issuer). `null` hides the link. */
+  verificationUrl: string | null;
 }
 
 export interface WritingEntry {
@@ -561,23 +565,40 @@ export const toolbox: { group: string; items: string[] }[] = [
 
 /* ───────────── Certifications ───────────── */
 
+export const certificationSection = {
+  label: "Credentials",
+  title: "Certifications.",
+  navigationLabel: "Certifications",
+  earnedLabel: "Earned",
+  expiresLabel: "Expires",
+  documentLabel: "View certificate",
+  verificationLabel: "Verify credential",
+};
+
 /** Shown under the toolbox. Empty array hides the block. */
 export const certifications: Certification[] = [
   {
-    name: "AWS Certified AI Practitioner",
+    id: "aws-ai-practitioner",
+    title: "AWS Certified AI Practitioner",
     issuer: "Amazon Web Services",
-    code: "AIF-C01",
-    earned: "Nov 2026",
-    url: null,
-    badge: null,
+    exam: "AIF-C01",
+    earned: "November 24, 2026",
+    expires: "November 24, 2029",
+    badge: "/badges/aws-certified-ai-practitioner.png",
+    document: "/certificates/aws-ai-practitioner-certificate.pdf",
+    verificationUrl: "https://www.credly.com/badges/e4c183a3-94e5-475a-ba77-717e560f40ae/public_url",
   },
   {
-    name: "Microsoft Certified: Fabric Analytics Engineer Associate",
+    id: "microsoft-fabric-analytics-engineer",
+    title: "Microsoft Certified: Fabric Analytics Engineer Associate",
     issuer: "Microsoft",
-    code: "DP-600",
-    earned: "Nov 2026",
-    url: "https://learn.microsoft.com/en-us/users/jaidityadev-9388/credentials/certification/fabric-analytics-engineer-associate",
+    exam: "DP-600",
+    earned: "November 18, 2026",
+    expires: "November 18, 2027",
     badge: null,
+    document: "/certificates/microsoft-fabric-certificate.pdf",
+    verificationUrl:
+      "https://learn.microsoft.com/api/credentials/share/en-us/JaidityaDev-9388/3DFE7008EFA9F9F5?sharingId=8B2FA4A8809E9E9C",
   },
 ];
 

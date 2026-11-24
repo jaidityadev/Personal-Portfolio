@@ -1,8 +1,8 @@
-import { CertificationCard } from "@/components/site/CertificationCard";
 import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { TagList } from "@/components/site/Tag";
-import { certifications, toolbox } from "@/content/portfolio";
+import { toolbox } from "@/content/portfolio";
+import { Certifications } from "./Certifications";
 
 export function Toolbox() {
   return (
@@ -36,22 +36,7 @@ export function Toolbox() {
           ))}
         </dl>
 
-        {certifications.length > 0 ? (
-          <div className="mt-16 grid gap-6 md:mt-20 md:grid-cols-12 md:gap-10">
-            <Reveal className="md:col-span-3">
-              <h3 id="certifications" className="eyebrow scroll-mt-24">
-                Certifications
-              </h3>
-            </Reveal>
-            <div className="grid gap-4 md:col-span-9 lg:grid-cols-2">
-              {certifications.map((cert, i) => (
-                <Reveal key={cert.name} delay={i * 60} className="h-full">
-                  <CertificationCard cert={cert} />
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        ) : null}
+        <Certifications />
       </div>
     </section>
   );

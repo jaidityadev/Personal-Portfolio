@@ -9,7 +9,7 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { links, projects } from "@/content/portfolio";
+import { certificationSection, links, projects } from "@/content/portfolio";
 
 const SECTIONS = [
   { id: "top", label: "Home" },
@@ -18,6 +18,7 @@ const SECTIONS = [
   { id: "work", label: "Selected work" },
   { id: "research", label: "Research" },
   { id: "toolbox", label: "Technical toolbox" },
+  { id: "certifications", label: certificationSection.navigationLabel },
   { id: "beyond", label: "Beyond the code" },
   { id: "contact", label: "Contact" },
 ];
