@@ -15,9 +15,9 @@ export function Hero() {
     <section
       id="top"
       aria-labelledby="hero-title"
-      className="relative flex min-h-[100svh] flex-col pt-28 md:pt-32"
+      className="relative flex flex-col pt-28 md:pt-32 lg:min-h-[100svh]"
     >
-      <div className="container-page grid flex-1 items-center gap-14 pb-24 lg:grid-cols-12 lg:gap-12">
+      <div className="container-page grid flex-1 items-center gap-8 pb-12 md:pb-24 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-7">
           <p className="eyebrow hero-in" style={d(0)}>
             {hero.eyebrow[0]}
@@ -67,7 +67,7 @@ export function Hero() {
         </div>
 
         <figure className="hero-in lg:col-span-5" style={d(250)}>
-          <div className="dot-grid relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card sm:aspect-square lg:aspect-[4/5]">
+          <div className="dot-grid relative h-[clamp(9rem,25svh,13rem)] overflow-hidden rounded-2xl border border-border bg-card lg:aspect-[4/5] lg:h-auto">
             <DataConstellation readoutRef={readoutRef} />
             <span aria-hidden className="eyebrow pointer-events-none absolute left-4 top-4">
               n = 3 clusters
