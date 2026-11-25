@@ -595,7 +595,7 @@ export const certifications: Certification[] = [
     exam: "DP-600",
     earned: "November 18, 2026",
     expires: "November 18, 2027",
-    badge: null,
+    badge: "/badges/microsoft-certified-associate-badge.svg",
     document: "/certificates/microsoft-fabric-certificate.pdf",
     verificationUrl:
       "https://learn.microsoft.com/api/credentials/share/en-us/JaidityaDev-9388/3DFE7008EFA9F9F5?sharingId=8B2FA4A8809E9E9C",
